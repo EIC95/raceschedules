@@ -10,4 +10,4 @@ app.include_router(sessions.router)
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Motorsport Schedules API"}
+    return {"message": "Welcome to the RaceSchedules API"}
