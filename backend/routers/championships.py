@@ -6,7 +6,7 @@ from app.database import get_db
 
 router = APIRouter()
 
-@router.get("/championships", response_model=List[schemas.ChampionshipSimple])
+@router.get("/championships", response_model=List[schemas.ChampionshipBase])
 def read_championships(db: Session = Depends(get_db)):
     return db.query(models.Championship).all()
 

@@ -4,15 +4,13 @@ from typing import List, Optional
 
 # Base and simple schemas first
 
-class SessionBase(BaseModel):
+class ChampionshipBase(BaseModel):
     name: str
-    start_time: datetime
-    session_number: int
+    slug: str
 
-class Session(SessionBase):
+class ChampionshipRead(ChampionshipBase):
     id: int
-    event_id: int
-
+    category_id: int
     class Config:
         from_attributes = True
 
@@ -22,22 +20,30 @@ class EventBase(BaseModel):
     start_date: datetime
     end_date: datetime
 
-class EventSimple(EventBase):
+class EventRead(EventBase):
     id: int
     championship_id: Optional[int] = None
+    championship: Optional[ChampionshipRead] = None # Nested Championship
+
     class Config:
         from_attributes = True
 
-class ChampionshipBase(BaseModel):
+class SessionBase(BaseModel):
     name: str
-    slug: str
+    start_time: datetime
+    session_number: int
 
-class ChampionshipSimple(ChampionshipBase):
+class Session(SessionBase): # This is the main Session schema
     id: int
-    category_id: int
+    event_id: int
+    event: Optional[EventRead] = None # Nested Event
+
     class Config:
         from_attributes = True
 
+
+# Existing schemas for other purposes, keeping them as is for now.
+# If EventDetail/ChampionshipDetail were meant to include these, they should be updated.
 class CategoryBase(BaseModel):
     name: str
 
@@ -46,14 +52,11 @@ class Category(CategoryBase):
     class Config:
         from_attributes = True
 
+class EventDetail(EventRead): # Inherit from EventRead
+    sessions: List["Session"] = [] # Only include basic session info
 
-# Schemas with relationships for detail views
-
-class EventDetail(EventSimple):
-    sessions: List[Session] = []
-
-class ChampionshipDetail(ChampionshipSimple):
-    events: List[EventSimple] = []
+class ChampionshipDetail(ChampionshipRead): # Inherit from ChampionshipRead
+    events: List[EventRead] = [] # Include EventRead
 
 class CategoryDetail(Category):
-    championships: List[ChampionshipSimple] = []
+    championships: List[ChampionshipRead] = [] # Include ChampionshipRead

@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 router = APIRouter()
 
-@router.get("/events/upcoming", response_model=List[schemas.EventSimple])
+@router.get("/events/upcoming", response_model=List[schemas.EventBase])
 def read_upcoming_events(db: Session = Depends(get_db)):
     now = datetime.now(timezone.utc)
     one_week_from_now = now + timedelta(weeks=1)
