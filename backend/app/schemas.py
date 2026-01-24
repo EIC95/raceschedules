@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional # Keep Optional for other fields that are still optional
 
 # Base and simple schemas first
 
@@ -32,6 +32,7 @@ class SessionBase(BaseModel):
     name: str
     start_time: datetime
     session_number: int
+    timezone: str # Changed to non-optional
 
 class Session(SessionBase): # This is the main Session schema
     id: int

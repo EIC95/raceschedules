@@ -36,3 +36,4 @@ class Session(Base):
     session_number = Column(Integer)
     event_id = Column(Integer, ForeignKey("events.id"))
     event = relationship("Event", back_populates="sessions")
+    timezone = Column(String, nullable=False, default="UTC") # Changed to non-nullable with default

@@ -1,20 +1,12 @@
-import { useState, useEffect } from 'react';
 import { Clock, MapPin } from 'lucide-react';
+import { useTimezone } from '../context/TimezoneContext';
 
-export default function TimezoneToggle() {
-    const [selectedTimezone, setSelectedTimezone] = useState<'your_time' | 'track_time'>('your_time');
+export default function TimezoneToggle(){
+    const { selectedTimezone, setSelectedTimezone } = useTimezone();
 
     const toggleTimezone = (timezone: 'your_time' | 'track_time') => {
         setSelectedTimezone(timezone);
-        localStorage.setItem('timezone', timezone)
     };
-
-    useEffect(() => {
-        const saved = localStorage.getItem("timezone");
-        if (saved === "your_time" || saved === "track_time") {
-        setSelectedTimezone(saved);
-        }
-    }, []);
 
     return (
         <div className="relative flex items-center p-1 rounded-full border-2 border-black">
