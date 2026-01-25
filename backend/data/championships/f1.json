@@ -1,0 +1,29 @@
+{
+  "championship": "f1",
+  "events": [
+    {
+      "slug": "bahrain-gp-2026",
+      "name": "Bahrain Grand Prix",
+      "location": "Sakhir, Bahrain",
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-15",
+      "sessions": [
+        { "name": "FP1", "session_number": 1, "start_time": "2026-03-13T12:30:00", "timezone": "Asia/Bahrain" },
+        { "name": "Qualifying", "session_number": 2, "start_time": "2026-03-14T15:00:00+03:00" },
+        { "name": "Race", "session_number": 3, "start_time": "2026-03-15T18:00:00+03:00" }
+      ]
+    },
+    {
+      "slug": "monaco-gp-2026",
+      "name": "Monaco Grand Prix",
+      "location": "Monte Carlo, Monaco",
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-24",
+      "sessions": [
+        { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-05-22T13:30:00", "timezone": "Europe/Monaco" },
+        { "name": "Qualifying", "session_number": 2, "start_time": "2026-05-23T16:00:00", "timezone": "Europe/Monaco" },
+        { "name": "Race", "session_number": 3, "start_time": "2026-05-24T15:00:00", "timezone": "Europe/Monaco" }
+      ]
+    }
+  ]
+}

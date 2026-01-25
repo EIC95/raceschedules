@@ -16,7 +16,7 @@ backend/
  ├── scripts/
  │   ├── seed.py
  │   └── validate_data.py
- └── README-data.md
+ └── README.md
 ```
 
 ---
@@ -54,9 +54,9 @@ List of objects:
 * `name`: string
 * `category`: `slug` of an existing Category
 
-### Season & Events (`backend/data/seasons/<championship>.json`)
+### Events (`backend/data/championships/<championship>.json`)
 
-One file per championship; example `seasons/f1.json`:
+One file per championship; example `championships/f1.json`:
 
 ```json
 {
@@ -151,7 +151,7 @@ python backend/scripts/seed.py
 
 1. Fork the repo.
 2. Create a branch: `feature/add-f1-2026`.
-3. Modify / add JSON files in `backend/data/seasons/…`.
+3. Modify / add JSON files in `backend/data/…`.
 4. Run validation locally:
 
    ```bash
@@ -193,11 +193,10 @@ python backend/scripts/seed.py
 ]
 ```
 
-`backend/data/seasons/2026/f1.json` (partial):
+`backend/data/championships/f1.json` (partial):
 
 ```json
 {
-  "season": 2026,
   "championship": "f1",
   "events": [
     {

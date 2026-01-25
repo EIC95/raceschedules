@@ -1,0 +1,8 @@
+[
+  { "slug": "single-seaters", "name": "Single-Seaters" },
+  { "slug": "motorcycles", "name": "Motorcycles" },
+  { "slug": "rally-off-road", "name": "Rally & Off-Road" },
+  { "slug": "stock-touring", "name": "Stock Cars & Touring Cars" },
+  { "slug": "endurance-gt", "name": "Endurance & GT Racing" },
+  { "slug": "exhibitions", "name": "Exhibitions" }
+]

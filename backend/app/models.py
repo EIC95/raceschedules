@@ -6,6 +6,7 @@ class Category(Base):
     __tablename__ = "categories"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
+    slug = Column(String, unique=True, index=True, nullable=False, default="")
     championships = relationship("Championship", back_populates="category")
 
 class Championship(Base):

@@ -8,6 +8,7 @@ class ChampionshipBase(BaseModel):
 
 class CategoryBase(BaseModel):
     name: str
+    slug: str
 
 class Category(CategoryBase):
     id: int
