@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import List, Set, Optional
 from datetime import datetime
-from pydantic import BaseModel, Field, ValidationError, field_validator
+from pydantic import BaseModel, Field, ValidationError, field_validator # Import field_validator
 
 # Try importing pytz for timezone validation, provide a fallback if not installed
 try:
@@ -36,8 +36,8 @@ class SessionData(BaseModel):
         return v
 
     @field_validator('timezone')
-    def validate_timezone_with_start_time(cls, v, values):
-        start_time_str = values.get('start_time')
+    def validate_timezone_with_start_time(cls, v, info): # Changed values to info for Pydantic V2
+        start_time_str = info.data.get('start_time') # Access data via info.data
         if not start_time_str:
             return v # start_time validation already failed or not present
 

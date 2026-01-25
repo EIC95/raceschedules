@@ -96,6 +96,33 @@ Notes:
   * without offset (`2026-03-13T12:30:00`) **with** a mandatory IANA `timezone` field (`"Asia/Bahrain"`).
 * If `start_time` has no offset and no `timezone` is provided, validation will fail.
 
+To contribute an exhibition event:
+1.  **Create a Championship Entry:** Add an entry to `backend/data/championships.json` with the `slug` of the exhibition event, its `name`, and set its `category` to `"exhibitions"`.
+    ```json
+    { "slug": "macau-grand-prix", "name": "Macau Grand Prix", "category": "exhibitions" }
+    ```
+2.  **Create an Event File:** Create a JSON file in `backend/data/championships/` named after the exhibition event's slug (e.g., `macau-grand-prix.json`). This file will contain the event(s) and their sessions, just like a regular championship event file.
+    ```json
+    {
+      "championship": "macau-grand-prix",
+      "events": [
+        {
+          "slug": "macau-f3-2026",
+          "name": "Macau F3 Race",
+          "location": "Macau, China",
+          "start_date": "2026-11-19",
+          "end_date": "2026-11-22",
+          "sessions": [
+            { "name": "Qualifying", "session_number": 1, "start_time": "2026-11-20T10:00:00", "timezone": "Asia/Macau" },
+            { "name": "Race", "session_number": 2, "start_time": "2026-11-22T15:30:00", "timezone": "Asia/Macau" }
+          ]
+        }
+      ]
+    }
+    ```
+
+This approach allows exhibition events to be managed and displayed using the same robust data structure as other championships.
+
 ### Session (inside an Event)
 
 Expected fields:

@@ -1,7 +1,12 @@
+import sys
+from pathlib import Path
+
+# Add the parent directory to sys.path to allow absolute imports for app modules
+sys.path.append(str(Path(__file__).parent.parent))
+
 from app.database import SessionLocal
 from app.models import Category, Championship, Event, Session
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 from scripts.validate_data import validate_categories_data, validate_championships_data, validate_championship_events_data
 from sqlalchemy.exc import IntegrityError
 from typing import Optional
