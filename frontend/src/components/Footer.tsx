@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             <div className="flex justify-between items-center text-sm text-gray-600 font-bold">
                 <p>© {currentYear} RACESCHEDULES</p>
                 <a
-                    href="https://github.com/your-github-repo"
+                    href="https://github.com/EIC95/raceschedules"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub Repository"
