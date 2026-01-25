@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
-import TimezoneToggle from '../components/TimezoneToggle';
 import SessionCard from '../components/SessionCard'; 
 import { fetchEventDetails } from '../api/events';
 import type { EventDetail } from '../api/events';
 import dayjs from 'dayjs'; 
 import Footer from '../components/Footer';
 import SeoHead from "../components/SeoHead";
+import Header from "../components/Header";
 
 const EventDetailPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
@@ -65,7 +65,7 @@ const EventDetailPage: React.FC = () => {
         if (startDate.month() === endDate.month()) {
             if (startDate.date() !== endDate.date()) {
                 dateRange = `${startDate.format('MMM DD')} - ${endDate.format('DD')}, ${startDate.year()}`.toUpperCase();
-            } else { // Single day event
+            } else { 
                 dateRange = `${startDate.format('MMM DD')}, ${startDate.year()}`.toUpperCase();
             }
         } else {
@@ -82,11 +82,8 @@ const EventDetailPage: React.FC = () => {
                 ogTitle={pageTitle}
                 ogDescription={pageDescription}
             />
-            <main className="px-36 py-10">
-                <header className="flex justify-between items-center mb-10">
-                    <Link to="/"><h1 className="text-2xl font-extrabold text-black uppercase">RACESCHEDULES</h1></Link>
-                    <TimezoneToggle />
-                </header>
+            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10">
+                <Header />
 
                 {loading ? (
                     <div className="text-center py-8">Loading event details...</div>
@@ -114,7 +111,7 @@ const EventDetailPage: React.FC = () => {
                                     {event.championship.name}
                                 </span>
                             )}
-                            <h2 className="text-6xl font-extrabold text-black uppercase leading-none mt-4">
+                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mt-4">
                                 {event.name}
                             </h2>
                             <span className="bg-black text-white text-xs font-bold px-2 py-1 uppercase mt-4 inline-block">
@@ -123,8 +120,8 @@ const EventDetailPage: React.FC = () => {
                         </div>
 
                         <section className="my-8">
-                            <h3 className="text-2xl font-extrabold text-black uppercase mb-6">Sessions</h3>
-                            <div> {/*No Separator line */}
+                            <h3 className="text-xl sm:text-2xl font-extrabold text-black uppercase mb-6">Sessions</h3>
+                            <div className="border-t-2 border-black pt-4"> {/* Separator line */}
                                 {event.sessions.length > 0 ? (
                                     event.sessions.map(session => (
                                         <SessionCard key={session.id} session={session} />

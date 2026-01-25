@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
-import TimezoneToggle from '../components/TimezoneToggle';
 import EventCard from '../components/EventCard';
 import { fetchChampionshipDetails } from '../api/championships';
 import type { ChampionshipDetail } from '../api/championships';
 import type { Event } from '../api/events';
 import Footer from '../components/Footer';
 import SeoHead from "../components/SeoHead";
+import Header from "../components/Header";
 
 const ChampionshipDetailPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
@@ -69,11 +69,8 @@ const ChampionshipDetailPage: React.FC = () => {
                 ogTitle={pageTitle}
                 ogDescription={pageDescription}
             />
-            <main className="px-36 py-10">
-                <header className="flex justify-between items-center mb-10">
-                    <Link to="/"><h1 className="text-2xl font-extrabold text-black uppercase">RACESCHEDULES</h1></Link>
-                    <TimezoneToggle />
-                </header>
+            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10">
+                <Header />
 
                 {loading ? (
                     <div className="text-center py-8">Loading championship details...</div>
@@ -93,7 +90,7 @@ const ChampionshipDetailPage: React.FC = () => {
                             <span className="text-gray-500 text-xs font-bold px-2 py-1 uppercase border border-gray-500">
                                 {championship.category.name}
                             </span>
-                            <h2 className="text-6xl font-extrabold text-black uppercase leading-none mt-4">
+                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mt-4">
                                 {championship.name}
                             </h2>
                         </div>

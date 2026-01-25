@@ -20,7 +20,7 @@ export default function TimezoneToggle(){
             ></div>
 
             <button
-                className={`relative z-10 flex items-center justify-center gap-2 px-4 py-1.5 transition-colors duration-300 ease-in-out text-xs font-bold
+                className={`relative z-10 flex items-center justify-center gap-1.5 px-3 py-1 sm:gap-2 sm:px-4 sm:py-1.5 transition-colors duration-300 ease-in-out text-xs sm:text-sm font-bold
                         ${selectedTimezone === 'your_time' ? 'text-white' : 'text-gray-600 cursor-pointer'}`}
                 onClick={() => toggleTimezone('your_time')}
             >
@@ -29,7 +29,7 @@ export default function TimezoneToggle(){
             </button>
 
             <button
-                className={`relative z-10 flex items-center justify-center gap-2 px-4 py-1.5 transition-colors duration-300 ease-in-out text-xs font-bold
+                className={`relative z-10 flex items-center justify-center gap-1.5 px-3 py-1 sm:gap-2 sm:px-4 sm:py-1.5 transition-colors duration-300 ease-in-out text-xs sm:text-sm font-bold
                         ${selectedTimezone === 'track_time' ? 'text-white' : 'text-gray-600 cursor-pointer'}`}
                 onClick={() => toggleTimezone('track_time')}
             >

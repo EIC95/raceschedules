@@ -1,10 +1,10 @@
-import { useEffect } from 'react'; // Removed React import
-import TimezoneToggle from "../components/TimezoneToggle";
+import { useEffect } from 'react';
 import NextSession from "../components/NextSession";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Championships from "../components/Championships";
 import Footer from "../components/Footer";
 import SeoHead from "../components/SeoHead";
+import Header from "../components/Header";
 
 export default function HomePage(){
     useEffect(() => {
@@ -14,11 +14,8 @@ export default function HomePage(){
     return(
         <>
             <SeoHead title="Home" description="View upcoming race schedules and championships." />
-            <main className="px-36 py-10">
-                <header className="flex justify-between items-center">
-                    <a href="/"><h1 className="text-2xl font-extrabold text-black uppercase">RACESCHEDULES</h1></a>
-                    <TimezoneToggle />
-                </header>
+            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10">
+                <Header />
                 <section className="mt-14">
                     <NextSession />
                 </section>
