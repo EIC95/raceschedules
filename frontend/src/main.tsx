@@ -3,14 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { TimezoneProvider } from './context/TimezoneContext';
-import { HelmetProvider } from 'react-helmet-async';
+import { Analytics } from '@vercel/analytics/react';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HelmetProvider>
       <TimezoneProvider>
+        <Analytics />
         <App />
       </TimezoneProvider>
-    </HelmetProvider>
   </StrictMode>,
 )

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 export default function NotFoundPage() {
+  useEffect(() => {
+    document.title = "404 - Page Not Found";
+  }, []);
+
   return (
     <>
-      <Helmet>
-        <title>404 - Page Not Found</title>
-        <meta name="description" content="The page you are looking for does not exist." />
-      </Helmet>
       <div className="flex flex-col min-h-screen">
         <main className="grow flex items-center justify-center p-4">
           <div className="text-center">

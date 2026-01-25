@@ -1,5 +1,4 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from 'react';
 
 interface SeoHeadProps {
     title: string;
@@ -27,25 +26,24 @@ const SeoHead: React.FC<SeoHeadProps> = ({
     const defaultTitle = "Race Schedules";
     const fullTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
 
-    return (
-        <Helmet>
-            <title>{fullTitle}</title>
-            <meta name="description" content={description} />
-            {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    useEffect(() => {
+        document.title = fullTitle;
+        // Meta tags and other SEO elements traditionally handled by react-helmet-async
+        // would need a new solution if comprehensive SEO is required.
+        // For example, to set description:
+        // const metaDescription = document.querySelector('meta[name="description"]');
+        // if (metaDescription) {
+        //     metaDescription.setAttribute('content', description);
+        // } else {
+        //     const newMeta = document.createElement('meta');
+        //     newMeta.name = 'description';
+        //     newMeta.content = description;
+        //     document.head.appendChild(newMeta);
+        // }
+        // Similar logic would apply for other meta tags like Open Graph and Twitter.
+    }, [fullTitle, description]); // Dependencies for useEffect to re-run if title or description changes
 
-            {/* Open Graph / Facebook */}
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content={ogTitle || fullTitle} />
-            <meta property="og:description" content={ogDescription || description} />
-            {ogImage && <meta property="og:image" content={ogImage} />}
-
-            {/* Twitter */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={twitterTitle || fullTitle} />
-            <meta name="twitter:description" content={twitterDescription || description} />
-            {twitterImage && <meta name="twitter:image" content={twitterImage} />}
-        </Helmet>
-    );
+    return null; // SeoHead no longer renders any HTML directly
 };
 
 export default SeoHead;

@@ -67,7 +67,7 @@ const Championships: React.FC = () => {
 
     return (
         <section className="my-8">
-            <h2 className="text-2xl font-extrabold text-black uppercase mb-6">Championships</h2>
+            <h2 className="text-2xl font-extrabold text-black uppercase mb-6">Championships & Exhibitions</h2>
             
             <div className="flex flex-wrap gap-2 mb-8">
                 {categories.map(category => (
