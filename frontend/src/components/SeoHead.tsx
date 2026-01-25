@@ -15,13 +15,6 @@ interface SeoHeadProps {
 const SeoHead: React.FC<SeoHeadProps> = ({
     title,
     description = "Stay updated with the latest race schedules, championship standings, and event details.",
-    canonicalUrl,
-    ogTitle,
-    ogDescription,
-    ogImage,
-    twitterTitle,
-    twitterDescription,
-    twitterImage,
 }) => {
     const defaultTitle = "Race Schedules";
     const fullTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
