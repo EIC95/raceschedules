@@ -58,7 +58,7 @@ const ChampionshipDetailPage: React.FC = () => {
                 </header>
 
                 <div className="mb-10">
-                    <Link to="/" className="flex items-center text-xs font-bold uppercase text-gray-500 transition-colors duration-200">
+                    <Link to="/" className="flex items-center text-xs font-bold uppercase text-gray-500 hover:text-black transition-colors duration-200">
                         <ChevronLeft size={16} className="mr-1" /> BACK TO HOME
                     </Link>
                 </div>
