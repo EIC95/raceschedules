@@ -2,7 +2,7 @@ import TimezoneToggle from "../components/TimezoneToggle";
 import NextSession from "../components/NextSession";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Championships from "../components/Championships";
-import Footer from "../components/Footer"; // Import Footer
+import Footer from "../components/Footer";
 
 export default function HomePage(){
     return(

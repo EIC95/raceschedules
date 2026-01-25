@@ -33,9 +33,11 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
                     <h3 className="text-xl font-extrabold text-black uppercase leading-tight">
                         {event.name}
                     </h3>
-                    <p className="text-gray-600 text-sm font-semibold uppercase">
-                        {event.championship.name}
-                    </p>
+                    {event.championship && (
+                        <p className="text-gray-600 text-sm font-semibold uppercase">
+                            {event.championship.name}
+                        </p>
+                    )}
                 </div>
                 <div className="self-end">
                     <ChevronRight size={24} className="text-black" />

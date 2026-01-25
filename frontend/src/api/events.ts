@@ -14,7 +14,7 @@ export interface Event {
     end_date: string;
     id: number;
     championship_id: number;
-    championship: Championship;
+    championship?: Championship; 
 }
 
 export const fetchUpcomingEvents = async (): Promise<Event[]> => {
