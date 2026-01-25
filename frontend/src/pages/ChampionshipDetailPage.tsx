@@ -49,6 +49,11 @@ const ChampionshipDetailPage: React.FC = () => {
         return <div className="text-center py-8">Championship not found.</div>;
     }
 
+    // Sort events by start_date before rendering
+    const sortedEvents = [...championship.events].sort((a, b) => {
+        return new Date(a.start_date).getTime() - new Date(b.start_date).getTime();
+    });
+
     return (
         <>
             <main className="px-36 py-10">
@@ -75,8 +80,8 @@ const ChampionshipDetailPage: React.FC = () => {
                 <section className="my-8">
                     <h3 className="text-2xl font-extrabold text-black uppercase mb-6">Events</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {championship.events.length > 0 ? (
-                            championship.events.map(event => (
+                        {sortedEvents.length > 0 ? ( // Use sortedEvents here
+                            sortedEvents.map(event => (
                                 <EventCard key={event.id} event={event as Event} />
                             ))
                         ) : (
