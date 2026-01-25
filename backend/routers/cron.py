@@ -5,7 +5,7 @@ from app.database import get_db
 
 router = APIRouter()
 
-@router.get("/cron/wakeup", methods=["GET", "HEAD"])
+@router.api_route("/cron/wakeup", methods=["GET", "HEAD"])
 def wakeup(db: Session = Depends(get_db)):
     """
     This endpoint is used to keep the backend awake on free hosting services.
