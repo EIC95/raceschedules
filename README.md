@@ -51,6 +51,21 @@ Here are some ideas for the next steps of the project, and any help is welcome:
 -   **Enriched Database:** Continue to expand the database with even more championships and motorsports categories.
 -   **Deployment and Visibility:** Look into upgrading to more premium deployment plans (the current ones being free) and finding an appropriate domain name for the project.
 
+Parfait. Pour ton README, il faut une section claire, courte et engageante pour inviter les gens à rejoindre le Discord, tout en donnant le contexte. Voici un exemple prêt à copier :
+
+---
+
+## Join the Community
+
+We have a **Discord server** for RaceSchedules where you can:
+
+* Chat with other motorsport fans
+* Share feedback and ideas
+* Report bugs and discuss technical topics
+* Stay updated on project announcements
+
+Join us and be part of the RaceSchedules community: [**Join Discord**](https://discord.gg/9Qsx3Uxu23)
+
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
