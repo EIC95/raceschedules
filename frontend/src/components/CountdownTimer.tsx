@@ -38,7 +38,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ startTime }) => {
     const formatTime = (time: number) => String(time).padStart(2, '0');
 
     return (
-        <div className="flex items-end justify-center text-5xl font-bold text-black tracking-tighter">
+        <div className="flex items-end justify-center text-4xl md:text-5xl font-bold text-black tracking-tighter">
             <div className="flex flex-col items-center">
                 <span>{formatTime(timeLeft.days)}</span>
                 <span className="text-xs tracking-normal font-semibold text-gray-500">DAYS</span>

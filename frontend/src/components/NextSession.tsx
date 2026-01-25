@@ -38,11 +38,11 @@ const NextSession: React.FC = () => {
     }
 
     return (
-        <div className="border-4 border-black p-8 my-8">
+        <div className="border-4 border-black p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8">
             <p className="text-gray-600 text-sm font-bold mb-2">NEXT SESSION</p>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-stretch flex-wrap"> {/* Responsive flex direction and alignment */}
-                <div className="flex-1 min-w-full md:min-w-0 md:w-auto mb-4 md:mb-0"> {/* Take full width on small, then auto */}
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mb-2"> {/* Responsive H2 */}
+                <div className="flex-1 min-w-full md:min-w-0 md:w-auto mb-4 sm:mb-6 md:mb-0"> {/* Take full width on small, then auto */}
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mb-1 sm:mb-2"> {/* Responsive H2 */}
                         {nextSession.event.name}
                     </h2>
                     <p className="text-gray-700 text-sm sm:text-lg font-semibold uppercase"> {/* Responsive P */}
@@ -50,7 +50,7 @@ const NextSession: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-col items-start md:items-end min-w-full md:min-w-0 mt-4 md:mt-auto"> {/* Take full width on small, then auto */}
+                <div className="flex flex-col items-start md:items-end min-w-full md:min-w-0 mt-4 sm:mt-6 md:mt-auto"> {/* Take full width on small, then auto */}
                     <SessionTimeDisplay startTime={nextSession.start_time} sessionTimezone={nextSession.timezone} />
                     <CountdownTimer startTime={nextSession.start_time} />
                 </div>
