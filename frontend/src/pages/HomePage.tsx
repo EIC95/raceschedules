@@ -2,6 +2,7 @@ import TimezoneToggle from "../components/TimezoneToggle";
 import NextSession from "../components/NextSession";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Championships from "../components/Championships";
+import Footer from "../components/Footer"; // Import Footer
 
 export default function HomePage(){
     return(
@@ -10,7 +11,7 @@ export default function HomePage(){
                 <h1 className="text-2xl font-extrabold text-black uppercase">RACESCHEDULES</h1>
                 <TimezoneToggle />
             </header>
-            <section className="mt-10">
+            <section className="mt-14">
                 <NextSession />
             </section>
             <section className="mt-14">
@@ -19,6 +20,7 @@ export default function HomePage(){
             <section className="mt-14">
                 <Championships />
             </section>
+            <Footer />
         </main>
     )
 }
