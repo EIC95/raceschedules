@@ -34,7 +34,10 @@ const UpcomingEvents: React.FC = () => {
     }
 
     if (events.length === 0) {
-        return <div className="text-center py-8">No upcoming events found.</div>;
+        return <>
+            <h2 className="text-2xl font-extrabold text-black uppercase mb-6">Upcoming Events</h2>
+            <div className="text-center py-8">No upcoming events found.</div>
+        </>;
     }
 
     return (

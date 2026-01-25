@@ -1,9 +1,3 @@
 [
-  { "slug": "f1", "name": "Formula 1", "category": "single-seaters" },
-  { "slug": "f2", "name": "Formula 2", "category": "single-seaters" },
-  { "slug": "f3", "name": "Formula 3", "category": "single-seaters" },
-  { "slug": "wec", "name": "FIA World Endurance Championship", "category": "endurance-gt" },
-  { "slug": "wrc", "name": "World Rally Championship", "category": "rally-off-road" },
-  { "slug": "motogp", "name": "MotoGP", "category": "motorcycles" },
-  { "slug": "nascar-cup", "name": "NASCAR Cup Series", "category": "stock-touring" }
+  { "slug": "f1", "name": "Formula 1", "category": "single-seaters" }
 ]
