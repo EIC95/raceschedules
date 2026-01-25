@@ -69,7 +69,7 @@ const ChampionshipDetailPage: React.FC = () => {
                 ogTitle={pageTitle}
                 ogDescription={pageDescription}
             />
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10">
+            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
                 <Header />
 
                 {loading ? (

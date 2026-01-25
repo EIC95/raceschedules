@@ -14,7 +14,7 @@ export default function HomePage(){
     return(
         <>
             <SeoHead title="Home" description="View upcoming race schedules and championships." />
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10">
+            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
                 <Header />
                 <section className="mt-14">
                     <NextSession />
