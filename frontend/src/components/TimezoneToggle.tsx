@@ -9,10 +9,10 @@ export default function TimezoneToggle(){
     };
 
     return (
-        <div className="relative flex items-center p-1 rounded-full border-2 border-black">
+        <div className="relative flex items-center p-1 border-2 border-black">
             {/* Sliding background for the active state */}
             <div
-                className={`absolute top-1 left-1 h-[calc(100%-8px)] bg-black rounded-full transition-all duration-300 ease-in-out text-xs font-bold`}
+                className={`absolute top-1 left-1 h-[calc(100%-8px)] bg-black transition-all duration-300 ease-in-out text-xs font-bold`}
                 style={{
                     width: 'calc(50% - 4px)',
                     transform: selectedTimezone === 'your_time' ? 'translateX(0)' : 'translateX(calc(100%))',
@@ -20,7 +20,7 @@ export default function TimezoneToggle(){
             ></div>
 
             <button
-                className={`relative z-10 flex items-center justify-center gap-2 px-4 py-1.5 rounded-full transition-colors duration-300 ease-in-out text-xs font-bold
+                className={`relative z-10 flex items-center justify-center gap-2 px-4 py-1.5 transition-colors duration-300 ease-in-out text-xs font-bold
                         ${selectedTimezone === 'your_time' ? 'text-white' : 'text-gray-600 cursor-pointer'}`}
                 onClick={() => toggleTimezone('your_time')}
             >
@@ -29,7 +29,7 @@ export default function TimezoneToggle(){
             </button>
 
             <button
-                className={`relative z-10 flex items-center justify-center gap-2 px-4 py-1.5 rounded-full transition-colors duration-300 ease-in-out text-xs font-bold
+                className={`relative z-10 flex items-center justify-center gap-2 px-4 py-1.5 transition-colors duration-300 ease-in-out text-xs font-bold
                         ${selectedTimezone === 'track_time' ? 'text-white' : 'text-gray-600 cursor-pointer'}`}
                 onClick={() => toggleTimezone('track_time')}
             >

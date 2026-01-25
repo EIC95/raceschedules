@@ -1,11 +1,13 @@
 import TimezoneToggle from "../components/TimezoneToggle";
 import NextSession from "../components/NextSession";
-import UpcomingEvents from "../components/UpcomingEvents"; // Import UpcomingEvents
+import UpcomingEvents from "../components/UpcomingEvents";
+import Championships from "../components/Championships";
 
 export default function HomePage(){
     return(
         <main className="px-36 py-10">
-            <header className="flex justify-end">
+            <header className="flex justify-between items-center">
+                <h1 className="text-2xl font-extrabold text-black uppercase">RACESCHEDULES</h1>
                 <TimezoneToggle />
             </header>
             <section className="mt-10">
@@ -13,6 +15,9 @@ export default function HomePage(){
             </section>
             <section className="mt-14">
                 <UpcomingEvents />
+            </section>
+            <section className="mt-14">
+                <Championships />
             </section>
         </main>
     )

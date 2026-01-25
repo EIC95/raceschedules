@@ -6,9 +6,18 @@ class ChampionshipBase(BaseModel):
     name: str
     slug: str
 
+class CategoryBase(BaseModel):
+    name: str
+
+class Category(CategoryBase):
+    id: int
+    class Config:
+        from_attributes = True
+
 class ChampionshipRead(ChampionshipBase):
     id: int
     category_id: int
+    category: Optional[Category] = None
     class Config:
         from_attributes = True
 
@@ -37,14 +46,6 @@ class Session(SessionBase):
     event_id: int
     event: Optional[EventRead] = None
 
-    class Config:
-        from_attributes = True
-
-class CategoryBase(BaseModel):
-    name: str
-
-class Category(CategoryBase):
-    id: int
     class Config:
         from_attributes = True
 
