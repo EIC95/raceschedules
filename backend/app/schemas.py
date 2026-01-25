@@ -27,6 +27,13 @@ class EventBase(BaseModel):
     start_date: datetime
     end_date: datetime
 
+# New schema for Event without nested Championship details
+class EventWithoutChampionship(EventBase):
+    id: int
+    championship_id: Optional[int] = None # Keep championship_id if needed for other purposes, but not the object
+    class Config:
+        from_attributes = True
+
 class EventRead(EventBase):
     id: int
     championship_id: Optional[int] = None
@@ -53,7 +60,8 @@ class EventDetail(EventRead):
     sessions: List["Session"] = []
 
 class ChampionshipDetail(ChampionshipRead):
-    events: List[EventRead] = []
+    # Use the new EventWithoutChampionship for events to avoid circular dependency and redundancy
+    events: List[EventWithoutChampionship] = []
 
 class CategoryDetail(Category):
     championships: List[ChampionshipRead] = []
