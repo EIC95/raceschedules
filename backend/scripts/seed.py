@@ -18,19 +18,13 @@ def seed_data():
         print("Seeding database...")
 
         # Helper to convert local time to UTC, handling timezone
-        def convert_to_utc(dt_str: str, tz_name: Optional[str] = None) -> datetime:
-            dt_naive = datetime.fromisoformat(dt_str.replace('Z', '+00:00')) # Handles 'Z' and gets base datetime
+        def convert_to_utc(dt_str: str, tz_name: str) -> datetime:
+            dt_naive = datetime.fromisoformat(dt_str) # Expects naive datetime
 
-            if dt_naive.tzinfo is not None and dt_naive.tzinfo.utcoffset(dt_naive) is not None:
-                # Already timezone-aware with offset, just convert to UTC
-                return dt_naive.astimezone(timezone.utc)
-            elif tz_name:
-                # Naive datetime with provided timezone name
-                local_tz = pytz.timezone(tz_name)
-                dt_localized = local_tz.localize(dt_naive)
-                return dt_localized.astimezone(timezone.utc)
-            else:
-                raise ValueError(f"Cannot convert naive datetime {dt_str} to UTC without a timezone name.")
+            # Naive datetime with provided timezone name
+            local_tz = pytz.timezone(tz_name)
+            dt_localized = local_tz.localize(dt_naive)
+            return dt_localized.astimezone(timezone.utc)
 
         # --- Categories Seeding ---
         BASE_DATA_PATH = Path(__file__).parent.parent / "data"

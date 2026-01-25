@@ -25,45 +25,32 @@ class SessionData(BaseModel):
     name: str
     session_number: int
     start_time: str
-    timezone: Optional[str] = None
+    timezone: str # Now always mandatory
 
     @field_validator('start_time')
     def validate_start_time_format(cls, v):
         try:
-            datetime.fromisoformat(v.replace('Z', '+00:00')) # Handle 'Z' for UTC
-        except ValueError:
-            raise ValueError("start_time must be a valid ISO 8601 datetime string.")
+            dt_check = datetime.fromisoformat(v.replace('Z', '+00:00'))
+            if dt_check.tzinfo is not None and dt_check.tzinfo.utcoffset(dt_check) is not None:
+                raise ValueError("start_time must be an ISO 8601 datetime string without offset (e.g., YYYY-MM-DDTHH:MM:SS).")
+        except ValueError as e:
+            raise ValueError(f"start_time must be a valid ISO 8601 datetime string without offset. Error: {e}")
         return v
 
     @field_validator('timezone')
-    def validate_timezone_with_start_time(cls, v, info): # Changed values to info for Pydantic V2
-        start_time_str = info.data.get('start_time') # Access data via info.data
-        if not start_time_str:
-            return v # start_time validation already failed or not present
-
-        dt = datetime.fromisoformat(start_time_str.replace('Z', '+00:00'))
-
-        # Check if start_time has timezone info (offset-aware)
-        if dt.tzinfo is not None and dt.tzinfo.utcoffset(dt) is not None:
-            if v is not None:
-                print(f"Warning: timezone field '{v}' is redundant for offset-aware start_time '{start_time_str}'.")
-            return None # Clear redundant timezone
-        else: # start_time is naive (offset-naive)
-            if v is None:
-                raise ValueError("timezone is mandatory for offset-naive start_time.")
-            if pytz:
-                try:
-                    pytz.timezone(v)
-                except pytz.exceptions.UnknownTimeZoneError:
-                    raise ValueError(f"'{v}' is not a valid IANA timezone.")
-            elif v is not None:
-                print(f"Skipping timezone validation for '{v}' because pytz is not installed.")
-            return v
+    def validate_timezone(cls, v): # Renamed and simplified
+        if pytz:
+            try:
+                pytz.timezone(v)
+            except pytz.exceptions.UnknownTimeZoneError:
+                raise ValueError(f"'{v}' is not a valid IANA timezone.")
+        elif v is not None:
+            print(f"Skipping timezone validation for '{v}' because pytz is not installed.")
+        return v
 
 class EventData(BaseModel):
     slug: str = Field(..., pattern=r"^[a-z0-9]+(?:-[a-z0-9]+)*$") # kebab-case
     name: str
-    location: str
     start_date: str # YYYY-MM-DD
     end_date: str   # YYYY-MM-DD
     sessions: List[SessionData]

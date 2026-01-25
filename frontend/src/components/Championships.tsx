@@ -85,9 +85,9 @@ const Championships: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filteredChampionships.map(championship => (
+                {filteredChampionships.length > 0 ? filteredChampionships.map(championship => (
                     <ChampionshipCard key={championship.id} championship={championship} />
-                ))}
+                )) : <p className='col-span-full text-center text-gray-600'>No championship found.</p>}
             </div>
         </section>
     );

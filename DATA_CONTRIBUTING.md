@@ -78,7 +78,7 @@ One file per championship; example `championships/f1.json`:
         {
           "name": "Race",
           "session_number": 3,
-          "start_time": "2026-03-15T18:00:00+03:00"
+          "start_time": "2026-03-15T18:00:00"
         }
       ]
     }
@@ -90,11 +90,8 @@ Notes:
 
 * `start_date` and `end_date` for an `Event` can be provided in date format (YYYY-MM-DD).
 * `sessions` is a list of Session objects (see below).
-* `session.start_time` can be provided as:
-
-  * ISO8601 with offset (`2026-03-15T18:00:00+03:00`) — the script will properly convert to UTC, **or**
-  * without offset (`2026-03-13T12:30:00`) **with** a mandatory IANA `timezone` field (`"Asia/Bahrain"`).
-* If `start_time` has no offset and no `timezone` is provided, validation will fail.
+* `session.start_time` can be provided as (`2026-03-13T12:30:00`) **with** a mandatory IANA `timezone` field (`"Asia/Bahrain"`).
+* If `start_time` has no `timezone` is provided, validation will fail.
 
 To contribute an exhibition event:
 1.  **Create a Championship Entry:** Add an entry to `backend/data/championships.json` with the `slug` of the exhibition event, its `name`, and set its `category` to `"exhibitions"`.
@@ -138,7 +135,7 @@ Expected fields:
 
 * `name`: string
 * `session_number`: integer (order within the event)
-* `start_time`: ISO8601 (see rules above)
+* `start_time`: (see rules above)
 * `timezone`: **IANA tz** (e.g. `Africa/Dakar`, `Europe/Paris`) if `start_time` has no offset
 
 ---
@@ -151,7 +148,6 @@ Expected fields:
   * uniqueness of slugs
   * existence of references (`championship` → `championships.json`, `category` → `categories.json`)
   * validity of timezones (IANA list)
-  * ISO8601 format for dates/times
 
 ---
 
@@ -247,7 +243,7 @@ python backend/scripts/seed.py
 ## FAQ
 
 * **Should I include numeric IDs?** No. Use slugs.
-* **Accepted formats for `start_time`?** ISO8601 with offset, or without offset + IANA `timezone`.
+* **Accepted formats for `start_time`?** ISO8601 without offset + IANA `timezone`.
 * **How is timezone validated?** The validation script checks against the IANA database.
 
 ---
