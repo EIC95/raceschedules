@@ -34,7 +34,7 @@ Follow the instructions in the `backend/README.md` and `frontend/README.md` file
 
 ### General Contributions
 
-Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### Data Contributions (Championships and Schedules)
 
