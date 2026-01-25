@@ -39,22 +39,22 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ startTime }) => {
 
     return (
         <div className="flex items-end justify-center text-4xl md:text-5xl font-bold text-black tracking-tighter">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center tabular-nums">
                 <span>{formatTime(timeLeft.days)}</span>
                 <span className="text-xs tracking-normal font-semibold text-gray-500">DAYS</span>
             </div>
             <span className="mb-5 mx-2 text-gray-300">:</span>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center tabular-nums">
                 <span>{formatTime(timeLeft.hours)}</span>
                 <span className="text-xs tracking-normal font-semibold text-gray-500">HRS</span>
             </div>
             <span className="mb-5 mx-2 text-gray-300">:</span>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center tabular-nums">
                 <span>{formatTime(timeLeft.minutes)}</span>
                 <span className="text-xs tracking-normal font-semibold text-gray-500">MINS</span>
             </div>
             <span className="mb-5 mx-2 text-gray-300">:</span>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center tabular-nums">
                 <span>{formatTime(timeLeft.seconds)}</span>
                 <span className="text-xs tracking-normal font-semibold text-gray-500 uppercase">Secs</span>
             </div> 
