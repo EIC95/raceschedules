@@ -53,8 +53,6 @@ Here are some ideas for the next steps of the project, and any help is welcome:
 
 Parfait. Pour ton README, il faut une section claire, courte et engageante pour inviter les gens à rejoindre le Discord, tout en donnant le contexte. Voici un exemple prêt à copier :
 
----
-
 ## Join the Community
 
 We have a **Discord server** for RaceSchedules where you can:
