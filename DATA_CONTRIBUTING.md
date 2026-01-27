@@ -264,6 +264,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 * Formula 1 (F1) ✅
 * Formula 2 (F2)
 * Formula 3 (F3)
+* Formula E ✅
 * Super Formula
 * F1 Academy
 * IndyCar
@@ -302,7 +303,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 * GT World Challenge Asia
 * GT World Challenge Australia
 * Intercontinental GT Challenge (IGTC) ✅
-* Asian Le Mans Series
+* Asian Le Mans Series ✅
 * European Le Mans Series (ELMS)
 * Nürburgring Langstrecken Serie (NLS)
 * Super GT

@@ -4,5 +4,6 @@
   { "slug": "igtc", "name": "Intercontinental GT Challenge", "category": "endurance-gt" },
   { "slug": "wec", "name": "World Endurance Championship", "category": "endurance-gt" },
   { "slug": "motogp", "name": "Moto GP", "category": "motorcycles" },
-  { "slug": "formula-e", "name": "Formula E", "category": "single-seaters" }
+  { "slug": "formula-e", "name": "Formula E", "category": "single-seaters" },
+  { "slug": "alms", "name": "Asian Le Mans Series", "category": "endurance-gt" }
 ]
