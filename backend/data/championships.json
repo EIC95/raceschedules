@@ -1,4 +1,6 @@
 [
   { "slug": "f1", "name": "Formula 1", "category": "single-seaters" },
-  { "slug": "wrc", "name": "World Rally Championship", "category": "rally-off-road" }
+  { "slug": "wrc", "name": "World Rally Championship", "category": "rally-off-road" },
+  { "slug": "igtc", "name": "Intercontinental GT Challenge", "category": "endurance-gt" },
+  { "slug": "wec", "name": "World Endurance Championship", "category": "endurance-gt" }
 ]

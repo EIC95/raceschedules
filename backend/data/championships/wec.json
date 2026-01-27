@@ -1,0 +1,70 @@
+{
+    "championship": "wec",
+    "events": [
+        {
+            "slug": "qatar-1812km-2026",
+            "name": "Qatar 1812km",
+            "start_date": "2026-03-26",
+            "end_date": "2026-03-28",
+            "sessions": [
+            { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-03-26T15:00:00", "timezone": "Asia/Qatar" },
+            { "name": "Free Practice 2", "session_number": 2, "start_time": "2026-03-26T19:30:00", "timezone": "Asia/Qatar" },
+            { "name": "Free Practice 3", "session_number": 3, "start_time": "2026-03-27T13:00:00", "timezone": "Asia/Qatar" },
+            { "name": "Qualifying - LMGT3", "session_number": 4, "start_time": "2026-03-27T17:00:00", "timezone": "Asia/Qatar" },
+            { "name": "Hyperpole - LMGT3", "session_number": 5, "start_time": "2026-03-27T17:20:00", "timezone": "Asia/Qatar" },
+            { "name": "Qualifying - HYPERCAR", "session_number": 6, "start_time": "2026-03-27T17:40:00", "timezone": "Asia/Qatar" },
+            { "name": "Hyperpole - HYPERCAR", "session_number": 7, "start_time": "2026-03-27T18:00:00", "timezone": "Asia/Qatar" },
+            { "name": "Race", "session_number": 8, "start_time": "2026-03-28T13:00:00", "timezone": "Asia/Qatar" }
+            ]
+        },
+        {
+            "slug": "6-hours-of-imola-2026",
+            "name": "6 Hours of Imola",
+            "start_date": "2026-04-17",
+            "end_date": "2026-04-19",
+            "sessions": []
+        },
+        {
+            "slug": "6-hours-of-spa-francorchamps-2026",
+            "name": "6 Hours of Spa-Francorchamps",
+            "start_date": "2026-05-07",
+            "end_date": "2026-05-09",
+            "sessions": []
+        },
+        {
+            "slug": "24-hours-of-le-mans-2026",
+            "name": "24 Hours of Le Mans",
+            "start_date": "2026-06-10",
+            "end_date": "2026-06-13",
+            "sessions": []
+        },
+        {
+            "slug": "6-hours-of-sao-paulo-2026",
+            "name": "6 Hours of São Paulo",
+            "start_date": "2026-07-10",
+            "end_date": "2026-07-12",
+            "sessions": []
+        },
+        {
+            "slug": "lone-star-le-mans-2026",
+            "name": "Lone Star Le Mans",
+            "start_date": "2026-09-04",
+            "end_date": "2026-09-06",
+            "sessions": []
+        },
+        {
+            "slug": "6-hours-of-fuji-2026",
+            "name": "6 Hours of Fuji",
+            "start_date": "2026-09-25",
+            "end_date": "2026-09-27",
+            "sessions": []
+        },
+        {
+            "slug": "8-hours-of-bahrain-2026",
+            "name": "8 Hours of Bahrain",
+            "start_date": "2026-11-05",
+            "end_date": "2026-11-07",
+            "sessions": []
+        }
+    ]
+}

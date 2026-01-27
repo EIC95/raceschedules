@@ -1,0 +1,40 @@
+{
+    "championship": "igtc",
+    "events": [
+        {
+            "slug": "bathurst-12-hour-2026",
+            "name": "Bathurst 12 Hour",
+            "start_date": "2026-02-13",
+            "end_date": "2026-02-15",
+            "sessions": []
+        },
+        {
+            "slug": "24h-nurburgring-2026",
+            "name": "24h Nürburgring",
+            "start_date": "2026-05-14",
+            "end_date": "2026-05-17",
+            "sessions": []
+        },
+        {
+            "slug": "24-hours-of-spa-2026",
+            "name": "24 Hours of Spa",
+            "start_date": "2026-06-25",
+            "end_date": "2026-06-28",
+            "sessions": []
+        },
+        {
+            "slug": "suzuka-1000km-2026",
+            "name": "Suzuka 1000km",
+            "start_date": "2026-09-11",
+            "end_date": "2026-09-13",
+            "sessions": []
+        },
+        {
+            "slug": "indianapolis-8-hour-2026",
+            "name": "Indianapolis 8 Hour",
+            "start_date": "2026-10-08",
+            "end_date": "2026-10-10",
+            "sessions": []
+        }
+    ]
+}
