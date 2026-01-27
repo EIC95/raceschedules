@@ -294,10 +294,14 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 
 ### Endurance & GT Racing
 
-* FIA World Endurance Championship (WEC)
+* World Endurance Championship (WEC) ✅
 * Le Mans Cup
 * IMSA WeatherTech SportsCar Championship (IMSA)
-* GT World Challenge (All regions combined)
+* GT World Challenge Europe
+* GT World Challenge America
+* GT World Challenge Asia
+* GT World Challenge Australia
+* Intercontinental GT Challenge (IGTC) ✅
 * Asian Le Mans Series
 * European Le Mans Series (ELMS)
 * Nürburgring Langstrecken Serie (NLS)
