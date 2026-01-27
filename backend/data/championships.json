@@ -1,3 +1,4 @@
 [
-  { "slug": "f1", "name": "Formula 1", "category": "single-seaters" }
+  { "slug": "f1", "name": "Formula 1", "category": "single-seaters" },
+  { "slug": "wrc", "name": "World Rally Championship", "category": "rally-off-road" }
 ]

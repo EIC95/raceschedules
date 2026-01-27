@@ -105,8 +105,8 @@ def seed_data():
                         event_db = Event(
                             name=event_data.name,
                             slug=event_data.slug,
-                            start_date=datetime.strptime(event_data.start_date, '%Y-%m-%d'),
-                            end_date=datetime.strptime(event_data.end_date, '%Y-%m-%d'),
+                            start_date=datetime.strptime(event_data.start_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
+                            end_date=datetime.strptime(event_data.end_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
                             championship_id=championship_id
                         )
                         db.add(event_db)
@@ -114,8 +114,8 @@ def seed_data():
                         print(f"Added event: {event_data.name} ({validated_champ_events.championship})")
                     else:
                         event_db.name = event_data.name
-                        event_db.start_date = datetime.strptime(event_data.start_date, '%Y-%m-%d'),
-                        event_db.end_date = datetime.strptime(event_data.end_date, '%Y-%m-%d'),
+                        event_db.start_date = datetime.strptime(event_data.start_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
+                        event_db.end_date = datetime.strptime(event_data.end_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
                         event_db.championship_id = championship_id
                         print(f"Updated event: {event_data.name} ({validated_champ_events.championship})")
 

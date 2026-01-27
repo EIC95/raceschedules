@@ -271,7 +271,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 
 ### Motorcycles
 
-* MotoGP ✅
+* MotoGP
 * Moto2
 * Moto3
 * World Superbike (WSBK)
@@ -284,7 +284,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 
 ### Stock Cars & Touring Cars
 
-* NASCAR Cup Series ✅
+* NASCAR Cup Series
 * NASCAR Xfinity Series
 * NASCAR Truck Series
 * NASCAR Euro Series
@@ -294,7 +294,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 
 ### Endurance & GT Racing
 
-* FIA World Endurance Championship (WEC) ✅
+* FIA World Endurance Championship (WEC)
 * Le Mans Cup
 * IMSA WeatherTech SportsCar Championship (IMSA)
 * GT World Challenge (All regions combined)
