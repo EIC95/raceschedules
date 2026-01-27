@@ -1,0 +1,173 @@
+{
+    "championship": "formula-e",
+    "events": [
+        {
+            "slug": "mexico-city-eprix-2026",
+            "name": "Mexico City E-Prix",
+            "start_date": "2026-01-09",
+            "end_date": "2026-01-10",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-01-09T16:00:00", "timezone": "America/Mexico_City", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-01-10T07:30:00", "timezone": "America/Mexico_City", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-01-10T09:40:00", "timezone": "America/Mexico_City", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-01-10T14:05:00", "timezone": "America/Mexico_City", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "miami-eprix-2026",
+            "name": "Miami E-Prix",
+            "start_date": "2026-01-30",
+            "end_date": "2026-01-31",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-01-30T17:00:00", "timezone": "America/New_York", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-01-31T07:30:00", "timezone": "America/New_York", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-01-31T09:40:00", "timezone": "America/New_York", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-01-31T14:05:00", "timezone": "America/New_York", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "jeddah-eprix-1-2026",
+            "name": "Jeddah E-Prix 1",
+            "start_date": "2026-02-12",
+            "end_date": "2026-02-13",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-02-12T20:00:00", "timezone": "Asia/Riyadh", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-02-13T13:30:00", "timezone": "Asia/Riyadh", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-02-13T15:40:00", "timezone": "Asia/Riyadh", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-02-13T20:05:00", "timezone": "Asia/Riyadh", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "jeddah-eprix-2-2026",
+            "name": "Jeddah E-Prix 2",
+            "start_date": "2026-02-14",
+            "end_date": "2026-02-14",
+            "sessions": [
+            { "name": "Free Practice 3", "start_time": "2026-02-14T13:30:00", "timezone": "Asia/Riyadh", "session_number": 1 },
+            { "name": "Qualifying", "start_time": "2026-02-14T15:40:00", "timezone": "Asia/Riyadh", "session_number": 2 },
+            { "name": "Race", "start_time": "2026-02-14T20:05:00", "timezone": "Asia/Riyadh", "session_number": 3 }
+            ]
+        },
+        {
+            "slug": "madrid-eprix-2026",
+            "name": "Madrid E-Prix",
+            "start_date": "2026-03-20",
+            "end_date": "2026-03-21",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-03-20T16:30:00", "timezone": "Europe/Madrid", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-03-21T09:30:00", "timezone": "Europe/Madrid", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-03-21T11:40:00", "timezone": "Europe/Madrid", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-03-21T16:05:00", "timezone": "Europe/Madrid", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "berlin-eprix-1-2026",
+            "name": "Berlin E-Prix 1",
+            "start_date": "2026-05-01",
+            "end_date": "2026-05-02",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-05-01T16:00:00", "timezone": "Europe/Berlin", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-05-02T09:30:00", "timezone": "Europe/Berlin", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-05-02T11:40:00", "timezone": "Europe/Berlin", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-05-02T16:05:00", "timezone": "Europe/Berlin", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "berlin-eprix-2-2026",
+            "name": "Berlin E-Prix 2",
+            "start_date": "2026-05-03",
+            "end_date": "2026-05-03",
+            "sessions": [
+            { "name": "Free Practice 3", "start_time": "2026-05-03T09:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+            { "name": "Qualifying", "start_time": "2026-05-03T11:40:00", "timezone": "Europe/Berlin", "session_number": 2 },
+            { "name": "Race", "start_time": "2026-05-03T16:05:00", "timezone": "Europe/Berlin", "session_number": 3 }
+            ]
+        },
+        {
+            "slug": "monaco-eprix-1-2026",
+            "name": "Monaco E-Prix 1",
+            "start_date": "2026-05-16",
+            "end_date": "2026-05-16",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-05-16T07:30:00", "timezone": "Europe/Monaco", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-05-16T09:10:00", "timezone": "Europe/Monaco", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-05-16T10:40:00", "timezone": "Europe/Monaco", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-05-16T15:05:00", "timezone": "Europe/Monaco", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "monaco-eprix-2-2026",
+            "name": "Monaco E-Prix 2",
+            "start_date": "2026-05-17",
+            "end_date": "2026-05-17",
+            "sessions": [
+            { "name": "Free Practice 3", "start_time": "2026-05-17T08:30:00", "timezone": "Europe/Monaco", "session_number": 1 },
+            { "name": "Qualifying", "start_time": "2026-05-17T10:40:00", "timezone": "Europe/Monaco", "session_number": 2 },
+            { "name": "Race", "start_time": "2026-05-17T15:05:00", "timezone": "Europe/Monaco", "session_number": 3 }
+            ]
+        },
+        {
+            "slug": "sanya-eprix-2026",
+            "name": "Sanya E-Prix",
+            "start_date": "2026-06-19",
+            "end_date": "2026-06-20",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-06-19T16:30:00", "timezone": "Asia/Shanghai", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-06-20T08:30:00", "timezone": "Asia/Shanghai", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-06-20T10:40:00", "timezone": "Asia/Shanghai", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-06-20T15:05:00", "timezone": "Asia/Shanghai", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "shanghai-eprix-1-2026",
+            "name": "Shanghai E-Prix 1",
+            "start_date": "2026-07-03",
+            "end_date": "2026-07-04",
+            "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-07-03T16:00:00", "timezone": "Asia/Shanghai", "session_number": 1 },
+            { "name": "Free Practice 2", "start_time": "2026-07-04T08:30:00", "timezone": "Asia/Shanghai", "session_number": 2 },
+            { "name": "Qualifying", "start_time": "2026-07-04T10:40:00", "timezone": "Asia/Shanghai", "session_number": 3 },
+            { "name": "Race", "start_time": "2026-07-04T15:05:00", "timezone": "Asia/Shanghai", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "shanghai-eprix-2-2026",
+            "name": "Shanghai E-Prix 2",
+            "start_date": "2026-07-05",
+            "end_date": "2026-07-05",
+            "sessions": [
+            { "name": "Free Practice 3", "start_time": "2026-07-05T08:30:00", "timezone": "Asia/Shanghai", "session_number": 1 },
+            { "name": "Qualifying", "start_time": "2026-07-05T10:40:00", "timezone": "Asia/Shanghai", "session_number": 2 },
+            { "name": "Race", "start_time": "2026-07-05T15:05:00", "timezone": "Asia/Shanghai", "session_number": 3 }
+            ]
+        },
+        {
+            "slug": "tokyo-eprix-2-2026",
+            "name": "Tokyo E-Prix 2",
+            "start_date": "2026-07-24",
+            "end_date": "2026-07-24",
+            "sessions": []
+        },
+        {
+            "slug": "tokyo-eprix-1-2026",
+            "name": "Tokyo E-Prix 1",
+            "start_date": "2026-07-25",
+            "end_date": "2026-07-25",
+            "sessions": []
+        },
+        {
+            "slug": "london-eprix-1-2026",
+            "name": "London E-Prix 1",
+            "start_date": "2026-08-15",
+            "end_date": "2026-08-15",
+            "sessions": []
+        },
+        {
+            "slug": "london-eprix-2-2026",
+            "name": "London E-Prix 2",
+            "start_date": "2026-08-16",
+            "end_date": "2026-08-16",
+            "sessions": []
+        }
+    ]
+}
