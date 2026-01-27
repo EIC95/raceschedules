@@ -271,7 +271,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 
 ### Motorcycles
 
-* MotoGP
+* MotoGP ✅
 * Moto2
 * Moto3
 * World Superbike (WSBK)
