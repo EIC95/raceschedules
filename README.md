@@ -51,8 +51,6 @@ Here are some ideas for the next steps of the project, and any help is welcome:
 -   **Enriched Database:** Continue to expand the database with even more championships and motorsports categories.
 -   **Deployment and Visibility:** Look into upgrading to more premium deployment plans (the current ones being free) and finding an appropriate domain name for the project.
 
-Parfait. Pour ton README, il faut une section claire, courte et engageante pour inviter les gens à rejoindre le Discord, tout en donnant le contexte. Voici un exemple prêt à copier :
-
 ## Join the Community
 
 We have a **Discord server** for RaceSchedules where you can:
