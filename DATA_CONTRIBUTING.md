@@ -237,19 +237,6 @@ python backend/scripts/seed.py
   ]
 }
 ```
-
----
-
-## FAQ
-
-* **Should I include numeric IDs?** No. Use slugs.
-* **Accepted formats for `start_time`?** ISO8601 without offset + IANA `timezone`.
-* **How is timezone validated?** The validation script checks against the IANA database.
-
----
-
-Voici une section que tu peux ajouter telle quelle dans ton README (ou dans `README-data.md`) pour expliquer clairement l’objectif côté données :
-
 ---
 
 ## Target Championships to Add
