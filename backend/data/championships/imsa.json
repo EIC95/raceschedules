@@ -1,0 +1,103 @@
+{
+    "championship": "imsa",
+    "events": [
+        {
+            "slug": "the-roar-before-the-24-2026",
+            "name": "The Roar Before The 24",
+            "start_date": "2026-01-16",
+            "end_date": "2026-01-18",
+            "sessions": [
+            { "name": "Practice 1", "start_time": "2026-01-16T11:00:00", "timezone": "America/New_York", "session_number": 1 },
+            { "name": "Practice 2", "start_time": "2026-01-16T16:00:00", "timezone": "America/New_York", "session_number": 2 },
+            { "name": "Practice 3", "start_time": "2026-01-17T11:15:00", "timezone": "America/New_York", "session_number": 3 },
+            { "name": "Practice 4", "start_time": "2026-01-17T15:10:00", "timezone": "America/New_York", "session_number": 4 },
+            { "name": "Practice 5", "start_time": "2026-01-17T18:30:00", "timezone": "America/New_York", "session_number": 5 },
+            { "name": "Practice 6", "start_time": "2026-01-18T09:45:00", "timezone": "America/New_York", "session_number": 6 },
+            { "name": "Practice 7", "start_time": "2026-01-18T14:30:00", "timezone": "America/New_York", "session_number": 7 }
+            ]
+        },
+        {
+            "slug": "rolex-24-at-daytona-2026",
+            "name": "Rolex 24 at Daytona",
+            "start_date": "2026-01-22",
+            "end_date": "2026-01-24",
+            "sessions": [
+            { "name": "Practice 1", "start_time": "2026-01-22T10:05:00", "timezone": "America/New_York", "session_number": 1 },
+            { "name": "Qualifying", "start_time": "2026-01-22T14:10:00", "timezone": "America/New_York", "session_number": 2 },
+            { "name": "Practice 2", "start_time": "2026-01-22T18:15:00", "timezone": "America/New_York", "session_number": 3 },
+            { "name": "Practice 3", "start_time": "2026-01-23T11:05:00", "timezone": "America/New_York", "session_number": 4 },
+            { "name": "Race", "start_time": "2026-01-24T13:40:00", "timezone": "America/New_York", "session_number": 5 }
+            ]
+        },
+        {
+            "slug": "12-hours-of-sebring-2026",
+            "name": "12 Hours of Sebring",
+            "start_date": "2026-03-21",
+            "end_date": "2026-03-21",
+            "sessions": []
+        },
+        {
+            "slug": "long-beach-grand-prix-2026",
+            "name": "Long Beach Grand Prix",
+            "start_date": "2026-04-18",
+            "end_date": "2026-04-18",
+            "sessions": []
+        },
+        {
+            "slug": "laguna-seca-2026",
+            "name": "Laguna Seca",
+            "start_date": "2026-05-03",
+            "end_date": "2026-05-03",
+            "sessions": []
+        },
+        {
+            "slug": "detroit-grand-prix-2026",
+            "name": "Detroit Grand Prix",
+            "start_date": "2026-05-30",
+            "end_date": "2026-05-30",
+            "sessions": []
+        },
+        {
+            "slug": "watkins-glen-2026",
+            "name": "Watkins Glen",
+            "start_date": "2026-06-28",
+            "end_date": "2026-06-28",
+            "sessions": []
+        },
+        {
+            "slug": "mosport-2026",
+            "name": "Mosport",
+            "start_date": "2026-07-12",
+            "end_date": "2026-07-12",
+            "sessions": []
+        },
+        {
+            "slug": "road-america-2026",
+            "name": "Road America",
+            "start_date": "2026-08-02",
+            "end_date": "2026-08-02",
+            "sessions": []
+        },
+        {
+            "slug": "virginia-international-raceway-2026",
+            "name": "Virginia International Raceway",
+            "start_date": "2026-08-23",
+            "end_date": "2026-08-23",
+            "sessions": []
+        },
+        {
+            "slug": "indianapolis-motor-speedway-2026",
+            "name": "Indianapolis Motor Speedway",
+            "start_date": "2026-09-20",
+            "end_date": "2026-09-20",
+            "sessions": []
+        },
+        {
+            "slug": "petit-le-mans-2026",
+            "name": "Petit Le Mans",
+            "start_date": "2026-10-03",
+            "end_date": "2026-10-03",
+            "sessions": []
+        }
+    ]
+}
