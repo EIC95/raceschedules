@@ -50,16 +50,25 @@
         {
             "slug": "4h-of-abu-dhabi-1-2026",
             "name": "4H of Abu Dhabi - Race 5",
-            "start_date": "2026-02-07",
+            "start_date": "2026-02-06",
             "end_date": "2026-02-07",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-02-06T16:00:00", "timezone": "Asia/Dubai", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-02-06T19:45:00", "timezone": "Asia/Dubai", "session_number": 2 },
+                { "name": "Qualifying - GT", "start_time": "2026-02-07T10:10:00", "timezone": "Asia/Dubai", "session_number": 3 },
+                { "name": "Qualifying - LMP3", "start_time": "2026-02-07T10:40:00", "timezone": "Asia/Dubai", "session_number": 4 },
+                { "name": "Qualifying - LMP2", "start_time": "2026-02-07T11:15:00", "timezone": "Asia/Dubai", "session_number": 5 },
+                { "name": "Race", "start_time": "2026-02-07T15:00:00", "timezone": "Asia/Dubai", "session_number": 6 }
+            ]
         },
         {
             "slug": "4h-of-abu-dhabi-2-2026",
             "name": "4H of Abu Dhabi - Race 6",
-            "start_date": "2026-02-08",
+            "start_date": "2026-02-06",
             "end_date": "2026-02-08",
-            "sessions": []
+            "sessions": [
+                { "name": "Race", "start_time": "2026-02-08T16:30:00", "timezone": "Asia/Dubai", "session_number": 1 }
+            ]
         }
     ]
 }
