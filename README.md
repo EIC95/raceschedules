@@ -14,7 +14,6 @@ This project is designed to be **open source and completely free**, developed by
 - **Championship Management:** List all available racing championships.
 - **Event Management:** Schedule and detail individual events within championships.
 - **Session Management:** Define specific sessions (e.g., practice, qualifying, race) for each event with timezone handling.
-- **User-Friendly Interface:** A responsive React application for easy navigation and viewing of schedules.
 
 ## Getting Started
 
@@ -42,14 +41,7 @@ The world of motorsports is vast and covers many categories. It's challenging to
 
 If you wish to contribute data for an existing championship or add a new one, please refer to the [DATA_CONTRIBUTING.md](DATA_CONTRIBUTING.md) file. You will find a detailed guide on how to contribute, a list of currently covered championships, and those we would like to see added. Your help is invaluable in enriching the database and making RaceSchedules more comprehensive!
 
-## Envisioned Future Enhancements
-
-Here are some ideas for the next steps of the project, and any help is welcome:
-
--   **Design and User Experience:** Improve the graphical interface with the addition of team/championship logos, images, and a general visual redesign.
--   **Notification System:** Implement a customizable notification system (e.g., for favorite events) to ensure no race is ever missed again.
--   **Enriched Database:** Continue to expand the database with even more championships and motorsports categories.
--   **Deployment and Visibility:** Look into upgrading to more premium deployment plans (the current ones being free) and finding an appropriate domain name for the project.
+Please see [roadmap.md](roadmap.md) for planned features and project vision.
 
 ## Join the Community
 
@@ -65,3 +57,17 @@ Join us and be part of the RaceSchedules community: [**Join Discord**](https://d
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Disclaimer
+
+**RaceSchedules** is a community-driven, open-source project created for informational purposes.
+
+*   **Data Sources**: All race schedules, dates, and related factual information are compiled from publicly available sources, including official championship websites and public calendars. We strive for accuracy but make no guarantees regarding the completeness or timeliness of the data.
+*   **Intellectual Property**: All trademarks and brand names (e.g., Formula 1, NASCAR, FIA) are the property of their respective owners. This project is not endorsed by, affiliated with, or sponsored by any of these entities. The use of such marks is for informational identification purposes only.
+*   **No Commercial Use**: This project and its data are provided free of charge for personal, non-commercial use by the motorsport community.
+*   **Limitation of Liability**: The maintainers and contributors of this project are not liable for any errors, omissions, or any losses, injuries, or damages arising from the use of this information. Always verify critical details with official sources.
+
+*For any copyright or trademark concerns, please open an issue in the repository to discuss.*
+
+---
+Built with ❤️ by [Ibrahima Cissé](https://github.com/EIC95)
