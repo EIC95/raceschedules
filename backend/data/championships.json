@@ -6,5 +6,6 @@
   { "slug": "motogp", "name": "Moto GP", "category": "motorcycles" },
   { "slug": "formula-e", "name": "Formula E", "category": "single-seaters" },
   { "slug": "alms", "name": "Asian Le Mans Series", "category": "endurance-gt" },
-  { "slug": "imsa", "name": "IMSA WeatherTech SportsCar Championship", "category": "endurance-gt" }
+  { "slug": "imsa", "name": "IMSA WeatherTech SportsCar Championship", "category": "endurance-gt" },
+  { "slug": "nascar-cup-series", "name": "Nascar Cup Series", "category": "stock-touring" }
 ]

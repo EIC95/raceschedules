@@ -1,0 +1,270 @@
+{
+    "championship": "nascar-cup-series",
+    "events": [
+        {
+            "slug": "daytona-500-2026",
+            "name": "Daytona 500",
+            "start_date": "2026-02-11",
+            "end_date": "2026-02-15",
+            "sessions": [
+                { "name": "Practice 1", "start_time": "2026-02-11T10:00:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Qualifying", "start_time": "2026-02-11T20:15:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Practice 2", "start_time": "2026-02-13T17:35:00", "timezone": "America/New_York", "session_number": 3 },
+                { "name": "Practice 3", "start_time": "2026-02-14T15:00:00", "timezone": "America/New_York", "session_number": 4 },
+                { "name": "Race", "start_time": "2026-02-15T14:30:00", "timezone": "America/New_York", "session_number": 5 }
+            ]
+        },
+        {
+            "slug": "atlanta-400-1-2026",
+            "name": "Atlanta 400",
+            "start_date": "2026-02-22",
+            "end_date": "2026-02-22",
+            "sessions": []
+        },
+        {
+            "slug": "cota-grand-prix-2026",
+            "name": "COTA Grand Prix",
+            "start_date": "2026-03-01",
+            "end_date": "2026-03-01",
+            "sessions": []
+        },
+        {
+            "slug": "phoenix-500-1-2026",
+            "name": "Phoenix 500",
+            "start_date": "2026-03-08",
+            "end_date": "2026-03-08",
+            "sessions": []
+        },
+        {
+            "slug": "las-vegas-400-1-2026",
+            "name": "Las Vegas 400",
+            "start_date": "2026-03-15",
+            "end_date": "2026-03-15",
+            "sessions": []
+        },
+        {
+            "slug": "darlington-400-1-2026",
+            "name": "Darlington 400",
+            "start_date": "2026-03-22",
+            "end_date": "2026-03-22",
+            "sessions": []
+        },
+        {
+            "slug": "martinsville-400-1-2026",
+            "name": "Martinsville 400",
+            "start_date": "2026-03-29",
+            "end_date": "2026-03-29",
+            "sessions": []
+        },
+        {
+            "slug": "bristol-500-1-2026",
+            "name": "Bristol 500",
+            "start_date": "2026-04-12",
+            "end_date": "2026-04-12",
+            "sessions": []
+        },
+        {
+            "slug": "kansas-400-1-2026",
+            "name": "Kansas 400",
+            "start_date": "2026-04-19",
+            "end_date": "2026-04-19",
+            "sessions": []
+        },
+        {
+            "slug": "talladega-500-1-2026",
+            "name": "Talladega 500",
+            "start_date": "2026-04-26",
+            "end_date": "2026-04-26",
+            "sessions": []
+        },
+        {
+            "slug": "texas-400-2026",
+            "name": "Texas 400",
+            "start_date": "2026-05-03",
+            "end_date": "2026-05-03",
+            "sessions": []
+        },
+        {
+            "slug": "watkins-glen-2026",
+            "name": "Watkins Glen",
+            "start_date": "2026-05-10",
+            "end_date": "2026-05-10",
+            "sessions": []
+        },
+        {
+            "slug": "all-star-race-2026",
+            "name": "All-Star Race",
+            "start_date": "2026-05-17",
+            "end_date": "2026-05-17",
+            "sessions": []
+        },
+        {
+            "slug": "charlotte-600-2026",
+            "name": "Charlotte 600",
+            "start_date": "2026-05-24",
+            "end_date": "2026-05-24",
+            "sessions": []
+        },
+        {
+            "slug": "nashville-400-2026",
+            "name": "Nashville 400",
+            "start_date": "2026-05-31",
+            "end_date": "2026-05-31",
+            "sessions": []
+        },
+        {
+            "slug": "michigan-400-2026",
+            "name": "Michigan 400",
+            "start_date": "2026-06-07",
+            "end_date": "2026-06-07",
+            "sessions": []
+        },
+        {
+            "slug": "pocono-400-2026",
+            "name": "Pocono 400",
+            "start_date": "2026-06-14",
+            "end_date": "2026-06-14",
+            "sessions": []
+        },
+        {
+            "slug": "coronado-250-2026",
+            "name": "Coronado 250",
+            "start_date": "2026-06-21",
+            "end_date": "2026-06-21",
+            "sessions": []
+        },
+        {
+            "slug": "sonoma-350-2026",
+            "name": "Sonoma 350",
+            "start_date": "2026-06-28",
+            "end_date": "2026-06-28",
+            "sessions": []
+        },
+        {
+            "slug": "chicagoland-400-2026",
+            "name": "Chicagoland 400",
+            "start_date": "2026-07-05",
+            "end_date": "2026-07-05",
+            "sessions": []
+        },
+        {
+            "slug": "atlanta-400-2-2026",
+            "name": "Atlanta 400",
+            "start_date": "2026-07-12",
+            "end_date": "2026-07-12",
+            "sessions": []
+        },
+        {
+            "slug": "north-wilkesboro-450-2026",
+            "name": "North Wilkesboro 450",
+            "start_date": "2026-07-19",
+            "end_date": "2026-07-19",
+            "sessions": []
+        },
+        {
+            "slug": "brickyard-400-2026",
+            "name": "Brickyard 400",
+            "start_date": "2026-07-26",
+            "end_date": "2026-07-26",
+            "sessions": []
+        },
+        {
+            "slug": "iowa-350-2026",
+            "name": "Iowa 350",
+            "start_date": "2026-08-09",
+            "end_date": "2026-08-09",
+            "sessions": []
+        },
+        {
+            "slug": "richmond-400-2026",
+            "name": "Richmond 400",
+            "start_date": "2026-08-15",
+            "end_date": "2026-08-15",
+            "sessions": []
+        },
+        {
+            "slug": "new-hampshire-300-2026",
+            "name": "New Hampshire 300",
+            "start_date": "2026-08-23",
+            "end_date": "2026-08-23",
+            "sessions": []
+        },
+        {
+            "slug": "daytona-400-2026",
+            "name": "Daytona 400",
+            "start_date": "2026-08-29",
+            "end_date": "2026-08-29",
+            "sessions": []
+        },
+        {
+            "slug": "southern-500-2026",
+            "name": "Southern 500",
+            "start_date": "2026-09-06",
+            "end_date": "2026-09-06",
+            "sessions": []
+        },
+        {
+            "slug": "gateway-300-2026",
+            "name": "Gateway 300",
+            "start_date": "2026-09-13",
+            "end_date": "2026-09-13",
+            "sessions": []
+        },
+        {
+            "slug": "bristol-night-race-2026",
+            "name": "Bristol Night Race",
+            "start_date": "2026-09-19",
+            "end_date": "2026-09-19",
+            "sessions": []
+        },
+        {
+            "slug": "kansas-400-2-2026",
+            "name": "Kansas 400",
+            "start_date": "2026-09-27",
+            "end_date": "2026-09-27",
+            "sessions": []
+        },
+        {
+            "slug": "las-vegas-400-2-2026",
+            "name": "Las Vegas 400",
+            "start_date": "2026-10-04",
+            "end_date": "2026-10-04",
+            "sessions": []
+        },
+        {
+            "slug": "charlotte-400-2026",
+            "name": "Charlotte 400",
+            "start_date": "2026-10-11",
+            "end_date": "2026-10-11",
+            "sessions": []
+        },
+        {
+            "slug": "phoenix-500-2-2026",
+            "name": "Phoenix 500",
+            "start_date": "2026-10-18",
+            "end_date": "2026-10-18",
+            "sessions": []
+        },
+        {
+            "slug": "talladega-500-2-2026",
+            "name": "Talladega 500",
+            "start_date": "2026-10-25",
+            "end_date": "2026-10-25",
+            "sessions": []
+        },
+        {
+            "slug": "martinsville-500-2026",
+            "name": "Martinsville 500",
+            "start_date": "2026-11-01",
+            "end_date": "2026-11-01",
+            "sessions": []
+        },
+        {
+            "slug": "homestead-400-2026",
+            "name": "Homestead 400",
+            "start_date": "2026-11-08",
+            "end_date": "2026-11-08",
+            "sessions": []
+        }
+    ]
+}
