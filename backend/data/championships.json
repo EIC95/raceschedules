@@ -7,5 +7,6 @@
   { "slug": "formula-e", "name": "Formula E", "category": "single-seaters" },
   { "slug": "alms", "name": "Asian Le Mans Series", "category": "endurance-gt" },
   { "slug": "imsa", "name": "IMSA WeatherTech SportsCar Championship", "category": "endurance-gt" },
-  { "slug": "nascar-cup-series", "name": "Nascar Cup Series", "category": "stock-touring" }
+  { "slug": "nascar-cup-series", "name": "Nascar Cup Series", "category": "stock-touring" },
+  { "slug": "supercars-championship", "name": "Supercars Championship", "category": "stock-touring" }
 ]

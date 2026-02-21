@@ -1,0 +1,124 @@
+{
+    "championship": "supercars-championship",
+    "events": [
+        {
+            "slug": "sydney-500-2026",
+            "name": "Sydney 500",
+            "start_date": "2026-02-20",
+            "end_date": "2026-02-22",
+            "sessions": [
+                { "name": "Practice", "start_time": "2026-02-20T13:55:00", "timezone": "Australia/Sydney", "session_number": 1 },
+                { "name": "Qualifying - Race 1", "start_time": "2026-02-20T16:20:00", "timezone": "Australia/Sydney", "session_number": 2 },
+                { "name": "Race 1", "start_time": "2026-02-20T19:50:00", "timezone": "Australia/Sydney", "session_number": 3 },
+                { "name": "Qualifying - Race 2", "start_time": "2026-02-21T15:40:00", "timezone": "Australia/Sydney", "session_number": 4 },
+                { "name": "Top Ten Shootout - Race 2", "start_time": "2026-02-21T16:35:00", "timezone": "Australia/Sydney", "session_number": 5 },
+                { "name": "Race 2", "start_time": "2026-02-21T19:35:00", "timezone": "Australia/Sydney", "session_number": 6 },
+                { "name": "Qualifying - Race 3", "start_time": "2026-02-22T12:10:00", "timezone": "Australia/Sydney", "session_number": 7 },
+                { "name": "Top Ten Shootout - Race 3", "start_time": "2026-02-22T13:05:00", "timezone": "Australia/Sydney", "session_number": 8 },
+                { "name": "Race 3", "start_time": "2026-02-22T16:05:00", "timezone": "Australia/Sydney", "session_number": 9 }
+            ]
+        },
+        {
+            "slug": "melbourne-supersprint-2026",
+            "name": "Melbourne SuperSprint",
+            "start_date": "2026-03-05",
+            "end_date": "2026-03-08",
+            "sessions": [
+                { "name": "Practice 1", "start_time": "2026-03-05T10:35:00", "timezone": "Australia/Melbourne", "session_number": 1 },
+                { "name": "Practice 2", "start_time": "2026-03-05T12:25:00", "timezone": "Australia/Melbourne", "session_number": 2 },
+                { "name": "Qualifying - Race 1", "start_time": "2026-03-05T14:20:00", "timezone": "Australia/Melbourne", "session_number": 3 },
+                { "name": "Qualifying - Race 2", "start_time": "2026-03-05T14:42:00", "timezone": "Australia/Melbourne", "session_number": 4 },
+                { "name": "Race 1", "start_time": "2026-03-05T17:00:00", "timezone": "Australia/Melbourne", "session_number": 5 },
+                { "name": "Race 2", "start_time": "2026-03-06T17:30:00", "timezone": "Australia/Melbourne", "session_number": 6 },
+                { "name": "Qualifying - Race 3", "start_time": "2026-03-07T09:00:00", "timezone": "Australia/Melbourne", "session_number": 7 },
+                { "name": "Qualifying - Race 4", "start_time": "2026-03-07T09:22:00", "timezone": "Australia/Melbourne", "session_number": 8 },
+                { "name": "Race 3", "start_time": "2026-03-07T17:35:00", "timezone": "Australia/Melbourne", "session_number": 9 },
+                { "name": "Race 4", "start_time": "2026-03-08T10:10:00", "timezone": "Australia/Melbourne", "session_number": 10 }
+            ]
+        },
+        {
+            "slug": "taupo-super-440-2026",
+            "name": "Taupō Super 440",
+            "start_date": "2026-04-10",
+            "end_date": "2026-04-12",
+            "sessions": []
+        },
+        {
+            "slug": "christchurch-super-440-2026",
+            "name": "Christchurch Super 440",
+            "start_date": "2026-04-17",
+            "end_date": "2026-04-19",
+            "sessions": []
+        },
+        {
+            "slug": "tasmania-super-440-2026",
+            "name": "Tasmania Super 440",
+            "start_date": "2026-05-22",
+            "end_date": "2026-05-24",
+            "sessions": []
+        },
+        {
+            "slug": "darwin-triple-crown-2026",
+            "name": "Darwin Triple Crown",
+            "start_date": "2026-06-19",
+            "end_date": "2026-06-21",
+            "sessions": []
+        },
+        {
+            "slug": "townsville-500-2026",
+            "name": "Townsville 500",
+            "start_date": "2026-07-10",
+            "end_date": "2026-07-12",
+            "sessions": []
+        },
+        {
+            "slug": "perth-super-440-2026",
+            "name": "Perth Super 440",
+            "start_date": "2026-07-31",
+            "end_date": "2026-08-02",
+            "sessions": []
+        },
+        {
+            "slug": "ipswich-super-440-2026",
+            "name": "Ipswich Super 440",
+            "start_date": "2026-08-21",
+            "end_date": "2026-08-23",
+            "sessions": []
+        },
+        {
+            "slug": "500-at-the-bend-2026",
+            "name": "500 at The Bend",
+            "start_date": "2026-09-11",
+            "end_date": "2026-09-13",
+            "sessions": []
+        },
+        {
+            "slug": "bathurst-1000-2026",
+            "name": "Bathurst 1000",
+            "start_date": "2026-10-08",
+            "end_date": "2026-10-11",
+            "sessions": []
+        },
+        {
+            "slug": "gold-coast-500-2026",
+            "name": "Gold Coast 500",
+            "start_date": "2026-10-23",
+            "end_date": "2026-10-25",
+            "sessions": []
+        },
+        {
+            "slug": "sandown-500-2026",
+            "name": "Sandown 500",
+            "start_date": "2026-11-13",
+            "end_date": "2026-11-15",
+            "sessions": []
+        },
+        {
+            "slug": "adelaide-grand-final-2026",
+            "name": "Adelaide Grand Final",
+            "start_date": "2026-12-03",
+            "end_date": "2026-12-06",
+            "sessions": []
+        }
+    ]
+}

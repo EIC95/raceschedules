@@ -15,11 +15,14 @@
             ]
         },
         {
-            "slug": "atlanta-400-1-2026",
+            "slug": "atlanta-400-2026",
             "name": "Atlanta 400",
-            "start_date": "2026-02-22",
+            "start_date": "2026-02-20",
             "end_date": "2026-02-22",
-            "sessions": []
+            "sessions": [
+                { "name": "Qualifying", "start_time": "2026-02-21T11:00:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Race", "start_time": "2026-02-22T15:00:00", "timezone": "America/New_York", "session_number": 2 }
+            ]
         },
         {
             "slug": "cota-grand-prix-2026",
