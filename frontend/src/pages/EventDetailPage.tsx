@@ -6,8 +6,8 @@ import { fetchEventDetails } from '../api/events';
 import type { EventDetail } from '../api/events';
 import dayjs from 'dayjs'; 
 import Footer from '../components/Footer';
-import SeoHead from "../components/SeoHead";
 import Header from "../components/Header";
+import SEO from '../components/SEO';
 
 const EventDetailPage: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
@@ -38,24 +38,6 @@ const EventDetailPage: React.FC = () => {
         getEventDetails();
     }, [slug]);
 
-    let pageTitle = "Loading Event...";
-    let pageDescription = "Loading event details.";
-
-    if (error) {
-        pageTitle = "Error";
-        pageDescription = `Error loading event: ${error}`;
-    } else if (!loading && !event) {
-        pageTitle = "Event Not Found";
-        pageDescription = "The requested event could not be found.";
-    } else if (event) {
-        pageTitle = `${event.name}`;
-        pageDescription = `Details for ${event.name}${event.championship?.name ? ` from the ${event.championship.name}` : ''}. View all sessions and schedules.`;
-    }
-
-    useEffect(() => {
-        document.title = `${pageTitle} | Race Schedules`;
-    }, [pageTitle]);
-
     const startDate = event ? dayjs(event.start_date) : null;
     const endDate = event ? dayjs(event.end_date) : null;
 
@@ -75,12 +57,14 @@ const EventDetailPage: React.FC = () => {
     
     return (
         <>
-            <SeoHead
-                title={pageTitle}
-                description={pageDescription}
-                canonicalUrl={event ? `/events/${event.slug}` : undefined}
-                ogTitle={pageTitle}
-                ogDescription={pageDescription}
+            <SEO 
+                title={event ? `${event?.name} | RaceSchedules` : ''} 
+                description={event ? startDate === endDate
+                    ? `Full schedule for ${event?.name} on ${startDate?.format('MMM DD')} — don't miss a single lap.`
+                    : `Follow every session of ${event?.name}. Full schedule from ${startDate?.format('MMM DD')} to ${endDate?.format('MMM DD')} — don't miss a single lap.`
+                : ''}
+                canonical={event ? `https://raceschedules.ibrahima.dev/events/${event?.slug}` : ''} 
+                image="https://raceschedules.ibrahima.dev/og-image.png"
             />
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
                 <Header />

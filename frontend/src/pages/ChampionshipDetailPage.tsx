@@ -6,7 +6,7 @@ import { fetchChampionshipDetails } from '../api/championships';
 import type { ChampionshipDetail } from '../api/championships';
 import type { Event } from '../api/events';
 import Footer from '../components/Footer';
-import SeoHead from "../components/SeoHead";
+import SEO from '../components/SEO';
 import Header from "../components/Header";
 
 const ChampionshipDetailPage: React.FC = () => {
@@ -38,36 +38,17 @@ const ChampionshipDetailPage: React.FC = () => {
         getChampionshipDetails();
     }, [slug]);
 
-    let pageTitle = "Loading Championship...";
-    let pageDescription = "Loading championship details.";
-
-    if (error) {
-        pageTitle = "Error";
-        pageDescription = `Error loading championship: ${error}`;
-    } else if (!loading && !championship) {
-        pageTitle = "Championship Not Found";
-        pageDescription = "The requested championship could not be found.";
-    } else if (championship) {
-        pageTitle = `${championship.name}`;
-        pageDescription = `Details for ${championship.name}, part of the ${championship.category.name} category. Discover all upcoming events.`;
-    }
-
-    useEffect(() => {
-        document.title = `${pageTitle} | Race Schedules`;
-    }, [pageTitle]);
-
     const sortedEvents = championship?.events ? [...championship.events].sort((a, b) => {
         return new Date(a.start_date).getTime() - new Date(b.start_date).getTime();
     }) : [];
 
     return (
         <>
-            <SeoHead
-                title={pageTitle}
-                description={pageDescription}
-                canonicalUrl={championship ? `/championships/${championship.slug}` : undefined}
-                ogTitle={pageTitle}
-                ogDescription={pageDescription}
+            <SEO 
+                title={championship ? `${championship?.name} | RaceSchedules` : ''} 
+                description={championship ? `Full ${championship?.name} season schedule — every race, every date, all in one place.` : ''}
+                canonical={championship ? `https://raceschedules.ibrahima.dev/championships/${championship?.slug}` : ''} 
+                image="https://raceschedules.ibrahima.dev/og-image.png"
             />
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
                 <Header />
