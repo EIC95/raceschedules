@@ -1,8 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import dayjs from 'dayjs';
 import { ChevronRight } from 'lucide-react';
-import type { Event } from '../api/events'; 
+import type { Event } from '../api/events';
 
 interface EventCardProps {
     event: Event;
@@ -22,7 +21,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
     }
 
     return (
-        <Link to={`/events/${event.slug}`} className="block">
+        <Link href={`/events/${event.slug}`} className="block">
             <div className="relative border-2 border-black p-4 h-40 flex flex-col justify-between transition-transform duration-200 ease-in-out hover:translate-x-1 hover:-translate-y-1">
                 <div className="flex justify-between items-start">
                     <span className="bg-black text-white text-xs font-bold px-2 py-1">

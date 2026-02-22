@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+"use client";
+import { useState, useEffect } from 'react';
 import { fetchUpcomingEvents } from '../api/events';
 import type { Event } from '../api/events';
 import EventCard from './EventCard';

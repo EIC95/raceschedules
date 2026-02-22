@@ -1,7 +1,6 @@
 import api from './api';
 import type { Category } from './categories';
 
-// Interface for events without championship details, to avoid redundancy in ChampionshipDetail
 export interface EventWithoutChampionship {
     id: number;
     name: string;
@@ -11,17 +10,15 @@ export interface EventWithoutChampionship {
     championship_id: number | null;
 }
 
-// Interface for a championship with its full details, including events
 export interface ChampionshipDetail {
     id: number;
     name: string;
     slug: string;
     category_id: number;
     category: Category;
-    events: EventWithoutChampionship[]; // List of events without nested championship
+    events: EventWithoutChampionship[];
 }
 
-// Existing Championship interface (from ChampionshipRead)
 export interface Championship {
     id: number;
     name: string;

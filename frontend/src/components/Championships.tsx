@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+"use client";
+import { useState, useEffect } from 'react';
 import { fetchCategories } from '../api/categories';
 import type { Category } from '../api/categories';
 import { fetchChampionships } from '../api/championships';
@@ -68,7 +69,7 @@ const Championships: React.FC = () => {
     return (
         <section className="my-8">
             <h2 className="text-2xl font-extrabold text-black uppercase mb-6">Championships & Exhibitions</h2>
-            
+
             <div className="flex flex-wrap gap-2 mb-8">
                 {categories.map(category => (
                     <button
@@ -76,8 +77,8 @@ const Championships: React.FC = () => {
                         onClick={() => setSelectedCategoryId(category.id)}
                         className={`px-4 py-1.5 text-sm font-bold uppercase border-2 transition-colors duration-200 ease-in-out
                                     ${selectedCategoryId === category.id
-                                        ? 'bg-black text-white border-black'
-                                        : 'bg-white text-gray-600 border-gray-300 hover:border-black hover:text-black cursor-pointer'} `}
+                                ? 'bg-black text-white border-black'
+                                : 'bg-white text-gray-600 border-gray-300 hover:border-black hover:text-black cursor-pointer'} `}
                     >
                         {category.name}
                     </button>

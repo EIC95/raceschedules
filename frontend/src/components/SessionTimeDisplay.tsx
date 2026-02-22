@@ -1,4 +1,4 @@
-import React from 'react';
+"use client";
 import { Clock } from 'lucide-react';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';

@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                     rel="noopener noreferrer"
                     aria-label="GitHub Repository"
                 >
-                    <img src="/github.svg" alt="github icon" className='w-6'/>
+                    <Image src="/github.svg" alt="github icon" width={24} height={24} className='w-6' />
                 </a>
             </div>
         </footer>

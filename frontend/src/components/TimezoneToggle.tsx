@@ -1,7 +1,8 @@
+"use client";
 import { Clock, MapPin } from 'lucide-react';
 import { useTimezone } from '../context/TimezoneContext';
 
-export default function TimezoneToggle(){
+export default function TimezoneToggle() {
     const { selectedTimezone, setSelectedTimezone } = useTimezone();
 
     const toggleTimezone = (timezone: 'your_time' | 'track_time') => {

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+"use client";
+import { useState, useEffect } from 'react';
 
 interface CountdownTimerProps {
     startTime: string;
@@ -57,7 +58,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ startTime }) => {
             <div className="flex flex-col items-center tabular-nums">
                 <span>{formatTime(timeLeft.seconds)}</span>
                 <span className="text-xs tracking-normal font-semibold text-gray-500 uppercase">Secs</span>
-            </div> 
+            </div>
         </div>
     );
 };

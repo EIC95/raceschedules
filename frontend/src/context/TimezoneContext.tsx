@@ -1,4 +1,5 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+"use client";
+import { createContext, useState, useContext, useEffect } from 'react';
 import type { ReactNode } from 'react';
 
 type Timezone = 'your_time' | 'track_time';
@@ -16,8 +17,11 @@ interface TimezoneProviderProps {
 
 export const TimezoneProvider: React.FC<TimezoneProviderProps> = ({ children }) => {
     const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(() => {
-        const savedTimezone = localStorage.getItem('timezone');
-        return (savedTimezone === 'your_time' || savedTimezone === 'track_time') ? savedTimezone : 'your_time';
+        if (typeof window !== 'undefined') {
+            const savedTimezone = localStorage.getItem('timezone');
+            return (savedTimezone === 'your_time' || savedTimezone === 'track_time') ? savedTimezone : 'your_time';
+        }
+        return 'your_time';
     });
 
     useEffect(() => {

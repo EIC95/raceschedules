@@ -7,7 +7,7 @@ This project is designed to be **open source and completely free**, developed by
 ## Project Structure
 
 - `backend/`: Contains the FastAPI application, database models, API endpoints, and migration scripts.
-- `frontend/`: Contains the React application, including components, pages, and API integration.
+- `frontend/`: Contains the Next.js application, including components, pages, and API integration.
 
 ## Features
 

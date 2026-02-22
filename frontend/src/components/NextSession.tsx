@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+"use client";
+import { useState, useEffect } from 'react';
 import SessionTimeDisplay from './SessionTimeDisplay';
 import CountdownTimer from './CountdownTimer';
 import { fetchNextSession } from '../api/sessions';
