@@ -168,6 +168,8 @@ Local command (example):
 python backend/scripts/seed.py
 ```
 
+> **Note**: The script will prompt you interactively to choose whether you want to seed each event file in the `championships` directory. You can enter `n` to skip seeding events for a specific championship.
+
 ---
 
 ## Contribution workflow (for contributors)

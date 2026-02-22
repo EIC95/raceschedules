@@ -99,6 +99,11 @@ def seed_data():
                     print(f"Warning: Championship '{validated_champ_events.championship}' not found. Skipping events in {event_file.name}.")
                     continue
 
+                seed_this_event_file = input(f"Seed events from '{event_file.name}'? [Y/n]: ").strip().lower()
+                if seed_this_event_file == 'n':
+                    print(f"  -> Skipping event file: {event_file.name}")
+                    continue
+
                 for event_data in validated_champ_events.events:
                     event_db = db.query(Event).filter(Event.slug == event_data.slug).first()
                     if not event_db:
