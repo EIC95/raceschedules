@@ -14,16 +14,16 @@ const SessionCard: React.FC<SessionCardProps> = ({ session }) => {
     const dayOfWeek = sessionDate.format('dddd').toUpperCase();
 
     return (
-        <div className="border-2 border-black p-4 mb-4 flex items-center justify-between">
+        <div className="border-2 border-black p-4 mb-4 flex items-center justify-between gap-2">
             <div className="flex items-center">
-                <span className="text-4xl font-extrabold text-gray-300 mr-4">
+                <span className="text-3xl md:text-4xl font-extrabold text-gray-300 mr-4">
                     {session.session_number}
                 </span>
                 <div>
-                    <h4 className="text-xl font-extrabold text-black uppercase leading-tight">
+                    <h4 className="text-lg md:text-xl font-extrabold text-black uppercase leading-tight">
                         {session.name}
                     </h4>
-                    <p className="text-gray-600 text-xs font-semibold uppercase">
+                    <p className="text-gray-600 text-xs md:text-sm font-semibold uppercase">
                         {dayOfWeek}
                     </p>
                 </div>

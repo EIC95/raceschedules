@@ -28,9 +28,14 @@ const SessionTimeDisplay: React.FC<SessionTimeDisplayProps> = ({ startTime, sess
     }
 
     return (
-        <div className="flex items-center gap-1 text-sm font-bold uppercase">
-            <Clock size={15} className="text-gray-600" />
-            STARTS {displayTime}
+        <div className="flex items-center gap-1 text-sm font-bold uppercase flex-wrap justify-end">
+            <div className="flex items-center gap-1">
+                <Clock size={15} className="text-gray-600" />
+                <p>STARTS</p>
+            </div>
+            <p>
+                {displayTime}
+            </p>
         </div>
     );
 };
