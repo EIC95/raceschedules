@@ -11,6 +11,8 @@ interface Params {
     params: Promise<{ slug: string }>;
 }
 
+export const dynamic = 'force-dynamic';
+
 export async function generateStaticParams() {
     try {
         const championships = await fetchChampionships();
