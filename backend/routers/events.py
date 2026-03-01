@@ -14,13 +14,13 @@ def read_upcoming_events(db: Session = Depends(get_db)):
     today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     one_week_from_now = (now + timedelta(weeks=1)).replace(hour=23, minute=59, second=59, microsecond=999999)
 
-    # Query for distinct events that have at least one session within the next week (including today)
     upcoming_events = db.query(models.Event) \
-        .join(models.Session) \
         .options(joinedload(models.Event.championship)) \
-        .filter(models.Session.start_time.between(today_start, one_week_from_now)) \
+        .filter(
+            models.Event.start_date <= one_week_from_now,  # commence avant la fin de la semaine
+            models.Event.end_date >= today_start           # pas encore terminé
+        ) \
         .order_by(models.Event.start_date) \
-        .distinct() \
         .all()
     
     return upcoming_events
