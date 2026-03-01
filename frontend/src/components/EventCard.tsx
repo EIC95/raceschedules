@@ -5,9 +5,10 @@ import type { Event } from '../api/events';
 
 interface EventCardProps {
     event: Event;
+    isPast?: boolean;
 }
 
-const EventCard: React.FC<EventCardProps> = ({ event }) => {
+const EventCard: React.FC<EventCardProps> = ({ event, isPast = false }) => {
     const startDate = dayjs(event.start_date);
     const endDate = dayjs(event.end_date);
 
@@ -27,6 +28,11 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
                     <span className="bg-black text-white text-xs font-bold px-2 py-1">
                         {dateRange}
                     </span>
+                    {isPast && (
+                        <span className="bg-black text-white text-xs font-bold px-2 py-1">
+                            COMPLETED
+                        </span>
+                    )}
                 </div>
                 <div>
                     <h3 className="text-xl font-extrabold text-black uppercase leading-tight">

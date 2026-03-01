@@ -96,16 +96,13 @@ export default async function EventDetailPage({ params }: Params) {
         <>
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
                 <Header />
-                <div className="mb-10">
-                    {event.championship?.slug ? (
-                        <Link href={`/championships/${event.championship.slug}`} className="flex items-center text-gray-500 text-xs font-bold uppercase hover:text-black transition-colors duration-200">
-                            <ChevronLeft size={16} className="mr-1" /> BACK TO CHAMPIONSHIP
-                        </Link>
-                    ) : (
-                        <Link href="/" className="flex items-center text-gray-500 text-xs font-bold uppercase hover:text-black transition-colors duration-200">
-                            <ChevronLeft size={16} className="mr-1" /> BACK TO HOME
-                        </Link>
-                    )}
+                <div className="flex gap-4 flex-col mb-10">
+                    <Link href={`/championships/${event.championship!.slug}`} className="flex items-center text-gray-500 text-xs font-bold uppercase hover:text-black transition-colors duration-200">
+                        <ChevronLeft size={16} className="mr-1" /> BACK TO CHAMPIONSHIP
+                    </Link>
+                    <Link href="/" className="flex items-center text-gray-500 text-xs font-bold uppercase hover:text-black transition-colors duration-200">
+                        <ChevronLeft size={16} className="mr-1" /> BACK TO HOME
+                    </Link>
                 </div>
 
                 <div className="mb-8">

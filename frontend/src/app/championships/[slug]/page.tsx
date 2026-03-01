@@ -6,6 +6,7 @@ import type { Event } from '../../../api/events';
 import Footer from '../../../components/Footer';
 import Header from "../../../components/Header";
 import type { Metadata } from 'next';
+import dayjs from 'dayjs';
 
 interface Params {
     params: Promise<{ slug: string }>;
@@ -100,9 +101,12 @@ export default async function ChampionshipDetailPage({ params }: Params) {
                     <h3 className="text-2xl font-extrabold text-black uppercase mb-6">Events</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {sortedEvents.length > 0 ? (
-                            sortedEvents.map(event => (
-                                <EventCard key={event.id} event={event as Event} />
-                            ))
+                            sortedEvents.map(event => {
+                                const isPast = dayjs(event.end_date).isBefore(dayjs());
+                                return (
+                                    <EventCard key={event.id} event={event as Event} isPast={isPast} />
+                                );
+                            })
                         ) : (
                             <p className="col-span-full text-center text-gray-600">No upcoming events for this championship.</p>
                         )}
