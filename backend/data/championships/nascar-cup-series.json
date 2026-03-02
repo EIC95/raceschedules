@@ -27,23 +27,33 @@
         {
             "slug": "cota-grand-prix-2026",
             "name": "COTA Grand Prix",
-            "start_date": "2026-03-01",
+            "start_date": "2026-02-28",
             "end_date": "2026-03-01",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice & Qualifying", "start_time": "2026-02-28T10:00:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Race", "start_time": "2026-03-01T15:30:00", "timezone": "America/New_York", "session_number": 2 }
+            ]
         },
         {
             "slug": "phoenix-500-1-2026",
             "name": "Phoenix 500",
-            "start_date": "2026-03-08",
+            "start_date": "2026-03-07",
             "end_date": "2026-03-08",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice & Qualifying", "start_time": "2026-03-07T12:00:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Race", "start_time": "2026-03-08T15:30:00", "timezone": "America/New_York", "session_number": 2 }
+            ]
         },
         {
             "slug": "las-vegas-400-1-2026",
             "name": "Las Vegas 400",
-            "start_date": "2026-03-15",
+            "start_date": "2026-03-14",
             "end_date": "2026-03-15",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice", "start_time": "2026-03-14T14:30:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Qualifying", "start_time": "2026-03-14T15:40:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Race", "start_time": "2026-03-15T16:00:00", "timezone": "America/New_York", "session_number": 3 }
+            ]
         },
         {
             "slug": "darlington-400-1-2026",
