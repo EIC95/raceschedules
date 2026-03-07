@@ -4,25 +4,25 @@
         {
             "slug": "qatar-1812km-2026",
             "name": "Qatar 1812km",
-            "start_date": "2026-03-26",
-            "end_date": "2026-03-28",
-            "sessions": [
-            { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-03-26T15:00:00", "timezone": "Asia/Qatar" },
-            { "name": "Free Practice 2", "session_number": 2, "start_time": "2026-03-26T19:30:00", "timezone": "Asia/Qatar" },
-            { "name": "Free Practice 3", "session_number": 3, "start_time": "2026-03-27T13:00:00", "timezone": "Asia/Qatar" },
-            { "name": "Qualifying - LMGT3", "session_number": 4, "start_time": "2026-03-27T17:00:00", "timezone": "Asia/Qatar" },
-            { "name": "Hyperpole - LMGT3", "session_number": 5, "start_time": "2026-03-27T17:20:00", "timezone": "Asia/Qatar" },
-            { "name": "Qualifying - HYPERCAR", "session_number": 6, "start_time": "2026-03-27T17:40:00", "timezone": "Asia/Qatar" },
-            { "name": "Hyperpole - HYPERCAR", "session_number": 7, "start_time": "2026-03-27T18:00:00", "timezone": "Asia/Qatar" },
-            { "name": "Race", "session_number": 8, "start_time": "2026-03-28T13:00:00", "timezone": "Asia/Qatar" }
-            ]
+            "start_date": "0001-01-01",
+            "end_date": "0001-01-01",
+            "sessions": []
         },
         {
             "slug": "6-hours-of-imola-2026",
             "name": "6 Hours of Imola",
             "start_date": "2026-04-17",
             "end_date": "2026-04-19",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-04-17T10:15:00", "timezone": "Europe/Rome", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-04-17T15:15:00", "timezone": "Europe/Rome", "session_number": 2 },
+                { "name": "Free Practice 3", "start_time": "2026-04-18T10:30:00", "timezone": "Europe/Rome", "session_number": 3 },
+                { "name": "Qualifying LMGT3", "start_time": "2026-04-18T14:30:00", "timezone": "Europe/Rome", "session_number": 4 },
+                { "name": "Hyperpole LMGT3", "start_time": "2026-04-18T14:50:00", "timezone": "Europe/Rome", "session_number": 5 },
+                { "name": "Qualifying Hypercar", "start_time": "2026-04-18T15:10:00", "timezone": "Europe/Rome", "session_number": 6 },
+                { "name": "Hyperpole Hypercar", "start_time": "2026-04-18T15:30:00", "timezone": "Europe/Rome", "session_number": 7 },
+                { "name": "Race", "start_time": "2026-04-19T13:00:00", "timezone": "Europe/Rome", "session_number": 8 }
+            ]
         },
         {
             "slug": "6-hours-of-spa-francorchamps-2026",
