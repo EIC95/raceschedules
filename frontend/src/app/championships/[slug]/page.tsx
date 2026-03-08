@@ -75,8 +75,6 @@ export default async function ChampionshipDetailPage({ params }: Params) {
     }
 
     const sortedEvents = championship.events ? [...championship.events].sort((a, b) => {
-        if (a.start_date === "0001-01-01") return 1;
-        if (b.start_date === "0001-01-01") return -1;
         return new Date(a.start_date).getTime() - new Date(b.start_date).getTime();
     }) : [];
 

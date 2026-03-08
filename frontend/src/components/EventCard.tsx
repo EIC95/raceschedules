@@ -13,10 +13,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, isPast = false }) => {
     const endDate = dayjs(event.end_date);
 
     let dateRange = startDate.format('MMM DD').toUpperCase();
-
-    if (startDate.date() === 1 && startDate.month() === 1 && startDate.year() === 1) {
-        dateRange = "POSTPONED";
-    } else if (startDate.month() === endDate.month()) {
+    if (startDate.month() === endDate.month()) {
         if (startDate.date() !== endDate.date()) {
             dateRange = `${startDate.format('MMM DD')} - ${endDate.format('DD')}`.toUpperCase();
         }
