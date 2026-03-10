@@ -1,0 +1,15 @@
+{
+  "championship": "nls",
+  "events": [
+    { "slug": "nls1-2026", "name": "NLS 1", "start_date": "2026-03-14", "end_date": "2026-03-14", "sessions": [] },
+    { "slug": "nls2-2026", "name": "NLS 2", "start_date": "2026-03-21", "end_date": "2026-03-21", "sessions": [] },
+    { "slug": "nls3-2026", "name": "NLS 3", "start_date": "2026-04-11", "end_date": "2026-04-11", "sessions": [] },
+    { "slug": "nls4-24h-qualifier-1-2026", "name": "ADAC 24h Nürburgring Qualifier 1", "start_date": "2026-04-18", "end_date": "2026-04-18", "sessions": [] },
+    { "slug": "nls5-24h-qualifier-2-2026", "name": "ADAC 24h Nürburgring Qualifier 2", "start_date": "2026-04-19", "end_date": "2026-04-19", "sessions": [] },
+    { "slug": "nls6-2026", "name": "NLS 6", "start_date": "2026-06-20", "end_date": "2026-06-20", "sessions": [] },
+    { "slug": "nls7-2026", "name": "NLS 7", "start_date": "2026-08-01", "end_date": "2026-08-01", "sessions": [] },
+    { "slug": "nls8-2026", "name": "NLS 8", "start_date": "2026-09-12", "end_date": "2026-09-12", "sessions": [] },
+    { "slug": "nls9-2026", "name": "NLS 9", "start_date": "2026-09-13", "end_date": "2026-09-13", "sessions": [] },
+    { "slug": "nls10-2026", "name": "NLS 10", "start_date": "2026-10-10", "end_date": "2026-10-10", "sessions": [] }
+  ]
+}

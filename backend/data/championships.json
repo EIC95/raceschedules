@@ -9,5 +9,6 @@
   { "slug": "imsa", "name": "IMSA WeatherTech SportsCar Championship", "category": "endurance-gt" },
   { "slug": "nascar-cup-series", "name": "Nascar Cup Series", "category": "stock-touring" },
   { "slug": "supercars-championship", "name": "Supercars Championship", "category": "stock-touring" },
-  { "slug": "indycar-series", "name": "IndyCar Series", "category": "single-seaters" }
+  { "slug": "indycar-series", "name": "IndyCar Series", "category": "single-seaters" },
+  { "slug": "nls", "name": "Nürburgring Langstrecken-Serie", "category": "endurance-gt" }
 ]
