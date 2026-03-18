@@ -7,9 +7,11 @@ dayjs.extend(localizedFormat);
 
 interface SessionCardProps {
     session: Session;
+    postponed?: boolean;
+    cancelled?: boolean;
 }
 
-const SessionCard: React.FC<SessionCardProps> = ({ session }) => {
+const SessionCard: React.FC<SessionCardProps> = ({ session, postponed, cancelled }) => {
     const sessionDate = dayjs(session.start_time);
     const dayOfWeek = sessionDate.format('dddd').toUpperCase();
     const isPast = sessionDate.isBefore(dayjs());
@@ -17,7 +19,7 @@ const SessionCard: React.FC<SessionCardProps> = ({ session }) => {
     return (
         <div className="border-2 border-black p-4 mb-4 flex flex-col">
             <div className="flex justify-end mb-2">
-                {isPast && (
+                {isPast && !(postponed || cancelled) && (
                     <span className="bg-black text-white text-xs font-bold px-2 py-1 w-fit">
                         COMPLETED
                     </span>

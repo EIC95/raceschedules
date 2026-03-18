@@ -119,6 +119,16 @@ export default async function EventDetailPage({ params }: Params) {
                     <span className="bg-black text-white text-xs font-bold px-2 py-1 uppercase mt-4 inline-block">
                         {dateRange}
                     </span>
+                    {event.cancelled && (
+                        <div className="bg-black text-white text-xs font-bold px-2 py-1 mt-4 w-fit">
+                            CANCELLED
+                        </div>
+                    )}
+                    {event.postponed && (
+                        <div className="bg-black text-white text-xs font-bold px-2 py-1 mt-4 w-fit">
+                            POSTPONED
+                        </div>
+                    )}
                 </div>
 
                 <section className="my-8">
@@ -126,7 +136,7 @@ export default async function EventDetailPage({ params }: Params) {
                     <div className="border-t-2 border-black pt-4"> {/* Separator line */}
                         {event.sessions.length > 0 ? (
                             event.sessions.map(session => (
-                                <SessionCard key={session.id} session={session} />
+                                <SessionCard key={session.id} session={session} postponed={event.postponed} cancelled={event.cancelled} />
                             ))
                         ) : (
                             <p className="col-span-full text-center text-gray-600">No sessions found for this event.</p>
