@@ -6,6 +6,7 @@
       "name": "NLS 1",
       "start_date": "2026-03-14",
       "end_date": "2026-03-14",
+      "cancelled": true,
       "sessions": [
         { "name": "Qualifying", "start_time": "2026-03-14T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
         { "name": "Race", "start_time": "2026-03-14T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }

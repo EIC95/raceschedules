@@ -80,6 +80,7 @@
       "name": "Bahrain Grand Prix",
       "start_date": "2026-04-10",
       "end_date": "2026-04-12",
+      "cancelled": true,
       "sessions": [
         { "name": "Practice 1", "session_number": 1, "start_time": "2026-04-10T14:30:00", "timezone": "Asia/Bahrain" },
         { "name": "Practice 2", "session_number": 2, "start_time": "2026-04-10T18:00:00", "timezone": "Asia/Bahrain" },
@@ -93,6 +94,7 @@
       "name": "Saudi Arabian Grand Prix",
       "start_date": "2026-04-17",
       "end_date": "2026-04-19",
+      "cancelled": true,
       "sessions": [
         { "name": "Practice 1", "session_number": 1, "start_time": "2026-04-17T16:30:00", "timezone": "Asia/Riyadh" },
         { "name": "Practice 2", "session_number": 2, "start_time": "2026-04-17T20:00:00", "timezone": "Asia/Riyadh" },

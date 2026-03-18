@@ -112,6 +112,8 @@ def seed_data():
                             slug=event_data.slug,
                             start_date=datetime.strptime(event_data.start_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
                             end_date=datetime.strptime(event_data.end_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
+                            postponed=event_data.postponed if event_data.postponed is not None else False,
+                            cancelled=event_data.cancelled if event_data.cancelled is not None else False,
                             championship_id=championship_id
                         )
                         db.add(event_db)
@@ -119,8 +121,10 @@ def seed_data():
                         print(f"Added event: {event_data.name} ({validated_champ_events.championship})")
                     else:
                         event_db.name = event_data.name
-                        event_db.start_date = datetime.strptime(event_data.start_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
-                        event_db.end_date = datetime.strptime(event_data.end_date, '%Y-%m-%d').replace(tzinfo=timezone.utc),
+                        event_db.start_date = datetime.strptime(event_data.start_date, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+                        event_db.end_date = datetime.strptime(event_data.end_date, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+                        event_db.postponed = event_data.postponed if event_data.postponed is not None else False
+                        event_db.cancelled = event_data.cancelled if event_data.cancelled is not None else False
                         event_db.championship_id = championship_id
                         print(f"Updated event: {event_data.name} ({validated_champ_events.championship})")
 

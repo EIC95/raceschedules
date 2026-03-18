@@ -2,13 +2,6 @@
     "championship": "wec",
     "events": [
         {
-            "slug": "qatar-1812km-2026",
-            "name": "Qatar 1812km",
-            "start_date": "2026-03-26",
-            "end_date": "2026-03-28",
-            "sessions": []
-        },
-        {
             "slug": "6-hours-of-imola-2026",
             "name": "6 Hours of Imola",
             "start_date": "2026-04-17",
@@ -57,6 +50,14 @@
             "name": "6 Hours of Fuji",
             "start_date": "2026-09-25",
             "end_date": "2026-09-27",
+            "sessions": []
+        },
+        {
+            "slug": "qatar-1812km-2026",
+            "name": "Qatar 1812km",
+            "start_date": "2026-10-24",
+            "end_date": "2026-10-24",
+            "postponed": true,
             "sessions": []
         },
         {

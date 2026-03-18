@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
 from .database import Base
 
@@ -25,6 +25,8 @@ class Event(Base):
     slug = Column(String, unique=True, index=True)
     start_date = Column(DateTime)
     end_date = Column(DateTime)
+    postponed = Column(Boolean, default=False)
+    cancelled = Column(Boolean, default=False)
     championship_id = Column(Integer, ForeignKey("championships.id"), nullable=True)
     championship = relationship("Championship", back_populates="events")
     sessions = relationship("Session", back_populates="event")

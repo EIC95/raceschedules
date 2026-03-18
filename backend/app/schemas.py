@@ -27,6 +27,8 @@ class EventBase(BaseModel):
     slug: str
     start_date: datetime
     end_date: datetime
+    postponed: bool = False
+    cancelled: bool = False
 
 # New schema for Event without nested Championship details
 class EventWithoutChampionship(EventBase):

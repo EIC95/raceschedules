@@ -53,6 +53,8 @@ class EventData(BaseModel):
     name: str
     start_date: str # YYYY-MM-DD
     end_date: str   # YYYY-MM-DD
+    postponed: bool = False
+    cancelled: bool = False
     sessions: List[SessionData]
 
     @field_validator('start_date', 'end_date')

@@ -28,7 +28,17 @@ const EventCard: React.FC<EventCardProps> = ({ event, isPast = false }) => {
                     <span className="bg-black text-white text-xs font-bold px-2 py-1">
                         {dateRange}
                     </span>
-                    {isPast && (
+                    {event.cancelled && (
+                        <span className="bg-black text-white text-xs font-bold px-2 py-1">
+                            CANCELLED
+                        </span>
+                    )}
+                    {!event.cancelled && event.postponed && !isPast && (
+                        <span className="bg-black text-white text-xs font-bold px-2 py-1">
+                            POSTPONED
+                        </span>
+                    )}
+                    {!event.cancelled && isPast && (
                         <span className="bg-black text-white text-xs font-bold px-2 py-1">
                             COMPLETED
                         </span>

@@ -17,8 +17,10 @@ def read_upcoming_events(db: Session = Depends(get_db)):
     upcoming_events = db.query(models.Event) \
         .options(joinedload(models.Event.championship)) \
         .filter(
-            models.Event.start_date <= one_week_from_now,  # commence avant la fin de la semaine
-            models.Event.end_date >= today_start           # pas encore terminé
+            models.Event.start_date <= one_week_from_now,  
+            models.Event.end_date >= today_start,          
+            models.Event.postponed == False,               
+            models.Event.cancelled == False                
         ) \
         .order_by(models.Event.start_date) \
         .all()

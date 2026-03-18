@@ -10,6 +10,8 @@ export interface Event {
     id: number;
     championship_id: number;
     championship?: Championship;
+    postponed?: boolean;
+    cancelled?: boolean;
 }
 
 export interface EventDetail {
@@ -21,6 +23,8 @@ export interface EventDetail {
     championship_id: number;
     championship?: Championship;
     sessions: Session[];
+    postponed?: boolean;
+    cancelled?: boolean;
 }
 
 export const fetchUpcomingEvents = async (): Promise<Event[]> => {
