@@ -1,0 +1,50 @@
+{
+  "championship": "24h-european-series",
+  "events": [
+    {
+      "slug": "12h-mugello-2026",
+      "name": "12H Mugello",
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-22",
+      "sessions": [
+        { "name": "Free Practice", "start_time": "2026-03-20T11:45:00", "timezone": "Europe/Rome", "session_number": 1 },
+        { "name": "Qualifying TCE/GT4/GTX/992 - Session 1", "start_time": "2026-03-20T16:15:00", "timezone": "Europe/Rome", "session_number": 2 },
+        { "name": "Qualifying TCE/GT4/GTX/992 - Session 2", "start_time": "2026-03-20T16:37:00", "timezone": "Europe/Rome", "session_number": 3 },
+        { "name": "Qualifying TCE/GT4/GTX/992 - Session 3", "start_time": "2026-03-20T16:59:00", "timezone": "Europe/Rome", "session_number": 4 },
+        { "name": "Qualifying GT3 - Session 1", "start_time": "2026-03-20T17:25:00", "timezone": "Europe/Rome", "session_number": 5 },
+        { "name": "Qualifying GT3 - Session 2", "start_time": "2026-03-20T17:45:00", "timezone": "Europe/Rome", "session_number": 6 },
+        { "name": "Qualifying GT3 - Session 3", "start_time": "2026-03-20T18:05:00", "timezone": "Europe/Rome", "session_number": 7 },
+        { "name": "Race Part 1", "start_time": "2026-03-21T12:10:00", "timezone": "Europe/Rome", "session_number": 8 },
+        { "name": "Race Part 2", "start_time": "2026-03-22T12:00:00", "timezone": "Europe/Rome", "session_number": 9 }
+      ]
+    },
+    {
+      "slug": "12h-spa-francorchamps-2026",
+      "name": "12H Spa-Francorchamps",
+      "start_date": "2026-04-17",
+      "end_date": "2026-04-19",
+      "sessions": []
+    },
+    {
+      "slug": "12h-paul-ricard-2026",
+      "name": "12H Paul Ricard",
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-07",
+      "sessions": []
+    },
+    {
+      "slug": "12h-nurburgring-2026",
+      "name": "12H Nürburgring",
+      "start_date": "2026-07-03",
+      "end_date": "2026-07-05",
+      "sessions": []
+    },
+    {
+      "slug": "24h-barcelona-2026",
+      "name": "24H Barcelona",
+      "start_date": "2026-09-18",
+      "end_date": "2026-09-20",
+      "sessions": []
+    }
+  ]
+}

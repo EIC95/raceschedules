@@ -256,7 +256,7 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 * Formula E ✅
 * Super Formula
 * F1 Academy
-* IndyCar
+* IndyCar ✅
 * Indy NXT
 
 ### Motorcycles
@@ -274,19 +274,19 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 
 ### Stock Cars & Touring Cars
 
-* NASCAR Cup Series
+* NASCAR Cup Series ✅
 * NASCAR Xfinity Series
 * NASCAR Truck Series
 * NASCAR Euro Series
 * Deutsche Tourenwagen Masters (DTM)
-* Supercars Championship
+* Supercars Championship ✅
 * British Touring Car Championship
 
 ### Endurance & GT Racing
 
 * World Endurance Championship (WEC) ✅
 * Le Mans Cup
-* IMSA WeatherTech SportsCar Championship (IMSA)
+* IMSA WeatherTech SportsCar Championship (IMSA) ✅
 * GT World Challenge Europe
 * GT World Challenge America
 * GT World Challenge Asia
@@ -294,7 +294,9 @@ Contributors are encouraged to help by adding events, and sessions for any of th
 * Intercontinental GT Challenge (IGTC) ✅
 * Asian Le Mans Series ✅
 * European Le Mans Series (ELMS)
-* Nürburgring Langstrecken Serie (NLS)
+* Nürburgring Langstrecken Serie (NLS) ✅
+* 24h European Series ✅
+* 24h Middle East Series
 * Super GT
 * Porsche Supercup
 * Ferrari Challenge

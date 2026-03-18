@@ -10,5 +10,6 @@
   { "slug": "nascar-cup-series", "name": "Nascar Cup Series", "category": "stock-touring" },
   { "slug": "supercars-championship", "name": "Supercars Championship", "category": "stock-touring" },
   { "slug": "indycar-series", "name": "IndyCar Series", "category": "single-seaters" },
-  { "slug": "nls", "name": "Nürburgring Langstrecken-Serie", "category": "endurance-gt" }
+  { "slug": "nls", "name": "Nürburgring Langstrecken-Serie", "category": "endurance-gt" },
+  { "slug": "24h-european-series", "name": "24h European Series", "category": "endurance-gt" }
 ]

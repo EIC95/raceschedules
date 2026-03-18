@@ -1,15 +1,99 @@
 {
   "championship": "nls",
   "events": [
-    { "slug": "nls1-2026", "name": "NLS 1", "start_date": "2026-03-14", "end_date": "2026-03-14", "sessions": [] },
-    { "slug": "nls2-2026", "name": "NLS 2", "start_date": "2026-03-21", "end_date": "2026-03-21", "sessions": [] },
-    { "slug": "nls3-2026", "name": "NLS 3", "start_date": "2026-04-11", "end_date": "2026-04-11", "sessions": [] },
-    { "slug": "nls4-24h-qualifier-1-2026", "name": "ADAC 24h Nürburgring Qualifier 1", "start_date": "2026-04-18", "end_date": "2026-04-18", "sessions": [] },
-    { "slug": "nls5-24h-qualifier-2-2026", "name": "ADAC 24h Nürburgring Qualifier 2", "start_date": "2026-04-19", "end_date": "2026-04-19", "sessions": [] },
-    { "slug": "nls6-2026", "name": "NLS 6", "start_date": "2026-06-20", "end_date": "2026-06-20", "sessions": [] },
-    { "slug": "nls7-2026", "name": "NLS 7", "start_date": "2026-08-01", "end_date": "2026-08-01", "sessions": [] },
-    { "slug": "nls8-2026", "name": "NLS 8", "start_date": "2026-09-12", "end_date": "2026-09-12", "sessions": [] },
-    { "slug": "nls9-2026", "name": "NLS 9", "start_date": "2026-09-13", "end_date": "2026-09-13", "sessions": [] },
-    { "slug": "nls10-2026", "name": "NLS 10", "start_date": "2026-10-10", "end_date": "2026-10-10", "sessions": [] }
+    {
+      "slug": "nls1-2026",
+      "name": "NLS 1",
+      "start_date": "2026-03-14",
+      "end_date": "2026-03-14",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-03-14T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-03-14T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls2-2026",
+      "name": "NLS 2",
+      "start_date": "2026-03-21",
+      "end_date": "2026-03-21",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-03-21T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-03-21T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls3-2026",
+      "name": "NLS 3",
+      "start_date": "2026-04-11",
+      "end_date": "2026-04-11",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-04-11T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-04-11T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls4-24h-qualifier-1-2026",
+      "name": "ADAC 24h Nürburgring Qualifier 1",
+      "start_date": "2026-04-18",
+      "end_date": "2026-04-18",
+      "sessions": []
+    },
+    {
+      "slug": "nls5-24h-qualifier-2-2026",
+      "name": "ADAC 24h Nürburgring Qualifier 2",
+      "start_date": "2026-04-19",
+      "end_date": "2026-04-19",
+      "sessions": []
+    },
+    {
+      "slug": "nls6-2026",
+      "name": "NLS 6",
+      "start_date": "2026-06-20",
+      "end_date": "2026-06-20",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-06-20T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-06-20T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls7-2026",
+      "name": "NLS 7",
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-01",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-08-01T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-08-01T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls8-2026",
+      "name": "NLS 8",
+      "start_date": "2026-09-12",
+      "end_date": "2026-09-12",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-09-12T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-09-12T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls9-2026",
+      "name": "NLS 9",
+      "start_date": "2026-09-13",
+      "end_date": "2026-09-13",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-09-13T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-09-13T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    },
+    {
+      "slug": "nls10-2026",
+      "name": "NLS 10",
+      "start_date": "2026-10-10",
+      "end_date": "2026-10-10",
+      "sessions": [
+        { "name": "Qualifying", "start_time": "2026-10-10T08:30:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Race", "start_time": "2026-10-10T12:00:00", "timezone": "Europe/Berlin", "session_number": 2 }
+      ]
+    }
   ]
 }

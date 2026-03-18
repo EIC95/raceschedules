@@ -32,9 +32,15 @@
         {
             "slug": "12-hours-of-sebring-2026",
             "name": "12 Hours of Sebring",
-            "start_date": "2026-03-21",
+            "start_date": "2026-03-19",
             "end_date": "2026-03-21",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice 1", "start_time": "2026-03-19T10:05:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Practice 2", "start_time": "2026-03-19T16:00:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Practice 3", "start_time": "2026-03-19T19:45:00", "timezone": "America/New_York", "session_number": 3 },
+                { "name": "Qualifying", "start_time": "2026-03-20T11:25:00", "timezone": "America/New_York", "session_number": 4 },
+                { "name": "Race", "start_time": "2026-03-21T10:10:00", "timezone": "America/New_York", "session_number": 5 }
+            ]
         },
         {
             "slug": "long-beach-grand-prix-2026",
