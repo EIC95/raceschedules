@@ -120,6 +120,38 @@ To contribute an exhibition event:
 
 This approach allows exhibition events to be managed and displayed using the same robust data structure as other championships.
 
+### Postponed or Cancelled Events
+
+If an event is postponed or cancelled, you must include the `postponed` or `cancelled` boolean field in the event JSON.
+
+**Example for a postponed event:**
+```json
+{
+  "slug": "event-postponed-2026",
+  "name": "Event Postponed",
+  "location": "City, Country",
+  "start_date": "2026-05-15",
+  "end_date": "2026-05-17",
+  "postponed": true,
+  "sessions": [
+    { "name": "Practice", "session_number": 1, "start_time": "2026-05-15T10:00:00", "timezone": "Europe/Paris" }
+  ]
+}
+```
+
+**Example for a cancelled event:**
+```json
+{
+  "slug": "event-cancelled-2026",
+  "name": "Event Cancelled",
+  "location": "City, Country",
+  "start_date": "2026-06-20",
+  "end_date": "2026-06-22",
+  "cancelled": true,
+  "sessions": []
+}
+```
+
 ### Session (inside an Event)
 
 Expected fields:
