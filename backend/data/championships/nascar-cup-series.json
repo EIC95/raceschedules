@@ -58,16 +58,24 @@
         {
             "slug": "darlington-400-1-2026",
             "name": "Darlington 400",
-            "start_date": "2026-03-22",
+            "start_date": "2026-03-21",
             "end_date": "2026-03-22",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice", "start_time": "2026-03-21T14:30:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Qualifying", "start_time": "2026-03-21T15:40:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Race", "start_time": "2026-03-22T15:00:00", "timezone": "America/New_York", "session_number": 3 }
+            ]
         },
         {
             "slug": "martinsville-400-1-2026",
             "name": "Martinsville 400",
-            "start_date": "2026-03-29",
+            "start_date": "2026-03-28",
             "end_date": "2026-03-29",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice", "start_time": "2026-03-28T12:30:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Qualifying", "start_time": "2026-03-28T13:40:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Race", "start_time": "2026-03-29T15:30:00", "timezone": "America/New_York", "session_number": 3 }
+            ]
         },
         {
             "slug": "bristol-500-1-2026",

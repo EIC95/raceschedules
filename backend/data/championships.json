@@ -11,5 +11,9 @@
   { "slug": "supercars-championship", "name": "Supercars Championship", "category": "stock-touring" },
   { "slug": "indycar-series", "name": "IndyCar Series", "category": "single-seaters" },
   { "slug": "nls", "name": "Nürburgring Langstrecken-Serie", "category": "endurance-gt" },
-  { "slug": "24h-european-series", "name": "24h European Series", "category": "endurance-gt" }
+  { "slug": "24h-european-series", "name": "24h European Series", "category": "endurance-gt" },
+  { "slug": "gt-world-challenge-america", "name": "GT World Challenge America", "category": "endurance-gt" },
+  { "slug": "gt-world-challenge-australia", "name": "GT World Challenge Australia", "category": "endurance-gt" },
+  { "slug": "super-formula", "name": "Super Formula", "category": "single-seaters" },
+  { "slug": "gt-world-challenge-asia", "name": "GT World Challenge Asia", "category": "endurance-gt" }
 ]

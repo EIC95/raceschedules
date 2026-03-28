@@ -1,0 +1,54 @@
+{
+  "championship": "gt-world-challenge-australia",
+  "events": [
+    {
+      "slug": "phillip-island-2026",
+      "name": "Phillip Island Grand Prix Circuit",
+      "start_date": "2026-03-27",
+      "end_date": "2026-03-29",
+      "sessions": [
+        { "name": "Free Practice 1", "start_time": "2026-03-27T10:10:00", "timezone": "Australia/Melbourne", "session_number": 1 },
+        { "name": "Free Practice 2", "start_time": "2026-03-27T13:50:00", "timezone": "Australia/Melbourne", "session_number": 2 },
+        { "name": "Qualifying 1", "start_time": "2026-03-28T11:15:00", "timezone": "Australia/Melbourne", "session_number": 3 },
+        { "name": "Qualifying 2", "start_time": "2026-03-28T11:35:00", "timezone": "Australia/Melbourne", "session_number": 4 },
+        { "name": "Race 1", "start_time": "2026-03-28T15:55:00", "timezone": "Australia/Melbourne", "session_number": 5 },
+        { "name": "Race 2", "start_time": "2026-03-29T13:40:00", "timezone": "Australia/Melbourne", "session_number": 6 }
+      ]
+    },
+    {
+      "slug": "the-bend-2026",
+      "name": "Shell V-Power Motorsport Park",
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-10",
+      "sessions": []
+    },
+    {
+      "slug": "queensland-raceway-2026",
+      "name": "Queensland Raceway",
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-14",
+      "sessions": []
+    },
+    {
+      "slug": "hidden-valley-2026",
+      "name": "Hidden Valley Raceway",
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-26",
+      "sessions": []
+    },
+    {
+      "slug": "sydney-motorsport-park-2026",
+      "name": "Sydney Motorsport Park",
+      "start_date": "2026-09-18",
+      "end_date": "2026-09-20",
+      "sessions": []
+    },
+    {
+      "slug": "adelaide-street-circuit-2026",
+      "name": "Adelaide Street Circuit",
+      "start_date": "2026-11-26",
+      "end_date": "2026-11-29",
+      "sessions": []
+    }
+  ]
+}

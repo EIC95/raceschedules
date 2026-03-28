@@ -1,0 +1,55 @@
+{
+  "championship": "gt-world-challenge-asia",
+  "events": [
+    {
+        "slug": "sepang-2026",
+        "name": "Sepang International Circuit",
+        "start_date": "2026-04-04",
+        "end_date": "2026-04-05",
+        "sessions": [
+            { "name": "Official Practice", "start_time": "2026-04-03T11:00:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 1 },
+            { "name": "Bronze Session", "start_time": "2026-04-03T12:10:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 2 },
+            { "name": "Pre-Qualifying", "start_time": "2026-04-03T15:40:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 3 },
+            { "name": "Qualifying 1", "start_time": "2026-04-04T10:25:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 4 },
+            { "name": "Qualifying 2", "start_time": "2026-04-04T10:47:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 5 },
+            { "name": "Race 1", "start_time": "2026-04-04T14:15:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 6 },
+            { "name": "Race 2", "start_time": "2026-04-05T11:30:00", "timezone": "Asia/Kuala_Lumpur", "session_number": 7 }
+        ]
+    },
+    {
+      "slug": "mandalika-2026",
+      "name": "Pertamina Mandalika International Circuit",
+      "start_date": "2026-05-02",
+      "end_date": "2026-05-03",
+      "sessions": []
+    },
+    {
+      "slug": "shanghai-2026",
+      "name": "Shanghai International Circuit",
+      "start_date": "2026-06-05",
+      "end_date": "2026-06-06",
+      "sessions": []
+    },
+    {
+      "slug": "fuji-2026",
+      "name": "Fuji International Speedway",
+      "start_date": "2026-07-11",
+      "end_date": "2026-07-12",
+      "sessions": []
+    },
+    {
+      "slug": "okayama-2026",
+      "name": "Okayama International Circuit",
+      "start_date": "2026-08-29",
+      "end_date": "2026-08-30",
+      "sessions": []
+    },
+    {
+      "slug": "beijing-street-circuit-2026",
+      "name": "Beijing Street Circuit",
+      "start_date": "2026-10-17",
+      "end_date": "2026-10-18",
+      "sessions": []
+    }
+  ]
+}

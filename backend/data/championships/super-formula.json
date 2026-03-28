@@ -1,0 +1,60 @@
+{
+  "championship": "super-formula",
+  "events": [
+    {
+      "slug": "motegi-2026",
+      "name": "Mobility Resort Motegi",
+      "start_date": "2026-04-03",
+      "end_date": "2026-04-05",
+      "sessions": [
+        { "name": "Free Practice", "start_time": "2026-04-03T09:00:00", "timezone": "Asia/Tokyo", "session_number": 1 },
+        { "name": "Qualifying Round 1", "start_time": "2026-04-04T09:00:00", "timezone": "Asia/Tokyo", "session_number": 2 },
+        { "name": "Race 1", "start_time": "2026-04-04T14:00:00", "timezone": "Asia/Tokyo", "session_number": 3 },
+        { "name": "Qualifying Round 2", "start_time": "2026-04-05T09:00:00", "timezone": "Asia/Tokyo", "session_number": 4 },
+        { "name": "Race 2", "start_time": "2026-04-05T14:00:00", "timezone": "Asia/Tokyo", "session_number": 5 }
+      ]
+    },
+    {
+      "slug": "autopolis-2026",
+      "name": "Autopolis",
+      "start_date": "2026-04-25",
+      "end_date": "2026-04-26",
+      "sessions": []
+    },
+    {
+      "slug": "suzuka-1-2026",
+      "name": "Suzuka Circuit – Round 1",
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-24",
+      "sessions": []
+    },
+    {
+      "slug": "fuji-1-2026",
+      "name": "Fuji Speedway – Round 1",
+      "start_date": "2026-07-17",
+      "end_date": "2026-07-19",
+      "sessions": []
+    },
+    {
+      "slug": "sugo-2026",
+      "name": "Sportsland SUGO",
+      "start_date": "2026-08-07",
+      "end_date": "2026-08-09",
+      "sessions": []
+    },
+    {
+      "slug": "fuji-2-2026",
+      "name": "Fuji Speedway – Round 2",
+      "start_date": "2026-10-09",
+      "end_date": "2026-10-11",
+      "sessions": []
+    },
+    {
+      "slug": "suzuka-2-2026",
+      "name": "Suzuka Circuit – Round 2",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "sessions": []
+    }
+  ]
+}

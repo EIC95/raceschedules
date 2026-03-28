@@ -1,0 +1,60 @@
+{
+  "championship": "gt-world-challenge-america",
+  "events": [
+    {
+      "slug": "sonoma-2026",
+      "name": "Sonoma Raceway",
+      "start_date": "2026-03-27",
+      "end_date": "2026-03-29",
+      "sessions": [
+        { "name": "Practice 1", "start_time": "2026-03-27T16:00:00", "timezone": "America/Los_Angeles", "session_number": 1 },
+        { "name": "Practice 2", "start_time": "2026-03-28T11:00:00", "timezone": "America/Los_Angeles", "session_number": 2 },
+        { "name": "Practice 3", "start_time": "2026-03-28T14:15:00", "timezone": "America/Los_Angeles", "session_number": 3 },
+        { "name": "Qualifying", "start_time": "2026-03-29T08:50:00", "timezone": "America/Los_Angeles", "session_number": 4 },
+        { "name": "Race", "start_time": "2026-03-29T13:30:00", "timezone": "America/Los_Angeles", "session_number": 5 }
+      ]
+    },
+    {
+      "slug": "cota-2026",
+      "name": "Circuit of the Americas",
+      "start_date": "2026-04-24",
+      "end_date": "2026-04-26",
+      "sessions": []
+    },
+    {
+      "slug": "sebring-2026",
+      "name": "Sebring International Raceway",
+      "start_date": "2026-05-08",
+      "end_date": "2026-05-10",
+      "sessions": []
+    },
+    {
+      "slug": "road-atlanta-2026",
+      "name": "Michelin Raceway Road Atlanta",
+      "start_date": "2026-06-12",
+      "end_date": "2026-06-14",
+      "sessions": []
+    },
+    {
+      "slug": "road-america-2026",
+      "name": "Road America",
+      "start_date": "2026-08-28",
+      "end_date": "2026-08-30",
+      "sessions": []
+    },
+    {
+      "slug": "barber-2026",
+      "name": "Barber Motorsports Park",
+      "start_date": "2026-09-25",
+      "end_date": "2026-09-27",
+      "sessions": []
+    },
+    {
+      "slug": "indianapolis-8h-2026",
+      "name": "Indianapolis Motor Speedway",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-10",
+      "sessions": []
+    }
+  ]
+}
