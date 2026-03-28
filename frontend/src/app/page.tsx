@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   title: "RaceSchedules - Home",
   description: "Your go-to calendar for motorsport schedules. Follow Formula 1, MotoGP, WEC, and many other racing series — all in one place, always up to date.",
   alternates: {
-    canonical: "https://raceschedules.ibrahima.dev/"
+    canonical: "https://raceschedules.app/"
   },
   openGraph: {
-    images: "https://raceschedules.ibrahima.dev/og-image.png"
+    images: "https://raceschedules.app/og-image.png"
   }
 };
 

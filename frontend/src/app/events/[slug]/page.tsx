@@ -34,10 +34,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
                 ? `Full schedule for ${event.name} on ${startDate.format('MMM DD')} — don't miss a single lap.`
                 : `Follow every session of ${event.name}. Full schedule from ${startDate.format('MMM DD')} to ${endDate.format('MMM DD')} — don't miss a single lap.`,
             alternates: {
-                canonical: `https://raceschedules.ibrahima.dev/events/${event.slug}`
+                canonical: `https://raceschedules.app/events/${event.slug}`
             },
             openGraph: {
-                images: "https://raceschedules.ibrahima.dev/og-image.png"
+                images: "https://raceschedules.app/og-image.png"
             }
         };
     } catch (e) {

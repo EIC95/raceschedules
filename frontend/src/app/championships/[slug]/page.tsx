@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
             title: `${championship.name} | RaceSchedules`,
             description: `Full ${championship.name} season schedule — every race, every date, all in one place.`,
             alternates: {
-                canonical: `https://raceschedules.ibrahima.dev/championships/${championship.slug}`
+                canonical: `https://raceschedules.app/championships/${championship.slug}`
             },
             openGraph: {
-                images: "https://raceschedules.ibrahima.dev/og-image.png"
+                images: "https://raceschedules.app/og-image.png"
             }
         };
     } catch (e) {

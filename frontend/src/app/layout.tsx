@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: 'RaceSchedules - Home',
   },
   description: "Your go-to calendar for motorsport schedules. Follow Formula 1, MotoGP, WEC, and many other racing series — all in one place, always up to date.",
-  metadataBase: new URL('https://raceschedules.ibrahima.dev'),
+  metadataBase: new URL('https://raceschedules.app'),
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -44,7 +44,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "RaceSchedules",
-              "url": "https://raceschedules.ibrahima.dev/"
+              "url": "https://raceschedules.app/"
             }),
           }}
         />
