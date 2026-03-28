@@ -7,7 +7,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://raceschedules.vercel.app", "https://raceschedules.ibrahima.dev", "https://raceschedules-git-main-ibrahimas-projects-627d139e.vercel.app"],
+    allow_origins=["http://localhost:3000", "https://raceschedules.vercel.app", "https://raceschedules.ibrahima.dev", "https://raceschedules-git-main-ibrahimas-projects-627d139e.vercel.app", "https://raceschedules.app", "https://www.raceschedules.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
