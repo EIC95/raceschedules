@@ -53,7 +53,7 @@ const SessionCard: React.FC<SessionCardProps> = ({ session, postponed, cancelled
             </div>
 
             {/* Session number */}
-            <span className="text-2xl font-extrabold text-gray-200 dark:text-neutral-800 tabular-nums w-7 shrink-0 text-right select-none">
+            <span className="text-2xl font-extrabold text-gray-400 dark:text-neutral-600 tabular-nums w-7 shrink-0 text-right select-none">
                 {session.session_number}
             </span>
 

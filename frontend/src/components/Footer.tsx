@@ -3,7 +3,12 @@ const Footer: React.FC = () => {
 
     return (
         <footer className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-8 bg-white dark:bg-neutral-950">
-            <hr className="border-t border-gray-100 dark:border-neutral-800 w-full mb-6" />
+            <hr className="border-t border-gray-400 dark:border-neutral-800 w-full mb-6" />
+            <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed mb-4">
+                Motorsport never sleeps. From Formula 1 to MotoGP, WEC to NASCAR, there&apos;s always a session
+                happening somewhere in the world. RaceSchedules brings a wide range of championship calendars
+                into one place — open and kept alive by a community of motorsport fans.
+            </p>
             <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-4 text-xs text-gray-400 dark:text-neutral-500">
                     <span>© {currentYear} RACESCHEDULES</span>
@@ -11,7 +16,7 @@ const Footer: React.FC = () => {
                         href="https://ko-fi.com/X8X511TO4J"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="opacity-60 hover:opacity-100 transition-opacity"
+                        className="opacity-80 hover:opacity-100 transition-opacity"
                     >
                         <img
                             src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
@@ -25,7 +30,7 @@ const Footer: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub Repository"
-                    className="opacity-40 hover:opacity-100 transition-opacity dark:invert"
+                    className="opacity-50 hover:opacity-100 transition-opacity dark:invert"
                 >
                     <img src="/github.svg" alt="GitHub" className="w-5 h-5" />
                 </a>

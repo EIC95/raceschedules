@@ -88,68 +88,65 @@ export default async function EventDetailPage({ params }: Params) {
     });
 
     return (
-        <>
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                {/* Back link */}
-                <div className="mb-8">
-                    <Link
-                        href={`/championships/${event.championship?.slug}`}
-                        className="inline-flex items-center text-xs font-bold uppercase text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white transition-colors duration-200"
-                    >
-                        <ChevronLeft size={14} className="mr-0.5" />
-                        {event.championship?.name ?? 'Back'}
-                    </Link>
-                </div>
+        <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
+            {/* Back link */}
+            <div className="mb-8">
+                <Link
+                    href={`/championships/${event.championship?.slug}`}
+                    className="inline-flex items-center text-xs font-bold uppercase text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white transition-colors duration-200"
+                >
+                    <ChevronLeft size={14} className="mr-0.5" />
+                    {event.championship?.name ?? 'Back'}
+                </Link>
+            </div>
 
-                {/* Event header */}
-                <div className="mb-10">
-                    <div className="flex flex-wrap items-center gap-2 mb-3">
-                        <span className="text-xs font-bold px-2 py-1 bg-black dark:bg-white text-white dark:text-black uppercase">
-                            {dateRange}
+            {/* Event header */}
+            <div className="mb-10">
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                    <span className="text-xs font-bold px-2 py-1 bg-black dark:bg-white text-white dark:text-black uppercase">
+                        {dateRange}
+                    </span>
+                    {event.cancelled && (
+                        <span className="text-xs font-bold px-2 py-1 border border-gray-300 dark:border-neutral-600 text-gray-500 dark:text-gray-400 uppercase">
+                            Cancelled
                         </span>
-                        {event.cancelled && (
-                            <span className="text-xs font-bold px-2 py-1 border border-gray-300 dark:border-neutral-600 text-gray-500 dark:text-gray-400 uppercase">
-                                Cancelled
-                            </span>
-                        )}
-                        {event.postponed && !event.cancelled && (
-                            <span className="text-xs font-bold px-2 py-1 border border-gray-300 dark:border-neutral-600 text-gray-500 dark:text-gray-400 uppercase">
-                                Postponed
-                            </span>
-                        )}
-                    </div>
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black dark:text-white uppercase leading-none">
-                        {event.name}
-                    </h2>
-                    {event.championship?.name && (
-                        <p className="text-gray-500 dark:text-gray-400 text-sm font-semibold uppercase mt-2">
-                            {event.championship.name}
-                        </p>
+                    )}
+                    {event.postponed && !event.cancelled && (
+                        <span className="text-xs font-bold px-2 py-1 border border-gray-300 dark:border-neutral-600 text-gray-500 dark:text-gray-400 uppercase">
+                            Postponed
+                        </span>
                     )}
                 </div>
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black dark:text-white uppercase leading-none">
+                    {event.name}
+                </h2>
+                {event.championship?.name && (
+                    <p className="text-gray-500 dark:text-gray-400 text-sm font-semibold uppercase mt-2">
+                        {event.championship.name}
+                    </p>
+                )}
+            </div>
 
-                {/* Sessions */}
-                <section>
-                    <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">
-                        Sessions
-                    </h3>
-                    {sortedSessions.length > 0 ? (
-                        <div>
-                            {sortedSessions.map(session => (
-                                <SessionCard
-                                    key={session.id}
-                                    session={session}
-                                    postponed={event.postponed}
-                                    cancelled={event.cancelled}
-                                />
-                            ))}
-                        </div>
-                    ) : (
-                        <p className="text-sm text-gray-500 dark:text-gray-400">No sessions found for this event.</p>
-                    )}
-                </section>
-            </main>
-            <Footer />
-        </>
+            {/* Sessions */}
+            <section>
+                <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">
+                    Sessions
+                </h3>
+                {sortedSessions.length > 0 ? (
+                    <div>
+                        {sortedSessions.map(session => (
+                            <SessionCard
+                                key={session.id}
+                                session={session}
+                                postponed={event.postponed}
+                                cancelled={event.cancelled}
+                            />
+                        ))}
+                    </div>
+                ) : (
+                    <p className="text-sm text-gray-500 dark:text-gray-400">No sessions found for this event.</p>
+                )}
+            </section>
+        </main>
     );
 }
