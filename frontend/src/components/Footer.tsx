@@ -1,23 +1,55 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10 bg-white space-y-5"> {/* Responsive padding */}
-            <hr className="border-t-2 border-black w-full mt-4" />
-            <p className='text-justify text-sm text-gray-600 font-bold'>Motorsport never sleeps. From Formula 1 to MotoGP, WEC to NASCAR, there's always a session happening somewhere in the world. RaceSchedules brings a wide range of championship calendars into one place — open, and kept alive by a community of motorsport fans.</p>
-            <div className="flex justify-between items-center text-sm text-gray-600 font-bold">
-                <p>© {currentYear} RACESCHEDULES</p>
+        <footer className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-8 bg-white">
+        <hr className="border-t border-black w-full mb-6" />
+
+        <div className="flex flex-col gap-6">
+            
+            <p className="text-sm text-gray-600 max-w-2xl font-bold">
+                Motorsport never sleeps. From Formula 1 to MotoGP, WEC to NASCAR,
+                there's always a session happening somewhere in the world.
+                RaceSchedules brings a wide range of championship calendars into one place — open and kept alive by a community of motorsport fans.
+            </p>
+
+            <div className="flex items-center justify-between flex-wrap gap-4">
+            
+            <div className="flex items-center gap-3 text-xs text-gray-500">
+                <span>© {currentYear} RACESCHEDULES</span>
+
                 <a
-                    href="https://github.com/EIC95/raceschedules"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub Repository"
+                href="https://ko-fi.com/X8X511TO4J"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-70 hover:opacity-100 transition flex items-center"
                 >
-                    <Image src="/github.svg" alt="github icon" width={24} height={24} className='w-6' />
+                <img
+                    src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
+                    alt="Support me on Ko-fi"
+                    className="h-7 w-auto"
+                />
                 </a>
             </div>
+
+            <a
+                href="https://github.com/EIC95/raceschedules"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Repository"
+            >
+                <Image
+                src="/github.svg"
+                alt="github icon"
+                width={30}
+                height={30}
+                className="w-7 opacity-70 hover:opacity-100 transition"
+                />
+            </a>
+            </div>
+        </div>
         </footer>
     );
 };
