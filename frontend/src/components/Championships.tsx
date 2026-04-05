@@ -21,7 +21,7 @@ const Championships: React.FC = () => {
             try {
                 setLoadingCategories(true);
                 const data = await fetchCategories();
-                setCategories([{ id: 0, name: 'ALL CATEGORIES' }, ...data]);
+                setCategories([{ id: 0, name: 'All' }, ...data]);
             } catch (err) {
                 console.error('Error fetching categories:', err);
                 setError('Failed to load categories.');
@@ -58,19 +58,17 @@ const Championships: React.FC = () => {
         }
     }, [selectedCategoryId, allChampionships]);
 
-
     if (loadingCategories || loadingChampionships) {
-        return <div className="flex justify-center py-8"><Loader2 className='w-10 h-10 animate-spin'/></div>;
+        return <div className="flex justify-center py-8"><Loader2 className="w-5 h-5 animate-spin text-gray-400" /></div>;
     }
 
     if (error) {
         return (
             <div className="flex flex-col justify-center py-10">
-                <h2 className="text-2xl font-extrabold text-black uppercase mb-6 text-left w-full">
-                    Championships & Exhibitions
+                <h2 className="text-2xl font-extrabold text-black dark:text-white uppercase mb-6">
+                    Championships
                 </h2>
-
-                <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
+                <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm">
                     <AlertCircle className="w-4 h-4 opacity-60" />
                     <span>{error}</span>
                 </div>
@@ -79,28 +77,31 @@ const Championships: React.FC = () => {
     }
 
     return (
-        <section className="my-8">
-            <h2 className="text-2xl font-extrabold text-black uppercase mb-6">Championships & Exhibitions</h2>
+        <section>
+            <h2 className="text-2xl font-extrabold text-black dark:text-white uppercase mb-6">Championships</h2>
 
-            <div className="flex flex-wrap gap-2 mb-8">
+            <div className="flex flex-wrap gap-2 mb-6">
                 {categories.map(category => (
                     <button
                         key={category.id}
                         onClick={() => setSelectedCategoryId(category.id)}
-                        className={`px-4 py-1.5 text-sm font-bold uppercase border-2 transition-colors duration-200 ease-in-out
-                                    ${selectedCategoryId === category.id
-                                ? 'bg-black text-white border-black'
-                                : 'bg-white text-gray-600 border-gray-300 hover:border-black hover:text-black cursor-pointer'} `}
+                        className={`px-3 py-1 text-xs font-bold uppercase border transition-colors duration-200 cursor-pointer
+                            ${selectedCategoryId === category.id
+                                ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                                : 'bg-transparent text-gray-500 dark:text-gray-400 border-gray-300 dark:border-neutral-700 hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white'}`}
                     >
                         {category.name}
                     </button>
                 ))}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {filteredChampionships.length > 0 ? filteredChampionships.map(championship => (
-                    <ChampionshipCard key={championship.id} championship={championship} />
-                )) : <p className='col-span-full text-center text-gray-600'>No championship found.</p>}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {filteredChampionships.length > 0
+                    ? filteredChampionships.map(championship => (
+                        <ChampionshipCard key={championship.id} championship={championship} />
+                    ))
+                    : <p className="col-span-full text-sm text-gray-500 dark:text-gray-400">No championships found.</p>
+                }
             </div>
         </section>
     );

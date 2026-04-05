@@ -22,42 +22,41 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ startTime }) => {
                 return;
             }
 
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            setTimeLeft({ days, hours, minutes, seconds });
+            setTimeLeft({
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+                seconds: Math.floor((difference % (1000 * 60)) / 1000),
+            });
         };
 
         calculateTimeLeft();
         const timer = setInterval(calculateTimeLeft, 1000);
-
         return () => clearInterval(timer);
     }, [startTime]);
 
-    const formatTime = (time: number) => String(time).padStart(2, '0');
+    const fmt = (n: number) => String(n).padStart(2, '0');
 
     return (
-        <div className="flex items-end justify-center text-4xl md:text-5xl font-bold text-black tracking-tighter">
-            <div className="flex flex-col items-center tabular-nums">
-                <span>{formatTime(timeLeft.days)}</span>
-                <span className="text-xs tracking-normal font-semibold text-gray-500">DAYS</span>
+        <div className="flex items-end gap-1 text-3xl sm:text-4xl font-bold text-black dark:text-white tracking-tighter tabular-nums">
+            <div className="flex flex-col items-center">
+                <span>{fmt(timeLeft.days)}</span>
+                <span className="text-xs tracking-normal font-semibold text-gray-400 dark:text-gray-500">D</span>
             </div>
-            <span className="mb-5 mx-2 text-gray-300">:</span>
-            <div className="flex flex-col items-center tabular-nums">
-                <span>{formatTime(timeLeft.hours)}</span>
-                <span className="text-xs tracking-normal font-semibold text-gray-500">HRS</span>
+            <span className="mb-4 text-gray-200 dark:text-neutral-700">:</span>
+            <div className="flex flex-col items-center">
+                <span>{fmt(timeLeft.hours)}</span>
+                <span className="text-xs tracking-normal font-semibold text-gray-400 dark:text-gray-500">H</span>
             </div>
-            <span className="mb-5 mx-2 text-gray-300">:</span>
-            <div className="flex flex-col items-center tabular-nums">
-                <span>{formatTime(timeLeft.minutes)}</span>
-                <span className="text-xs tracking-normal font-semibold text-gray-500">MINS</span>
+            <span className="mb-4 text-gray-200 dark:text-neutral-700">:</span>
+            <div className="flex flex-col items-center">
+                <span>{fmt(timeLeft.minutes)}</span>
+                <span className="text-xs tracking-normal font-semibold text-gray-400 dark:text-gray-500">M</span>
             </div>
-            <span className="mb-5 mx-2 text-gray-300">:</span>
-            <div className="flex flex-col items-center tabular-nums">
-                <span>{formatTime(timeLeft.seconds)}</span>
-                <span className="text-xs tracking-normal font-semibold text-gray-500 uppercase">Secs</span>
+            <span className="mb-4 text-gray-200 dark:text-neutral-700">:</span>
+            <div className="flex flex-col items-center">
+                <span>{fmt(timeLeft.seconds)}</span>
+                <span className="text-xs tracking-normal font-semibold text-gray-400 dark:text-gray-500">S</span>
             </div>
         </div>
     );

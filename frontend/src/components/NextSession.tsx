@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import SessionTimeDisplay from './SessionTimeDisplay';
 import CountdownTimer from './CountdownTimer';
 import { fetchNextSession } from '../api/sessions';
-import type { Session } from '../api/sessions'
+import type { Session } from '../api/sessions';
 import { AlertCircle, Loader2 } from 'lucide-react';
 
 const NextSession: React.FC = () => {
@@ -12,54 +12,42 @@ const NextSession: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const getNextSession = async () => {
-            try {
-                setLoading(true);
-                const data = await fetchNextSession();
-                setNextSession(data);
-            } catch (err) {
-                setError('Failed to load next session. Please try again later.');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        getNextSession();
+        fetchNextSession()
+            .then(setNextSession)
+            .catch(() => setError('Failed to load next session.'))
+            .finally(() => setLoading(false));
     }, []);
 
     if (loading) {
-        return <div className="flex justify-center py-8"><Loader2 className='w-10 h-10 animate-spin'/></div>;
+        return <div className="flex justify-center py-10"><Loader2 className="w-5 h-5 animate-spin text-gray-400" /></div>;
     }
 
     if (error) {
         return (
-            <div className="flex items-center justify-center py-10">
-            <div className="flex items-center gap-2 text-gray-500 text-sm">
+            <div className="flex items-center gap-2 py-10 text-sm text-gray-500 dark:text-gray-400">
                 <AlertCircle className="w-4 h-4 opacity-60" />
                 <span>{error}</span>
-            </div>
             </div>
         );
     }
 
     if (!nextSession) {
-        return <div className="text-center text-gray-500 text-sm py-8">No upcoming sessions found.</div>;
+        return <p className="text-sm text-gray-500 dark:text-gray-400 py-10">No upcoming sessions found.</p>;
     }
 
     return (
-        <div className="border-4 border-black p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8">
-            <p className="text-gray-600 text-sm font-bold mb-2">NEXT SESSION</p>
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-stretch flex-wrap"> {/* Responsive flex direction and alignment */}
-                <div className="flex-1 min-w-full md:min-w-0 md:w-auto mb-4 sm:mb-6 md:mb-0"> {/* Take full width on small, then auto */}
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mb-1 sm:mb-2"> {/* Responsive H2 */}
+        <div className="border border-gray-200 dark:border-neutral-800 p-6 sm:p-8 hover:border-black dark:hover:border-white transition-colors duration-200">
+            <p className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">Next Session</p>
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 flex-wrap">
+                <div className="flex-1 min-w-0">
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black dark:text-white uppercase leading-none mb-2">
                         {nextSession.event.name}
                     </h2>
-                    <p className="text-gray-700 text-sm sm:text-lg font-semibold uppercase"> {/* Responsive P */}
+                    <p className="text-gray-500 dark:text-gray-400 text-sm font-semibold uppercase">
                         {nextSession.event.championship.name} — {nextSession.name}
                     </p>
                 </div>
-
-                <div className="flex flex-col items-start md:items-end min-w-full md:min-w-0 mt-4 sm:mt-6 md:mt-auto"> {/* Take full width on small, then auto */}
+                <div className="flex flex-col items-start md:items-end gap-3 shrink-0">
                     <SessionTimeDisplay startTime={nextSession.start_time} sessionTimezone={nextSession.timezone} />
                     <CountdownTimer startTime={nextSession.start_time} />
                 </div>

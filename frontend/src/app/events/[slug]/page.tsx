@@ -4,7 +4,6 @@ import SessionCard from '../../../components/SessionCard';
 import { fetchEventDetails, fetchUpcomingEvents } from '../../../api/events';
 import dayjs from 'dayjs';
 import Footer from '../../../components/Footer';
-import Header from "../../../components/Header";
 import type { Metadata } from 'next';
 
 interface Params {
@@ -57,21 +56,12 @@ export default async function EventDetailPage({ params }: Params) {
         error = 'Failed to load event details.';
     }
 
-    if (error) {
+    if (error || !event) {
         return (
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <Header />
-                <div className="text-center py-8 text-red-500">Error: {error}</div>
-                <Footer />
-            </main>
-        );
-    }
-
-    if (!event) {
-        return (
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <Header />
-                <div className="text-center py-8">Event not found.</div>
+                <p className="text-gray-500 dark:text-gray-400 text-sm py-8">
+                    {error ?? 'Event not found.'}
+                </p>
                 <Footer />
             </main>
         );
@@ -82,75 +72,81 @@ export default async function EventDetailPage({ params }: Params) {
 
     let dateRange = '';
     if (startDate.isValid() && endDate.isValid()) {
-        dateRange = startDate.format('MMM DD').toUpperCase();
         if (startDate.month() === endDate.month()) {
-            if (startDate.date() !== endDate.date()) {
-                dateRange = `${startDate.format('MMM DD')} - ${endDate.format('DD')}, ${startDate.year()}`.toUpperCase();
-            } else {
-                dateRange = `${startDate.format('MMM DD')}, ${startDate.year()}`.toUpperCase();
-            }
+            dateRange = startDate.date() !== endDate.date()
+                ? `${startDate.format('MMM DD')} – ${endDate.format('DD')}, ${startDate.year()}`.toUpperCase()
+                : `${startDate.format('MMM DD')}, ${startDate.year()}`.toUpperCase();
         } else {
-            dateRange = `${startDate.format('MMM DD')} - ${endDate.format('MMM DD')}, ${startDate.year()}`.toUpperCase();
+            dateRange = `${startDate.format('MMM DD')} – ${endDate.format('MMM DD')}, ${startDate.year()}`.toUpperCase();
         }
     }
 
-    const sortedSessions = event.sessions
-    .slice()
-    .sort((a, b) => a.session_number - b.session_number);
+    // Sort sessions by start_time, then session_number as tiebreaker
+    const sortedSessions = [...event.sessions].sort((a, b) => {
+        const timeDiff = new Date(a.start_time).getTime() - new Date(b.start_time).getTime();
+        return timeDiff !== 0 ? timeDiff : a.session_number - b.session_number;
+    });
 
     return (
         <>
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <Header />
-                <div className="flex gap-4 flex-col mb-10">
-                    <Link href={`/championships/${event.championship!.slug}`} className="flex items-center text-gray-500 text-xs font-bold uppercase hover:text-black transition-colors duration-200">
-                        <ChevronLeft size={16} className="mr-1" /> BACK TO CHAMPIONSHIP
-                    </Link>
-                    <Link href="/" className="flex items-center text-gray-500 text-xs font-bold uppercase hover:text-black transition-colors duration-200">
-                        <ChevronLeft size={16} className="mr-1" /> BACK TO HOME
+                {/* Back link */}
+                <div className="mb-8">
+                    <Link
+                        href={`/championships/${event.championship?.slug}`}
+                        className="inline-flex items-center text-xs font-bold uppercase text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white transition-colors duration-200"
+                    >
+                        <ChevronLeft size={14} className="mr-0.5" />
+                        {event.championship?.name ?? 'Back'}
                     </Link>
                 </div>
 
-                <div className="mb-8">
-                    {event.championship?.name && (
-                        <span className="text-gray-500 border border-gray-500 text-xs font-bold px-2 py-1 uppercase mb-2 inline-block">
-                            {event.championship.name}
+                {/* Event header */}
+                <div className="mb-10">
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                        <span className="text-xs font-bold px-2 py-1 bg-black dark:bg-white text-white dark:text-black uppercase">
+                            {dateRange}
                         </span>
-                    )}
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mt-4">
+                        {event.cancelled && (
+                            <span className="text-xs font-bold px-2 py-1 border border-gray-300 dark:border-neutral-600 text-gray-500 dark:text-gray-400 uppercase">
+                                Cancelled
+                            </span>
+                        )}
+                        {event.postponed && !event.cancelled && (
+                            <span className="text-xs font-bold px-2 py-1 border border-gray-300 dark:border-neutral-600 text-gray-500 dark:text-gray-400 uppercase">
+                                Postponed
+                            </span>
+                        )}
+                    </div>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black dark:text-white uppercase leading-none">
                         {event.name}
                     </h2>
-                    <span className="bg-black text-white text-xs font-bold px-2 py-1 uppercase mt-4 inline-block">
-                        {dateRange}
-                    </span>
-                    {event.cancelled && (
-                        <div className="bg-black text-white text-xs font-bold px-2 py-1 mt-4 w-fit">
-                            CANCELLED
-                        </div>
-                    )}
-                    {event.postponed && (
-                        <div className="bg-black text-white text-xs font-bold px-2 py-1 mt-4 w-fit">
-                            POSTPONED
-                        </div>
+                    {event.championship?.name && (
+                        <p className="text-gray-500 dark:text-gray-400 text-sm font-semibold uppercase mt-2">
+                            {event.championship.name}
+                        </p>
                     )}
                 </div>
 
-                <section className="my-8">
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-black uppercase mb-6">Sessions</h3>
-                    <div className="border-t-2 border-black pt-4"> {/* Separator line */}
-                        {event.sessions.length > 0 ? (
-                            sortedSessions.map(session => (
+                {/* Sessions */}
+                <section>
+                    <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">
+                        Sessions
+                    </h3>
+                    {sortedSessions.length > 0 ? (
+                        <div>
+                            {sortedSessions.map(session => (
                                 <SessionCard
                                     key={session.id}
                                     session={session}
                                     postponed={event.postponed}
                                     cancelled={event.cancelled}
                                 />
-                            ))
-                        ) : (
-                            <p className="col-span-full text-center text-gray-600">No sessions found for this event.</p>
-                        )}
-                    </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <p className="text-sm text-gray-500 dark:text-gray-400">No sessions found for this event.</p>
+                    )}
                 </section>
             </main>
             <Footer />

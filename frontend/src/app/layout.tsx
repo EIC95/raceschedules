@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from '@vercel/analytics/react';
 import { TimezoneProvider } from "../context/TimezoneContext";
+import Link from 'next/link';
+import TimezoneToggle from '../components/TimezoneToggle';
 import "./globals.css";
 import { Inter } from 'next/font/google'
 
@@ -49,8 +51,19 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body >
+      <body>
         <TimezoneProvider>
+          <header className="sticky top-0 z-50 w-full bg-white/90 dark:bg-neutral-950/90 backdrop-blur-sm border-b border-gray-100 dark:border-neutral-800">
+            <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 flex items-center justify-between h-14">
+              <Link
+                href="/"
+                className="text-xl font-extrabold text-black dark:text-white uppercase tracking-tight hover:opacity-70 transition-opacity duration-200"
+              >
+                RACESCHEDULES
+              </Link>
+              <TimezoneToggle />
+            </div>
+          </header>
           {children}
           <Analytics />
         </TimezoneProvider>

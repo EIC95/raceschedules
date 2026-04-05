@@ -19,23 +19,16 @@ const SessionTimeDisplay: React.FC<SessionTimeDisplayProps> = ({ startTime, sess
 
     if (startTime) {
         const utcDate = dayjs.utc(startTime);
-
-        if (selectedTimezone === 'your_time') {
-            displayTime = utcDate.local().format('HH[h]mm');
-        } else {
-            displayTime = utcDate.tz(sessionTimezone).format('HH[h]mm');
-        }
+        displayTime = selectedTimezone === 'your_time'
+            ? utcDate.local().format('HH[h]mm')
+            : utcDate.tz(sessionTimezone).format('HH[h]mm');
     }
 
     return (
-        <div className="flex items-center gap-1 text-sm font-bold uppercase flex-wrap justify-end">
-            <div className="flex items-center gap-1">
-                <Clock size={15} className="text-gray-600" />
-                <p>STARTS</p>
-            </div>
-            <p>
-                {displayTime}
-            </p>
+        <div className="flex items-center gap-1 text-sm font-bold uppercase shrink-0">
+            <Clock size={13} className="text-gray-400 dark:text-gray-500" />
+            <span className="text-gray-500 dark:text-gray-400 text-xs">Starts</span>
+            <span className="text-black dark:text-white">{displayTime}</span>
         </div>
     );
 };

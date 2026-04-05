@@ -8,25 +8,23 @@ export const metadata: Metadata = {
 
 export default function NotFoundPage() {
     return (
-        <>
-            <div className="flex flex-col min-h-screen">
-                <main className="grow flex items-center justify-center p-4">
-                    <div className="text-center">
-                        <h1 className="text-6xl font-bold text-gray-800 dark:text-gray-100">404</h1>
-                        <p className="text-2xl text-gray-600 dark:text-gray-300 mt-4">Page Not Found</p>
-                        <p className="text-lg text-gray-500 dark:text-gray-400 mt-2">
-                            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
-                        </p>
-                        <Link
-                            href="/"
-                            className="mt-6 inline-block bg-black hover:bg-black text-white font-bold py-3 px-6 transition duration-300 ease-in-out shadow-lg"
-                        >
-                            Go to Homepage
-                        </Link>
-                    </div>
-                </main>
-                <Footer />
-            </div>
-        </>
+        <div className="flex flex-col min-h-screen">
+            <main className="grow flex items-center justify-center p-8">
+                <div className="text-center">
+                    <p className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">404</p>
+                    <h1 className="text-4xl font-extrabold text-black dark:text-white uppercase mb-3">Page not found</h1>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-8 max-w-sm mx-auto">
+                        This page doesn&apos;t exist or has been removed.
+                    </p>
+                    <Link
+                        href="/"
+                        className="inline-block bg-black dark:bg-white text-white dark:text-black text-xs font-bold uppercase px-6 py-3 hover:opacity-70 transition-opacity"
+                    >
+                        Back to Home
+                    </Link>
+                </div>
+            </main>
+            <Footer />
+        </div>
     );
 }

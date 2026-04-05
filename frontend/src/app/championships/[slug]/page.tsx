@@ -4,7 +4,6 @@ import EventCard from '../../../components/EventCard';
 import { fetchChampionshipDetails, fetchChampionships } from '../../../api/championships';
 import type { Event } from '../../../api/events';
 import Footer from '../../../components/Footer';
-import Header from "../../../components/Header";
 import type { Metadata } from 'next';
 import dayjs from 'dayjs';
 
@@ -54,63 +53,70 @@ export default async function ChampionshipDetailPage({ params }: Params) {
         error = 'Failed to load championship details.';
     }
 
-    if (error) {
+    if (error || !championship) {
         return (
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <Header />
-                <div className="text-center py-8 text-red-500">Error: {error}</div>
+                <p className="text-gray-500 dark:text-gray-400 text-sm py-8">
+                    {error ?? 'Championship not found.'}
+                </p>
                 <Footer />
             </main>
         );
     }
 
-    if (!championship) {
-        return (
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <Header />
-                <div className="text-center py-8">Championship not found.</div>
-                <Footer />
-            </main>
-        );
-    }
+    const sortedEvents = championship.events
+        ? [...championship.events].sort((a, b) => new Date(a.start_date).getTime() - new Date(b.start_date).getTime())
+        : [];
 
-    const sortedEvents = championship.events ? [...championship.events].sort((a, b) => {
-        return new Date(a.start_date).getTime() - new Date(b.start_date).getTime();
-    }) : [];
+    const now = dayjs();
+    // First event whose end_date hasn't passed yet
+    const nextEventIdx = sortedEvents.findIndex(e => !dayjs(e.end_date).isBefore(now));
 
     return (
         <>
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <Header />
-                <div className="mb-10">
-                    <Link href="/" className="flex items-center text-xs font-bold uppercase text-gray-500 hover:text-black transition-colors duration-200">
-                        <ChevronLeft size={16} className="mr-1" /> BACK TO HOME
+                {/* Back link */}
+                <div className="mb-8">
+                    <Link
+                        href="/"
+                        className="inline-flex items-center text-xs font-bold uppercase text-gray-400 dark:text-gray-500 hover:text-black dark:hover:text-white transition-colors duration-200"
+                    >
+                        <ChevronLeft size={14} className="mr-0.5" /> Home
                     </Link>
                 </div>
 
-                <div className="mb-8">
-                    <span className="text-gray-500 text-xs font-bold px-2 py-1 uppercase border border-gray-500">
+                {/* Championship header */}
+                <div className="mb-10">
+                    <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">
                         {championship.category.name}
                     </span>
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black uppercase leading-none mt-4">
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black dark:text-white uppercase leading-none mt-2">
                         {championship.name}
                     </h2>
                 </div>
 
-                <section className="my-8">
-                    <h3 className="text-2xl font-extrabold text-black uppercase mb-6">Events</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {sortedEvents.length > 0 ? (
-                            sortedEvents.map(event => {
-                                const isPast = dayjs(event.end_date).isBefore(dayjs());
+                {/* Events */}
+                <section>
+                    <h3 className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
+                        {sortedEvents.length} Event{sortedEvents.length !== 1 ? 's' : ''}
+                    </h3>
+                    {sortedEvents.length > 0 ? (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {sortedEvents.map((event, idx) => {
+                                const isPast = dayjs(event.end_date).isBefore(now);
                                 return (
-                                    <EventCard key={event.id} event={event as Event} isPast={isPast} />
+                                    <EventCard
+                                        key={event.id}
+                                        event={event as Event}
+                                        isPast={isPast}
+                                        isNext={idx === nextEventIdx}
+                                    />
                                 );
-                            })
-                        ) : (
-                            <p className="col-span-full text-center text-gray-600">No upcoming events for this championship.</p>
-                        )}
-                    </div>
+                            })}
+                        </div>
+                    ) : (
+                        <p className="text-sm text-gray-500 dark:text-gray-400">No events for this championship.</p>
+                    )}
                 </section>
             </main>
             <Footer />
