@@ -69,5 +69,14 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 *For any copyright or trademark concerns, please open an issue in the repository to discuss.*
 
+## Support Me
+If you like this project and want to support it, you can **donate** via Ko-fi:
+
+<p>
+  <a href="https://ko-fi.com/X8X511TO4J" target="_blank">
+    <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" alt="Donate" height="36"/>
+  </a>
+</p>
+
 ---
 Built with ❤️ by [Ibrahima Cissé](https://github.com/EIC95)
