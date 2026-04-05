@@ -11,20 +11,39 @@ router = APIRouter()
 @router.get("/events/upcoming", response_model=List[schemas.EventRead])
 def read_upcoming_events(db: Session = Depends(get_db)):
     now = datetime.now(timezone.utc)
-    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
-    one_week_from_now = (now + timedelta(weeks=1)).replace(hour=23, minute=59, second=59, microsecond=999999)
 
-    upcoming_events = db.query(models.Event) \
+    # Début et fin de la semaine actuelle (lundi 00:00 → dimanche 23:59)
+    start_of_week = now - timedelta(days=now.weekday())
+    start_of_week = start_of_week.replace(hour=0, minute=0, second=0, microsecond=0)
+    end_of_week = start_of_week + timedelta(days=6, hours=23, minutes=59, seconds=59, microseconds=999999)
+
+    # Récupération des événements de la semaine en cours
+    events_this_week = db.query(models.Event) \
         .options(joinedload(models.Event.championship)) \
         .filter(
-            models.Event.start_date <= one_week_from_now,  
-            models.Event.end_date >= today_start,          
-            models.Event.postponed == False,               
-            models.Event.cancelled == False                
+            models.Event.start_date <= end_of_week,
+            models.Event.end_date >= start_of_week,
+            models.Event.postponed == False,
+            models.Event.cancelled == False
         ) \
         .order_by(models.Event.start_date) \
         .all()
-    
+
+    if events_this_week:
+        return events_this_week
+
+    # Fallback : événements à venir les plus proches
+    upcoming_events = db.query(models.Event) \
+        .options(joinedload(models.Event.championship)) \
+        .filter(
+            models.Event.start_date >= now,
+            models.Event.postponed == False,
+            models.Event.cancelled == False
+        ) \
+        .order_by(models.Event.start_date) \
+        .limit(5) \
+        .all()
+
     return upcoming_events
 
 
