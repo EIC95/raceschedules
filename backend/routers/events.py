@@ -1,38 +1,79 @@
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session, joinedload
+from sqlalchemy import exists, and_
 from app import models, schemas
 from app.database import get_db
 from datetime import datetime, timedelta, timezone
-from sqlalchemy import distinct
 
 router = APIRouter()
+
+def get_week_bounds(date: datetime):
+    start = date - timedelta(days=date.weekday())
+    start = start.replace(hour=0, minute=0, second=0, microsecond=0)
+    end = start + timedelta(days=6, hours=23, minutes=59, seconds=59, microseconds=999999)
+    return start, end
+
+def query_events_in_range(db, start, end, now=None, require_active_session=False):
+    query = db.query(models.Event).options(
+        joinedload(models.Event.championship)
+    ).filter(
+        models.Event.start_date <= end,
+        models.Event.end_date >= start,
+        models.Event.postponed == False,
+        models.Event.cancelled == False
+    )
+
+    if require_active_session and now:
+        query = query.filter(
+            exists().where(
+                and_(
+                    models.Session.event_id == models.Event.id,
+                    models.Session.start_time >= now
+                )
+            )
+        )
+
+    return query.order_by(models.Event.start_date).all()
 
 @router.get("/events/upcoming", response_model=List[schemas.EventRead])
 def read_upcoming_events(db: Session = Depends(get_db)):
     now = datetime.now(timezone.utc)
 
-    # Début et fin de la semaine actuelle (lundi 00:00 → dimanche 23:59)
-    start_of_week = now - timedelta(days=now.weekday())
-    start_of_week = start_of_week.replace(hour=0, minute=0, second=0, microsecond=0)
-    end_of_week = start_of_week + timedelta(days=6, hours=23, minutes=59, seconds=59, microseconds=999999)
+    # --- 1. CURRENT WEEK-END ---
+    start_of_week, end_of_week = get_week_bounds(now)
 
-    # Récupération des événements de la semaine en cours
-    events_this_week = db.query(models.Event) \
-        .options(joinedload(models.Event.championship)) \
-        .filter(
-            models.Event.start_date <= end_of_week,
-            models.Event.end_date >= start_of_week,
-            models.Event.postponed == False,
-            models.Event.cancelled == False
-        ) \
-        .order_by(models.Event.start_date) \
-        .all()
+    events_this_week = query_events_in_range(
+        db,
+        start_of_week,
+        end_of_week,
+        now=now,
+        require_active_session=True
+    )
 
     if events_this_week:
         return events_this_week
 
-    # Fallback : événements à venir les plus proches
+    # --- 2. NEXT WEEK-END ---
+    next_event = db.query(models.Event).filter(
+        models.Event.start_date > end_of_week,
+        models.Event.postponed == False,
+        models.Event.cancelled == False
+    ).order_by(models.Event.start_date).first()
+
+    if next_event:
+        next_start, next_end = get_week_bounds(next_event.start_date) # type: ignore
+
+        next_week_events = query_events_in_range(
+            db,
+            next_start,
+            next_end
+        )
+
+        if next_week_events:
+            return next_week_events
+
+    # --- 3. FALLBACK ---
     upcoming_events = db.query(models.Event) \
         .options(joinedload(models.Event.championship)) \
         .filter(
