@@ -82,7 +82,11 @@
             "name": "Bristol 500",
             "start_date": "2026-04-12",
             "end_date": "2026-04-12",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice", "start_time": "2026-04-11T16:30:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Qualifying", "start_time": "2026-04-11T17:40:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Race", "start_time": "2026-04-12T15:00:00", "timezone": "America/New_York", "session_number": 3 }
+            ]
         },
         {
             "slug": "kansas-400-1-2026",

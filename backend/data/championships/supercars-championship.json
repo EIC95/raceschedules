@@ -41,7 +41,20 @@
             "name": "Taupō Super 440",
             "start_date": "2026-04-10",
             "end_date": "2026-04-12",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice 1", "start_time": "2026-04-10T13:50:00", "timezone": "Pacific/Auckland", "session_number": 1 },
+                { "name": "Practice 2", "start_time": "2026-04-10T14:30:00", "timezone": "Pacific/Auckland", "session_number": 2 },
+                { "name": "Qualifying 1 Race 1", "start_time": "2026-04-11T10:15:00", "timezone": "Pacific/Auckland", "session_number": 3 },
+                { "name": "Qualifying 2 Race 1", "start_time": "2026-04-11T10:35:00", "timezone": "Pacific/Auckland", "session_number": 4 },
+                { "name": "Qualifying 1 Race 2", "start_time": "2026-04-11T11:10:00", "timezone": "Pacific/Auckland", "session_number": 5 },
+                { "name": "Qualifying 2 Race 2", "start_time": "2026-04-11T11:30:00", "timezone": "Pacific/Auckland", "session_number": 6 },
+                { "name": "Race 1", "start_time": "2026-04-11T12:55:00", "timezone": "Pacific/Auckland", "session_number": 7 },
+                { "name": "Race 2", "start_time": "2026-04-11T16:05:00", "timezone": "Pacific/Auckland", "session_number": 8 },
+                { "name": "Qualifying 1 Race 3", "start_time": "2026-04-12T11:40:00", "timezone": "Pacific/Auckland", "session_number": 9 },
+                { "name": "Qualifying 2 Race 3", "start_time": "2026-04-12T12:00:00", "timezone": "Pacific/Auckland", "session_number": 10 },
+                { "name": "Top Ten Shootout", "start_time": "2026-04-12T12:35:00", "timezone": "Pacific/Auckland", "session_number": 11 },
+                { "name": "Race 3", "start_time": "2026-04-12T15:05:00", "timezone": "Pacific/Auckland", "session_number": 12 }
+            ]
         },
         {
             "slug": "christchurch-super-440-2026",
