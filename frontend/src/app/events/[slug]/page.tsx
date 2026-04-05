@@ -94,6 +94,10 @@ export default async function EventDetailPage({ params }: Params) {
         }
     }
 
+    const sortedSessions = event.sessions
+    .slice()
+    .sort((a, b) => a.session_number - b.session_number);
+
     return (
         <>
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
@@ -135,8 +139,13 @@ export default async function EventDetailPage({ params }: Params) {
                     <h3 className="text-xl sm:text-2xl font-extrabold text-black uppercase mb-6">Sessions</h3>
                     <div className="border-t-2 border-black pt-4"> {/* Separator line */}
                         {event.sessions.length > 0 ? (
-                            event.sessions.map(session => (
-                                <SessionCard key={session.id} session={session} postponed={event.postponed} cancelled={event.cancelled} />
+                            sortedSessions.map(session => (
+                                <SessionCard
+                                    key={session.id}
+                                    session={session}
+                                    postponed={event.postponed}
+                                    cancelled={event.cancelled}
+                                />
                             ))
                         ) : (
                             <p className="col-span-full text-center text-gray-600">No sessions found for this event.</p>

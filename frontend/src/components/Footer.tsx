@@ -21,10 +21,10 @@ const Footer: React.FC = () => {
                 <span>© {currentYear} RACESCHEDULES</span>
 
                 <a
-                href="https://ko-fi.com/X8X511TO4J"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="opacity-70 hover:opacity-100 transition flex items-center"
+                    href="https://ko-fi.com/X8X511TO4J"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-70 hover:opacity-100 transition flex items-center"
                 >
                 <img
                     src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
@@ -41,11 +41,11 @@ const Footer: React.FC = () => {
                 aria-label="GitHub Repository"
             >
                 <Image
-                src="/github.svg"
-                alt="github icon"
-                width={30}
-                height={30}
-                className="w-7 opacity-70 hover:opacity-100 transition"
+                    src="/github.svg"
+                    alt="github icon"
+                    width={30}
+                    height={30}
+                    className="w-7 opacity-70 hover:opacity-100 transition"
                 />
             </a>
             </div>
