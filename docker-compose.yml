@@ -45,7 +45,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
       - /app/.next
-    command: npm run dev
+    command: npm run dev -- -H 0.0.0.0
 
 volumes:
   postgres_data:
