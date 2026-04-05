@@ -17,12 +17,56 @@ This project is designed to be **open source and completely free**, developed by
 
 ## Getting Started
 
+### Option 1: Docker (recommended)
+
+The easiest way to run the full stack locally is with Docker Compose.
+
+#### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/) and Docker Compose
+
+#### Run
+
+```bash
+docker compose up --build
+```
+
+This will start:
+- **PostgreSQL** on port `5432`
+- **Backend API** on port `8000` — docs at `http://localhost:8000/docs`
+- **Frontend** on port `3000` — app at `http://localhost:3000`
+
+Database migrations are applied automatically on backend startup.
+
+To seed initial data:
+
+```bash
+docker compose exec backend python scripts/seed.py
+```
+
+To stop:
+
+```bash
+docker compose down
+```
+
+To stop and remove the database volume:
+
+```bash
+docker compose down -v
+```
+
+---
+
+### Option 2: Manual setup
+
 Follow the instructions in the `backend/README.md` and `frontend/README.md` files to set up and run each part of the application.
 
 ## Development
 
 ### Prerequisites
-- npm or yarn
+- Docker and Docker Compose (for Docker setup)
+- Python 3.10+ and Node.js 18+ (for manual setup)
 
 ### Setup
 
@@ -42,17 +86,6 @@ The world of motorsports is vast and covers many categories. It's challenging to
 If you wish to contribute data for an existing championship or add a new one, please refer to the [DATA_CONTRIBUTING.md](DATA_CONTRIBUTING.md) file. You will find a detailed guide on how to contribute, a list of currently covered championships, and those we would like to see added. Your help is invaluable in enriching the database and making RaceSchedules more comprehensive!
 
 Please see [roadmap.md](roadmap.md) for planned features and project vision.
-
-## Join the Community
-
-We have a **Discord server** for RaceSchedules where you can:
-
-* Chat with other motorsport fans
-* Share feedback and ideas
-* Report bugs and discuss technical topics
-* Stay updated on project announcements
-
-Join us and be part of the RaceSchedules community: [**Join Discord**](https://discord.gg/9Qsx3Uxu23)
 
 ## License
 
