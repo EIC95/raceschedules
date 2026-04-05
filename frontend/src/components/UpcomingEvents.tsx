@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { fetchUpcomingEvents } from '../api/events';
 import type { Event } from '../api/events';
 import EventCard from './EventCard';
+import { AlertCircle, Loader2 } from 'lucide-react';
 
 const UpcomingEvents: React.FC = () => {
     const [events, setEvents] = useState<Event[]>([]);
@@ -27,17 +28,28 @@ const UpcomingEvents: React.FC = () => {
     }, []);
 
     if (loading) {
-        return <div className="text-center py-8">Loading upcoming events...</div>;
+        return <div className="flex justify-center py-8"><Loader2 className='w-10 h-10 animate-spin'/></div>;
     }
 
     if (error) {
-        return <div className="text-center py-8 text-red-500">Error: {error}</div>;
+        return (
+            <div className="flex flex-col justify-center py-10">
+                <h2 className="text-2xl font-extrabold text-black uppercase mb-6 text-left w-full">
+                    Upcoming Events
+                </h2>
+
+                <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
+                    <AlertCircle className="w-4 h-4 opacity-60" />
+                    <span>{error}</span>
+                </div>
+            </div>
+        );
     }
 
     if (events.length === 0) {
         return <>
             <h2 className="text-2xl font-extrabold text-black uppercase mb-6">Upcoming Events</h2>
-            <div className="text-center py-8">No upcoming events found.</div>
+            <div className="text-center text-gray-500 text-sm py-8">No upcoming events found.</div>
         </>;
     }
 

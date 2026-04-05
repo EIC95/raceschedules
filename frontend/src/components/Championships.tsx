@@ -5,6 +5,7 @@ import type { Category } from '../api/categories';
 import { fetchChampionships } from '../api/championships';
 import type { Championship } from '../api/championships';
 import ChampionshipCard from './ChampionshipCard';
+import { AlertCircle, Loader2 } from 'lucide-react';
 
 const Championships: React.FC = () => {
     const [categories, setCategories] = useState<Category[]>([]);
@@ -59,11 +60,22 @@ const Championships: React.FC = () => {
 
 
     if (loadingCategories || loadingChampionships) {
-        return <div className="text-center py-8">Loading championships...</div>;
+        return <div className="flex justify-center py-8"><Loader2 className='w-10 h-10 animate-spin'/></div>;
     }
 
     if (error) {
-        return <div className="text-center py-8 text-red-500">Error: {error}</div>;
+        return (
+            <div className="flex flex-col justify-center py-10">
+                <h2 className="text-2xl font-extrabold text-black uppercase mb-6 text-left w-full">
+                    Championships & Exhibitions
+                </h2>
+
+                <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
+                    <AlertCircle className="w-4 h-4 opacity-60" />
+                    <span>{error}</span>
+                </div>
+            </div>
+        );
     }
 
     return (

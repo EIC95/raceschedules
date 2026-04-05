@@ -4,6 +4,7 @@ import SessionTimeDisplay from './SessionTimeDisplay';
 import CountdownTimer from './CountdownTimer';
 import { fetchNextSession } from '../api/sessions';
 import type { Session } from '../api/sessions'
+import { AlertCircle, Loader2 } from 'lucide-react';
 
 const NextSession: React.FC = () => {
     const [nextSession, setNextSession] = useState<Session | null>(null);
@@ -27,15 +28,22 @@ const NextSession: React.FC = () => {
     }, []);
 
     if (loading) {
-        return <div className="text-center py-8">Loading next session...</div>;
+        return <div className="flex justify-center py-8"><Loader2 className='w-10 h-10 animate-spin'/></div>;
     }
 
     if (error) {
-        return <div className="text-center py-8 text-red-500">Error: {error}</div>;
+        return (
+            <div className="flex items-center justify-center py-10">
+            <div className="flex items-center gap-2 text-gray-500 text-sm">
+                <AlertCircle className="w-4 h-4 opacity-60" />
+                <span>{error}</span>
+            </div>
+            </div>
+        );
     }
 
     if (!nextSession) {
-        return <div className="text-center py-8">No upcoming sessions found.</div>;
+        return <div className="text-center text-gray-500 text-sm py-8">No upcoming sessions found.</div>;
     }
 
     return (
