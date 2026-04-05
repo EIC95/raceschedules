@@ -61,7 +61,7 @@ const UpcomingEvents: React.FC = () => {
                         href={`/events/${event.slug}`}
                         className="flex items-center gap-4 py-3 px-1 rounded-sm hover:bg-gray-50 dark:hover:bg-neutral-900 group transition-colors"
                     >
-                        <span className="text-xs font-bold text-gray-400 dark:text-gray-500 tabular-nums shrink-0 w-16">
+                        <span className="text-xs font-bold text-gray-400 dark:text-gray-500 tabular-nums shrink-0 w-20">
                             {formatDateRange(event)}
                         </span>
                         <div className="flex-1 min-w-0">
