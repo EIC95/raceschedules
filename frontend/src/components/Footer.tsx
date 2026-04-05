@@ -4,8 +4,9 @@ const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="mt-14 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10 bg-white"> {/* Responsive padding */}
-            <hr className="border-t-2 border-black w-full mb-8" />
+        <footer className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 py-10 bg-white space-y-5"> {/* Responsive padding */}
+            <hr className="border-t-2 border-black w-full mt-4" />
+            <p className='text-justify text-sm text-gray-600 font-bold'>Motorsport never sleeps. From Formula 1 to MotoGP, WEC to NASCAR, there's always a session happening somewhere in the world. RaceSchedules brings a wide range of championship calendars into one place — open, and kept alive by a community of motorsport fans.</p>
             <div className="flex justify-between items-center text-sm text-gray-600 font-bold">
                 <p>© {currentYear} RACESCHEDULES</p>
                 <a
