@@ -40,6 +40,7 @@ This directory contains the backend API for the Race Schedules project, built us
     ```
     DATABASE_URL="postgresql://user:password@host:port/database_name"
     # Example: DATABASE_URL="postgresql://raceschedules:raceschedules@localhost:5432/raceschedules_db"
+    ALLOWED_ORIGINS="http://localhost:3000,https://localhost:3001.app"
     ```
 
 5.  **Run database migrations:**
