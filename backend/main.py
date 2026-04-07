@@ -1,13 +1,20 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import categories, championships, events, sessions, cron
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
 
 # Configure CORS
+allowed_origins_str = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000")
+allowed_origins = [origin.strip() for origin in allowed_origins_str.split(",")]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://raceschedules-next.vercel.app", "https://raceschedules.ibrahima.dev", "https://raceschedules-git-main-ibrahimas-projects-627d139e.vercel.app", "https://raceschedules.app", "https://www.raceschedules.app"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
