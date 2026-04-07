@@ -2,17 +2,28 @@
     "championship": "gt-world-challenge-europe",
     "events": [
         {
-        "slug": "paul-ricard-2026",
-        "name": "Circuit Paul Ricard",
-        "start_date": "2026-04-11",
-        "end_date": "2026-04-12",
-        "sessions": [
-            { "name": "Bronze Test", "start_time": "2026-04-11T09:00:00", "timezone": "Europe/Paris", "session_number": 1 },
-            { "name": "Free Practice 1", "start_time": "2026-04-11T14:25:00", "timezone": "Europe/Paris", "session_number": 2 },
-            { "name": "Free Practice 2", "start_time": "2026-04-11T19:25:00", "timezone": "Europe/Paris", "session_number": 3 },
-            { "name": "Qualifying", "start_time": "2026-04-12T12:05:00", "timezone": "Europe/Paris", "session_number": 4 },
-            { "name": "Race", "start_time": "2026-04-12T18:00:00", "timezone": "Europe/Paris", "session_number": 5 }
-        ]
+            "slug": "prologue-paul-ricard-2026",
+            "name": "Official Test Days - Prologue",
+            "start_date": "2026-04-08",
+            "end_date": "2026-04-09",
+            "sessions": [
+                { "name": "Morning Session 1", "start_time": "2026-04-08T09:00:00", "timezone": "Europe/Paris", "session_number": 1 },
+                { "name": "Afternoon Session 1", "start_time": "2026-04-08T14:00:00", "timezone": "Europe/Paris", "session_number": 2 },
+                { "name": "Morning Session 2", "start_time": "2026-04-09T09:00:00", "timezone": "Europe/Paris", "session_number": 3 }
+            ]
+        },
+        {
+            "slug": "paul-ricard-2026",
+            "name": "Circuit Paul Ricard",
+            "start_date": "2026-04-10",
+            "end_date": "2026-04-11",
+            "sessions": [
+                { "name": "Bronze Test", "start_time": "2026-04-10T09:00:00", "timezone": "Europe/Paris", "session_number": 1 },
+                { "name": "Free Practice 1", "start_time": "2026-04-10T14:25:00", "timezone": "Europe/Paris", "session_number": 2 },
+                { "name": "Free Practice 2", "start_time": "2026-04-10T19:25:00", "timezone": "Europe/Paris", "session_number": 3 },
+                { "name": "Qualifying", "start_time": "2026-04-11T12:05:00", "timezone": "Europe/Paris", "session_number": 4 },
+                { "name": "Race", "start_time": "2026-04-11T18:00:00", "timezone": "Europe/Paris", "session_number": 5 }
+            ]
         },
         {
             "slug": "brands-hatch-2026",
@@ -22,8 +33,15 @@
             "sessions": []
         },
         {
+            "slug": "prologue-spa-2026",
+            "name": "24 Hours of Spa - Prologue",
+            "start_date": "2026-05-19",
+            "end_date": "2026-05-20",
+            "sessions": []
+        },
+        {
             "slug": "monza-2026",
-            "name": "Autodromo Nazionale Monza",
+            "name": "Monza",
             "start_date": "2026-05-29",
             "end_date": "2026-05-31",
             "sessions": []
@@ -37,14 +55,14 @@
         },
         {
             "slug": "misano-2026",
-            "name": "Misano World Circuit Marco Simoncelli",
+            "name": "Misano",
             "start_date": "2026-07-17",
             "end_date": "2026-07-19",
             "sessions": []
         },
         {
             "slug": "magny-cours-2026",
-            "name": "Circuit de Nevers Magny-Cours",
+            "name": "Magny-Cours",
             "start_date": "2026-07-31",
             "end_date": "2026-08-02",
             "sessions": []
