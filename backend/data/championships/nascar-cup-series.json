@@ -80,7 +80,7 @@
         {
             "slug": "bristol-500-1-2026",
             "name": "Bristol 500",
-            "start_date": "2026-04-12",
+            "start_date": "2026-04-11",
             "end_date": "2026-04-12",
             "sessions": [
                 { "name": "Practice", "start_time": "2026-04-11T16:30:00", "timezone": "America/New_York", "session_number": 1 },

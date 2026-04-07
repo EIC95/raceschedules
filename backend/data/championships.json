@@ -15,5 +15,8 @@
   { "slug": "gt-world-challenge-america", "name": "GT World Challenge America", "category": "endurance-gt" },
   { "slug": "gt-world-challenge-australia", "name": "GT World Challenge Australia", "category": "endurance-gt" },
   { "slug": "super-formula", "name": "Super Formula", "category": "single-seaters" },
-  { "slug": "gt-world-challenge-asia", "name": "GT World Challenge Asia", "category": "endurance-gt" }
+  { "slug": "gt-world-challenge-asia", "name": "GT World Challenge Asia", "category": "endurance-gt" },
+  { "slug": "gt-world-challenge-europe", "name": "GT World Challenge Europe", "category": "endurance-gt" },
+  { "slug": "elms", "name": "ELMS", "category": "endurance-gt" },
+  { "slug": "le-mans-cup", "name": "Le Mans Cup", "category": "endurance-gt" }
 ]

@@ -1,0 +1,81 @@
+{
+    "championship": "gt-world-challenge-europe",
+    "events": [
+        {
+        "slug": "paul-ricard-2026",
+        "name": "Circuit Paul Ricard",
+        "start_date": "2026-04-11",
+        "end_date": "2026-04-12",
+        "sessions": [
+            { "name": "Bronze Test", "start_time": "2026-04-11T09:00:00", "timezone": "Europe/Paris", "session_number": 1 },
+            { "name": "Free Practice 1", "start_time": "2026-04-11T14:25:00", "timezone": "Europe/Paris", "session_number": 2 },
+            { "name": "Free Practice 2", "start_time": "2026-04-11T19:25:00", "timezone": "Europe/Paris", "session_number": 3 },
+            { "name": "Qualifying", "start_time": "2026-04-12T12:05:00", "timezone": "Europe/Paris", "session_number": 4 },
+            { "name": "Race", "start_time": "2026-04-12T18:00:00", "timezone": "Europe/Paris", "session_number": 5 }
+        ]
+        },
+        {
+            "slug": "brands-hatch-2026",
+            "name": "Brands Hatch",
+            "start_date": "2026-05-02",
+            "end_date": "2026-05-03",
+            "sessions": []
+        },
+        {
+            "slug": "monza-2026",
+            "name": "Autodromo Nazionale Monza",
+            "start_date": "2026-05-29",
+            "end_date": "2026-05-31",
+            "sessions": []
+        },
+        {
+            "slug": "spa-24h-2026",
+            "name": "24 Hours of Spa",
+            "start_date": "2026-06-24",
+            "end_date": "2026-06-28",
+            "sessions": []
+        },
+        {
+            "slug": "misano-2026",
+            "name": "Misano World Circuit Marco Simoncelli",
+            "start_date": "2026-07-17",
+            "end_date": "2026-07-19",
+            "sessions": []
+        },
+        {
+            "slug": "magny-cours-2026",
+            "name": "Circuit de Nevers Magny-Cours",
+            "start_date": "2026-07-31",
+            "end_date": "2026-08-02",
+            "sessions": []
+        },
+        {
+            "slug": "nurburgring-2026",
+            "name": "Nürburgring",
+            "start_date": "2026-08-28",
+            "end_date": "2026-08-30",
+            "sessions": []
+        },
+        {
+            "slug": "zandvoort-2026",
+            "name": "Circuit Zandvoort",
+            "start_date": "2026-09-18",
+            "end_date": "2026-09-20",
+            "sessions": []
+        },
+        {
+            "slug": "barcelona-2026",
+            "name": "Circuit de Barcelona-Catalunya",
+            "start_date": "2026-10-02",
+            "end_date": "2026-10-04",
+            "sessions": []
+        },
+        {
+            "slug": "portimao-2026",
+            "name": "Algarve International Circuit",
+            "start_date": "2026-10-16",
+            "end_date": "2026-10-18",
+            "sessions": []
+        }
+    ]
+}

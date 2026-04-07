@@ -1,0 +1,59 @@
+{
+    "championship": "le-mans-cup",
+    "events": [
+        {
+            "slug": "barcelona-2026",
+            "name": "Barcelona Round",
+            "start_date": "2026-04-10",
+            "end_date": "2026-04-11",
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-04-10T09:50:00", "timezone": "Europe/Madrid", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-04-10T17:35:00", "timezone": "Europe/Madrid", "session_number": 2 },
+                { "name": "Qualifying 1", "start_time": "2026-04-11T12:30:00", "timezone": "Europe/Madrid", "session_number": 3 },
+                { "name": "Qualifying 2", "start_time": "2026-04-11T12:55:00", "timezone": "Europe/Madrid", "session_number": 4 },
+                { "name": "Qualifying 3", "start_time": "2026-04-11T13:20:00", "timezone": "Europe/Madrid", "session_number": 5 },
+                { "name": "Race", "start_time": "2026-04-11T18:20:00", "timezone": "Europe/Madrid", "session_number": 6 }
+            ]
+        },
+        {
+            "slug": "paul-ricard-2026",
+            "name": "Paul Ricard Round",
+            "start_date": "2026-05-01",
+            "end_date": "2026-05-02",
+            "sessions": []
+        },
+        {
+            "slug": "road-to-le-mans-2026",
+            "name": "Road To Le Mans",
+            "start_date": "2026-06-10",
+            "end_date": "2026-06-12",
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-06-10T00:00:00", "timezone": "Europe/Paris", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-06-10T00:00:00", "timezone": "Europe/Paris", "session_number": 2 },
+                { "name": "Qualifying", "start_time": "2026-06-11T00:00:00", "timezone": "Europe/Paris", "session_number": 3 },
+                { "name": "Race", "start_time": "2026-06-12T00:00:00", "timezone": "Europe/Paris", "session_number": 4 }
+            ]
+        },
+        {
+            "slug": "spa-2026",
+            "name": "Spa-Francorchamps Round",
+            "start_date": "2026-08-21",
+            "end_date": "2026-08-22",
+            "sessions": []
+        },
+        {
+            "slug": "silverstone-2026",
+            "name": "Silverstone Round",
+            "start_date": "2026-09-11",
+            "end_date": "2026-09-12",
+            "sessions": []
+        },
+        {
+            "slug": "portimao-2026",
+            "name": "Portimão Round",
+            "start_date": "2026-10-09",
+            "end_date": "2026-10-10",
+            "sessions": []
+        }
+    ]
+}

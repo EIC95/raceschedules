@@ -1,0 +1,56 @@
+{
+    "championship": "elms",
+    "events": [
+        {
+        "slug": "4-hours-of-barcelona-2026",
+        "name": "4 Hours of Barcelona",
+        "start_date": "2026-04-10",
+        "end_date": "2026-04-12",
+        "sessions": [
+            { "name": "Free Practice 1", "start_time": "2026-04-10T11:50:00", "timezone": "Europe/Madrid", "session_number": 1 },
+            { "name": "Bronze Test", "start_time": "2026-04-10T16:10:00", "timezone": "Europe/Madrid", "session_number": 2 },
+            { "name": "Free Practice 2", "start_time": "2026-04-11T10:10:00", "timezone": "Europe/Madrid", "session_number": 3 },
+            { "name": "Qualifying LMGT3", "start_time": "2026-04-11T15:05:00", "timezone": "Europe/Madrid", "session_number": 4 },
+            { "name": "Qualifying LMP3", "start_time": "2026-04-11T15:30:00", "timezone": "Europe/Madrid", "session_number": 5 },
+            { "name": "Qualifying LMP2 Pro/Am", "start_time": "2026-04-11T15:55:00", "timezone": "Europe/Madrid", "session_number": 6 },
+            { "name": "Qualifying LMP2", "start_time": "2026-04-11T16:20:00", "timezone": "Europe/Madrid", "session_number": 7 },
+            { "name": "Race", "start_time": "2026-04-12T12:00:00", "timezone": "Europe/Madrid", "session_number": 8 }
+        ]
+        },
+        {
+            "slug": "4-hours-of-le-castellet-2026",
+            "name": "4 Hours of Le Castellet",
+            "start_date": "2026-05-01",
+            "end_date": "2026-05-03",
+            "sessions": []
+        },
+        {
+            "slug": "4-hours-of-imola-2026",
+            "name": "4 Hours of Imola",
+            "start_date": "2026-07-03",
+            "end_date": "2026-07-05",
+            "sessions": []
+        },
+        {
+            "slug": "4-hours-of-spa-2026",
+            "name": "4 Hours of Spa-Francorchamps",
+            "start_date": "2026-08-21",
+            "end_date": "2026-08-23",
+            "sessions": []
+        },
+        {
+            "slug": "4-hours-of-silverstone-2026",
+            "name": "Goodyear 4 Hours of Silverstone",
+            "start_date": "2026-09-11",
+            "end_date": "2026-09-13",
+            "sessions": []
+        },
+        {
+            "slug": "4-hours-of-portimao-2026",
+            "name": "4 Hours of Portimão",
+            "start_date": "2026-10-08",
+            "end_date": "2026-10-10",
+            "sessions": []
+        }
+    ]
+}
