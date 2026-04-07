@@ -6,6 +6,10 @@ import { ChevronRight, AlertCircle, Loader2 } from 'lucide-react';
 import { fetchUpcomingEvents } from '../api/events';
 import type { Event } from '../api/events';
 
+interface UpcomingEventsProps {
+    initialData?: Event[];
+}
+
 function formatDateRange(event: Event): string {
     const start = dayjs(event.start_date);
     const end = dayjs(event.end_date);
@@ -17,17 +21,19 @@ function formatDateRange(event: Event): string {
     return `${start.format('MMM D')}–${end.format('MMM D')}`.toUpperCase();
 }
 
-const UpcomingEvents: React.FC = () => {
-    const [events, setEvents] = useState<Event[]>([]);
-    const [loading, setLoading] = useState(true);
+const UpcomingEvents: React.FC<UpcomingEventsProps> = ({ initialData }) => {
+    const [events, setEvents] = useState<Event[]>(initialData || []);
+    const [loading, setLoading] = useState(!initialData);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetchUpcomingEvents()
-            .then(setEvents)
-            .catch(() => setError('Failed to load upcoming events.'))
-            .finally(() => setLoading(false));
-    }, []);
+        if (!initialData) {
+            fetchUpcomingEvents()
+                .then(setEvents)
+                .catch(() => setError('Failed to load upcoming events.'))
+                .finally(() => setLoading(false));
+        }
+    }, [initialData]);
 
     if (loading) {
         return <div className="flex justify-center py-8"><Loader2 className="w-5 h-5 animate-spin text-gray-400" /></div>;

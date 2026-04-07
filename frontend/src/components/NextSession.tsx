@@ -6,17 +6,23 @@ import { fetchNextSession } from '../api/sessions';
 import type { Session } from '../api/sessions';
 import { AlertCircle, Loader2 } from 'lucide-react';
 
-const NextSession: React.FC = () => {
-    const [nextSession, setNextSession] = useState<Session | null>(null);
-    const [loading, setLoading] = useState<boolean>(true);
+interface NextSessionProps {
+    initialData?: Session | null;
+}
+
+const NextSession: React.FC<NextSessionProps> = ({ initialData }) => {
+    const [nextSession, setNextSession] = useState<Session | null>(initialData || null);
+    const [loading, setLoading] = useState(!initialData && initialData !== null);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetchNextSession()
-            .then(setNextSession)
-            .catch(() => setError('Failed to load next session.'))
-            .finally(() => setLoading(false));
-    }, []);
+        if (initialData === undefined) {
+            fetchNextSession()
+                .then(setNextSession)
+                .catch(() => setError('Failed to load next session.'))
+                .finally(() => setLoading(false));
+        }
+    }, [initialData]);
 
     if (loading) {
         return <div className="flex justify-center py-10"><Loader2 className="w-5 h-5 animate-spin text-gray-400" /></div>;

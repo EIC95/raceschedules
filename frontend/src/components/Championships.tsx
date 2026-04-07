@@ -7,46 +7,57 @@ import type { Championship } from '../api/championships';
 import ChampionshipCard from './ChampionshipCard';
 import { AlertCircle, Loader2 } from 'lucide-react';
 
-const Championships: React.FC = () => {
-    const [categories, setCategories] = useState<Category[]>([]);
+interface ChampionshipsProps {
+    initialChampionships?: Championship[];
+    initialCategories?: Category[];
+}
+
+const Championships: React.FC<ChampionshipsProps> = ({ initialChampionships, initialCategories }) => {
+    const [categories, setCategories] = useState<Category[]>(
+        initialCategories ? [{ id: 0, name: 'All' }, ...initialCategories] : []
+    );
     const [selectedCategoryId, setSelectedCategoryId] = useState<number>(0);
-    const [allChampionships, setAllChampionships] = useState<Championship[]>([]);
-    const [filteredChampionships, setFilteredChampionships] = useState<Championship[]>([]);
-    const [loadingCategories, setLoadingCategories] = useState<boolean>(true);
-    const [loadingChampionships, setLoadingChampionships] = useState<boolean>(true);
+    const [allChampionships, setAllChampionships] = useState<Championship[]>(initialChampionships || []);
+    const [filteredChampionships, setFilteredChampionships] = useState<Championship[]>(initialChampionships || []);
+    const [loadingCategories, setLoadingCategories] = useState<boolean>(!initialCategories);
+    const [loadingChampionships, setLoadingChampionships] = useState<boolean>(!initialChampionships);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const getCategories = async () => {
-            try {
-                setLoadingCategories(true);
-                const data = await fetchCategories();
-                setCategories([{ id: 0, name: 'All' }, ...data]);
-            } catch (err) {
-                console.error('Error fetching categories:', err);
-                setError('Failed to load categories.');
-            } finally {
-                setLoadingCategories(false);
-            }
-        };
-        getCategories();
-    }, []);
+        if (!initialCategories) {
+            const getCategories = async () => {
+                try {
+                    setLoadingCategories(true);
+                    const data = await fetchCategories();
+                    setCategories([{ id: 0, name: 'All' }, ...data]);
+                } catch (err) {
+                    console.error('Error fetching categories:', err);
+                    setError('Failed to load categories.');
+                } finally {
+                    setLoadingCategories(false);
+                }
+            };
+            getCategories();
+        }
+    }, [initialCategories]);
 
     useEffect(() => {
-        const getAllChampionships = async () => {
-            try {
-                setLoadingChampionships(true);
-                const data = await fetchChampionships();
-                setAllChampionships(data);
-            } catch (err) {
-                console.error('Error fetching all championships:', err);
-                setError('Failed to load championships.');
-            } finally {
-                setLoadingChampionships(false);
-            }
-        };
-        getAllChampionships();
-    }, []);
+        if (!initialChampionships) {
+            const getAllChampionships = async () => {
+                try {
+                    setLoadingChampionships(true);
+                    const data = await fetchChampionships();
+                    setAllChampionships(data);
+                } catch (err) {
+                    console.error('Error fetching all championships:', err);
+                    setError('Failed to load championships.');
+                } finally {
+                    setLoadingChampionships(false);
+                }
+            };
+            getAllChampionships();
+        }
+    }, [initialChampionships]);
 
     useEffect(() => {
         if (selectedCategoryId === 0) {

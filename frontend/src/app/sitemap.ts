@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { fetchChampionships, type Championship } from '../api/championships'
-import { fetchUpcomingEvents, type Event } from '../api/events'
+import { fetchEvents, type Event } from '../api/events'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://raceschedules.app'
@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     } catch (err) { }
 
     try {
-        events = await fetchUpcomingEvents()
+        events = await fetchEvents()
     } catch (err) { }
 
     const championshipUrls = championships.map((c) => ({

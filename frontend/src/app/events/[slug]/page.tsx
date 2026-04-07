@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ChevronLeft } from 'lucide-react';
 import SessionCard from '../../../components/SessionCard';
-import { fetchEventDetails, fetchUpcomingEvents } from '../../../api/events';
+import { fetchEventDetails, fetchEvents } from '../../../api/events';
 import dayjs from 'dayjs';
 import Footer from '../../../components/Footer';
 import type { Metadata } from 'next';
@@ -10,11 +10,9 @@ interface Params {
     params: Promise<{ slug: string }>;
 }
 
-export const dynamic = 'force-dynamic';
-
 export async function generateStaticParams() {
     try {
-        const events = await fetchUpcomingEvents();
+        const events = await fetchEvents();
         return events.map((e) => ({ slug: e.slug }));
     } catch (e) {
         return [];

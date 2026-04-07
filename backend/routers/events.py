@@ -88,6 +88,11 @@ def read_upcoming_events(db: Session = Depends(get_db)):
     return upcoming_events
 
 
+@router.get("/events", response_model=List[schemas.EventRead])
+def read_all_events(db: Session = Depends(get_db)):
+    return db.query(models.Event).options(joinedload(models.Event.championship)).all()
+
+
 @router.get("/events/{slug}", response_model=schemas.EventDetail)
 def read_event_details(slug: str, db: Session = Depends(get_db)):
     db_event = db.query(models.Event).options(joinedload(models.Event.sessions)).filter(models.Event.slug == slug).first()

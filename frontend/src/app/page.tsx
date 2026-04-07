@@ -2,6 +2,10 @@ import NextSession from "../components/NextSession";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Championships from "../components/Championships";
 import type { Metadata } from 'next';
+import { fetchUpcomingEvents } from '../api/events';
+import { fetchChampionships } from '../api/championships';
+import { fetchCategories } from '../api/categories';
+import { fetchNextSession } from '../api/sessions';
 
 export const metadata: Metadata = {
     title: "RaceSchedules - Home",
@@ -14,18 +18,26 @@ export const metadata: Metadata = {
     }
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+    // Fetch data on the server for SEO
+    const [upcomingEvents, championships, categories, nextSession] = await Promise.all([
+        fetchUpcomingEvents().catch(() => []),
+        fetchChampionships().catch(() => []),
+        fetchCategories().catch(() => []),
+        fetchNextSession().catch(() => null),
+    ]);
+
     return (
         <>
             <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
                 <section>
-                    <NextSession />
+                    <NextSession initialData={nextSession} />
                 </section>
                 <section className="mt-12">
-                    <UpcomingEvents />
+                    <UpcomingEvents initialData={upcomingEvents} />
                 </section>
                 <section className="mt-16">
-                    <Championships />
+                    <Championships initialChampionships={championships} initialCategories={categories} />
                 </section>
             </main>
         </>

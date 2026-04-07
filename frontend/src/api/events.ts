@@ -37,6 +37,16 @@ export const fetchUpcomingEvents = async (): Promise<Event[]> => {
     }
 };
 
+export const fetchEvents = async (): Promise<Event[]> => {
+    try {
+        const response = await api.get<Event[]>('/events');
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching all events:', error);
+        throw error;
+    }
+};
+
 export const fetchEventDetails = async (slug: string): Promise<EventDetail> => {
     try {
         const response = await api.get<EventDetail>(`/events/${slug}`);
