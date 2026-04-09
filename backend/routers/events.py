@@ -38,7 +38,8 @@ def query_events_in_range(db, start, end, now=None, require_active_session=False
 
 @router.get("/events/upcoming", response_model=List[schemas.EventRead])
 def read_upcoming_events(db: Session = Depends(get_db)):
-    now = datetime.now(timezone.utc)
+    # Use naive UTC datetime for comparison with TIMESTAMP WITHOUT TIME ZONE
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
 
     # --- 1. CURRENT WEEK-END ---
     start_of_week, end_of_week = get_week_bounds(now)

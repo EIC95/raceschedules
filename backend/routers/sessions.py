@@ -8,7 +8,8 @@ router = APIRouter()
 
 @router.get("/sessions/next", response_model=schemas.Session)
 def read_next_session(db: Session = Depends(get_db)):
-    now = datetime.now(timezone.utc)
+    # Use naive UTC datetime for comparison with TIMESTAMP WITHOUT TIME ZONE
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
     next_session = db.query(models.Session) \
         .options(
             joinedload(models.Session.event).joinedload(models.Event.championship)

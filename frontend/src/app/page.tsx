@@ -7,6 +7,8 @@ import { fetchChampionships } from '../api/championships';
 import { fetchCategories } from '../api/categories';
 import { fetchNextSession } from '../api/sessions';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
     title: "RaceSchedules - Home",
     description: "Your go-to calendar for motorsport schedules. Follow Formula 1, MotoGP, WEC, and many other racing series — all in one place, always up to date.",
