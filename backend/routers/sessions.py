@@ -15,6 +15,7 @@ def read_next_session(db: Session = Depends(get_db)):
             joinedload(models.Session.event).joinedload(models.Event.championship)
         ) \
         .filter(models.Session.start_time > now) \
+        .filter(models.Event.cancelled == False) \
         .order_by(models.Session.start_time) \
         .first()
     if next_session is None:
