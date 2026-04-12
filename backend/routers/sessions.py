@@ -11,6 +11,7 @@ def read_next_session(db: Session = Depends(get_db)):
     # Use naive UTC datetime for comparison with TIMESTAMP WITHOUT TIME ZONE
     now = datetime.now(timezone.utc).replace(tzinfo=None)
     next_session = db.query(models.Session) \
+        .join(models.Session.event) \
         .options(
             joinedload(models.Session.event).joinedload(models.Event.championship)
         ) \
