@@ -61,7 +61,22 @@
             "name": "Christchurch Super 440",
             "start_date": "2026-04-17",
             "end_date": "2026-04-19",
-            "sessions": []
+            "sessions": [
+                {"name": "Practice", "session_number": 1, "start_time": "2026-04-17T09:35:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 1 Race 1", "session_number": 2, "start_time": "2026-04-17T14:15:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 2 Race 1", "session_number": 3, "start_time": "2026-04-17T14:37:00", "timezone": "Pacific/Auckland"},
+                {"name": "Race 1", "session_number": 4, "start_time": "2026-04-17T16:35:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 1 Race 2", "session_number": 5, "start_time": "2026-04-18T10:05:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 2 Race 2", "session_number": 6, "start_time": "2026-04-18T10:25:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 1 Race 3", "session_number": 7, "start_time": "2026-04-18T11:00:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 2 Race 3", "session_number": 8, "start_time": "2026-04-18T11:20:00", "timezone": "Pacific/Auckland"},
+                {"name": "Race 2", "session_number": 9, "start_time": "2026-04-18T12:45:00", "timezone": "Pacific/Auckland"},
+                {"name": "Race 3", "session_number": 10, "start_time": "2026-04-18T16:10:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 1 Race 4", "session_number": 11, "start_time": "2026-04-19T11:50:00", "timezone": "Pacific/Auckland"},
+                {"name": "Qualifying 2 Race 4", "session_number": 12, "start_time": "2026-04-19T12:10:00", "timezone": "Pacific/Auckland"},
+                {"name": "Top Ten Shootout", "session_number": 13, "start_time": "2026-04-19T12:45:00", "timezone": "Pacific/Auckland"},
+                {"name": "Race 4", "session_number": 14, "start_time": "2026-04-19T15:05:00", "timezone": "Pacific/Auckland"}
+            ]
         },
         {
             "slug": "tasmania-super-440-2026",

@@ -37,14 +37,46 @@
       "name": "ADAC 24h Nürburgring Qualifier 1",
       "start_date": "2026-04-18",
       "end_date": "2026-04-18",
-      "sessions": []
+      "sessions": [
+        {
+          "name": "Qualifying Race 1",
+          "session_number": 1,
+          "start_time": "2026-04-18T08:30:00",
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "name": "Race 1",
+          "session_number": 2,
+          "start_time": "2026-04-18T17:30:00",
+          "timezone": "Europe/Berlin"
+        }
+      ]
     },
     {
       "slug": "nls5-24h-qualifier-2-2026",
       "name": "ADAC 24h Nürburgring Qualifier 2",
       "start_date": "2026-04-19",
       "end_date": "2026-04-19",
-      "sessions": []
+      "sessions": [
+        {
+          "name": "Qualifying Race 2",
+          "session_number": 1,
+          "start_time": "2026-04-19T08:15:00",
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "name": "Top Qualifying",
+          "session_number": 2,
+          "start_time": "2026-04-19T10:40:00",
+          "timezone": "Europe/Berlin"
+        },
+        {
+          "name": "Race 2",
+          "session_number": 3,
+          "start_time": "2026-04-19T13:00:00",
+          "timezone": "Europe/Berlin"
+        }
+      ]
     },
     {
       "slug": "nls6-2026",

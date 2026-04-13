@@ -91,9 +91,13 @@
         {
             "slug": "kansas-400-1-2026",
             "name": "Kansas 400",
-            "start_date": "2026-04-19",
+            "start_date": "2026-04-18",
             "end_date": "2026-04-19",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice", "session_number": 1, "start_time": "2026-04-18T16:00:00", "timezone": "America/Chicago" },
+                { "name": "Qualifying", "session_number": 2, "start_time": "2026-04-18T17:10:00", "timezone": "America/Chicago" },
+                { "name": "Race", "session_number": 3, "start_time": "2026-04-19T13:00:00", "timezone": "America/Chicago" }
+            ]
         },
         {
             "slug": "talladega-500-1-2026",

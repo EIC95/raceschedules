@@ -23,7 +23,17 @@
       "name": "12H Spa-Francorchamps",
       "start_date": "2026-04-17",
       "end_date": "2026-04-19",
-      "sessions": []
+      "sessions": [
+        { "name": "Free Practice", "session_number": 1, "start_time": "2026-04-17T10:45:00", "timezone": "Europe/Brussels" },
+        { "name": "Qualifying 1 - TCE/GT4/GTX/992", "session_number": 2, "start_time": "2026-04-17T15:00:00", "timezone": "Europe/Brussels" },
+        { "name": "Qualifying 2 - TCE/GT4/GTX/992", "session_number": 3, "start_time": "2026-04-17T15:22:00", "timezone": "Europe/Brussels" },
+        { "name": "Qualifying 3 - TCE/GT4/GTX/992", "session_number": 4, "start_time": "2026-04-17T15:44:00", "timezone": "Europe/Brussels" },
+        { "name": "Qualifying 1 - GT3", "session_number": 5, "start_time": "2026-04-17T16:10:00", "timezone": "Europe/Brussels" },
+        { "name": "Qualifying 2 - GT3", "session_number": 6, "start_time": "2026-04-17T16:32:00", "timezone": "Europe/Brussels" },
+        { "name": "Qualifying 3 - GT3", "session_number": 7, "start_time": "2026-04-17T16:54:00", "timezone": "Europe/Brussels" },
+        { "name": "Race Part 1", "session_number": 8, "start_time": "2026-04-18T11:30:00", "timezone": "Europe/Brussels" },
+        { "name": "Race Part 2", "session_number": 9, "start_time": "2026-04-19T10:30:00", "timezone": "Europe/Brussels" }
+      ]
     },
     {
       "slug": "12h-paul-ricard-2026",

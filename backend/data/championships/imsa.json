@@ -45,9 +45,15 @@
         {
             "slug": "long-beach-grand-prix-2026",
             "name": "Long Beach Grand Prix",
-            "start_date": "2026-04-18",
+            "start_date": "2026-04-17",
             "end_date": "2026-04-18",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice 1", "session_number": 1, "start_time": "2026-04-17T09:00:00", "timezone": "America/Los_Angeles" },
+                { "name": "Practice 2", "session_number": 2, "start_time": "2026-04-17T13:10:00", "timezone": "America/Los_Angeles" },
+                { "name": "Qualifying", "session_number": 3, "start_time": "2026-04-17T17:25:00", "timezone": "America/Los_Angeles" },
+                { "name": "Pre-Race", "session_number": 4, "start_time": "2026-04-18T12:05:00", "timezone": "America/Los_Angeles" },
+                { "name": "Race", "session_number": 5, "start_time": "2026-04-18T13:00:00", "timezone": "America/Los_Angeles" }
+            ]
         },
         {
             "slug": "laguna-seca-2026",
