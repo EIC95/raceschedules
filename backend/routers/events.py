@@ -49,7 +49,7 @@ def read_upcoming_events(db: Session = Depends(get_db)):
         start_of_week,
         end_of_week,
         now=now,
-        require_active_session=True
+        require_active_session=False
     )
 
     if events_this_week:
