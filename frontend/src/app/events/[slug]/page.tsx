@@ -6,6 +6,8 @@ import dayjs from 'dayjs';
 import Footer from '../../../components/Footer';
 import type { Metadata } from 'next';
 
+export const dynamic = 'force-dynamic';
+
 interface Params {
     params: Promise<{ slug: string }>;
 }
