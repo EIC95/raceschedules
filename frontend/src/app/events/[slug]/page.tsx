@@ -6,6 +6,7 @@ import dayjs from 'dayjs';
 import Footer from '../../../components/Footer';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 
 export const revalidate = 3600;
 
@@ -95,7 +96,8 @@ export default async function EventDetailPage({ params }: Params) {
 
     return (
         <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-            <script
+            <Script
+                id="event-json-ld"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
