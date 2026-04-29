@@ -1,0 +1,69 @@
+{
+  "championship": "dtm",
+  "events": [
+    {
+      "slug": "red-bull-ring-2026",
+      "name": "Red Bull Ring",
+      "start_date": "2026-04-23",
+      "end_date": "2026-04-24",
+      "sessions": [
+        { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-04-24T10:25:00", "timezone": "Europe/Vienna" },
+        { "name": "Free Practice 2", "session_number": 2, "start_time": "2026-04-24T12:15:00", "timezone": "Europe/Vienna" },
+        { "name": "Free Practice 3", "session_number": 3, "start_time": "2026-04-24T16:00:00", "timezone": "Europe/Vienna" },
+        { "name": "Qualifying 1", "session_number": 4, "start_time": "2026-04-25T09:40:00", "timezone": "Europe/Vienna" },
+        { "name": "Race 1", "session_number": 5, "start_time": "2026-04-25T13:30:00", "timezone": "Europe/Vienna" },
+        { "name": "Qualifying 2", "session_number": 6, "start_time": "2026-04-26T09:30:00", "timezone": "Europe/Vienna" },
+        { "name": "Race 2", "session_number": 7, "start_time": "2026-04-26T13:30:00", "timezone": "Europe/Vienna" }
+      ]
+    },
+    {
+      "slug": "zandvoort-2026",
+      "name": "Circuit Zandvoort",
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-24",
+      "sessions": []
+    },
+    {
+      "slug": "lausitzring-2026",
+      "name": "Lausitzring",
+      "start_date": "2026-06-19",
+      "end_date": "2026-06-21",
+      "sessions": []
+    },
+    {
+      "slug": "norisring-2026",
+      "name": "Norisring",
+      "start_date": "2026-07-02",
+      "end_date": "2026-07-04",
+      "sessions": []
+    },
+    {
+      "slug": "oschersleben-2026",
+      "name": "Motorsport Arena Oschersleben",
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-25",
+      "sessions": []
+    },
+    {
+      "slug": "nurburgring-2026",
+      "name": "Nürburgring",
+      "start_date": "2026-08-14",
+      "end_date": "2026-08-16",
+      "sessions": []
+    },
+    {
+      "slug": "sachsenring-2026",
+      "name": "Sachsenring",
+      "start_date": "2026-09-10",
+      "end_date": "2026-09-12",
+      "sessions": []
+    },
+    {
+      "slug": "hockenheimring-2026",
+      "name": "Hockenheimring",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-10",
+      "sessions": []
+    }
+  ]
+}

@@ -58,9 +58,14 @@
         {
             "slug": "laguna-seca-2026",
             "name": "Laguna Seca",
-            "start_date": "2026-05-03",
+            "start_date": "2026-05-01",
             "end_date": "2026-05-03",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice 1", "session_number": 1, "start_time": "2026-05-01T15:20:00", "timezone": "America/Los_Angeles" },
+                { "name": "Practice 2", "session_number": 2, "start_time": "2026-05-02T09:55:00", "timezone": "America/Los_Angeles" },
+                { "name": "Qualifying", "session_number": 3, "start_time": "2026-05-02T15:15:00", "timezone": "America/Los_Angeles" },
+                { "name": "Race", "session_number": 4, "start_time": "2026-05-03T13:10:00", "timezone": "America/Los_Angeles" }
+            ]
         },
         {
             "slug": "detroit-grand-prix-2026",

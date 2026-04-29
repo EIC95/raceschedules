@@ -30,7 +30,13 @@
             "name": "Brands Hatch",
             "start_date": "2026-05-02",
             "end_date": "2026-05-03",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-05-02T09:35:00", "timezone": "Europe/London" },
+                { "name": "Free Practice 2", "session_number": 2, "start_time": "2026-05-02T12:00:00", "timezone": "Europe/London" },
+                { "name": "Qualifying", "session_number": 3, "start_time": "2026-05-02T16:40:00", "timezone": "Europe/London" },
+                { "name": "Race 1", "session_number": 4, "start_time": "2026-05-03T11:15:00", "timezone": "Europe/London" },
+                { "name": "Race 2", "session_number": 5, "start_time": "2026-05-03T15:45:00", "timezone": "Europe/London" }
+            ]
         },
         {
             "slug": "prologue-spa-2026",

@@ -17,6 +17,7 @@
   { "slug": "super-formula", "name": "Super Formula", "category": "single-seaters" },
   { "slug": "gt-world-challenge-asia", "name": "GT World Challenge Asia", "category": "endurance-gt" },
   { "slug": "gt-world-challenge-europe", "name": "GT World Challenge Europe", "category": "endurance-gt" },
-  { "slug": "elms", "name": "ELMS", "category": "endurance-gt" },
-  { "slug": "le-mans-cup", "name": "Le Mans Cup", "category": "endurance-gt" }
+  { "slug": "elms", "name": "European Le Mans Series", "category": "endurance-gt" },
+  { "slug": "le-mans-cup", "name": "Le Mans Cup", "category": "endurance-gt" },
+  { "slug": "dtm", "name": "DTM", "category": "stock-touring" }
 ]

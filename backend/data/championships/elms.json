@@ -22,7 +22,16 @@
             "name": "4 Hours of Le Castellet",
             "start_date": "2026-05-01",
             "end_date": "2026-05-03",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-05-01T11:50:00", "timezone": "Europe/Paris" },
+                { "name": "Bronze Collective Tests", "session_number": 2, "start_time": "2026-05-01T16:20:00", "timezone": "Europe/Paris" },
+                { "name": "Free Practice 2", "session_number": 3, "start_time": "2026-05-02T10:10:00", "timezone": "Europe/Paris" },
+                { "name": "Qualifying - LMGT3", "session_number": 4, "start_time": "2026-05-02T15:10:00", "timezone": "Europe/Paris" },
+                { "name": "Qualifying - LMP3", "session_number": 5, "start_time": "2026-05-02T15:32:00", "timezone": "Europe/Paris" },
+                { "name": "Qualifying - LMP2 PRO/AM", "session_number": 6, "start_time": "2026-05-02T15:54:00", "timezone": "Europe/Paris" },
+                { "name": "Qualifying - LMP2", "session_number": 7, "start_time": "2026-05-02T16:16:00", "timezone": "Europe/Paris" },
+                { "name": "Race", "session_number": 8, "start_time": "2026-05-03T12:00:00", "timezone": "Europe/Paris" }
+            ]
         },
         {
             "slug": "4-hours-of-imola-2026",

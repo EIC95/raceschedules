@@ -118,7 +118,27 @@
             "name": "Canary Islands Rally",
             "start_date": "2026-04-23",
             "end_date": "2026-04-26",
-            "sessions": []
+            "sessions": [
+                { "name": "Shakedown - Santa Brígida", "session_number": 1, "start_time": "2026-04-23T11:01:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS1 BP Ultimate - Gran Canaria Stadium", "session_number": 2, "start_time": "2026-04-23T18:05:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS2 Valleseco - Artenara 1", "session_number": 3, "start_time": "2026-04-24T08:20:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS3 Tejeda - San Mateo 1", "session_number": 4, "start_time": "2026-04-24T09:23:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS4 Mogán - La Aldea 1", "session_number": 5, "start_time": "2026-04-24T11:16:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS5 Valleseco - Artenara 2", "session_number": 6, "start_time": "2026-04-24T14:56:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS6 Tejeda - San Mateo 2", "session_number": 7, "start_time": "2026-04-24T15:59:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS7 Mogán - La Aldea 2", "session_number": 8, "start_time": "2026-04-24T17:52:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS8 BP Ultimate - Las Palmas de Gran Canaria", "session_number": 9, "start_time": "2026-04-24T20:25:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS9 Maspalomas 1", "session_number": 10, "start_time": "2026-04-25T08:20:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS10 Arucas - Firgas - Teror 1", "session_number": 11, "start_time": "2026-04-25T09:35:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS11 Moya - Gáldar 1", "session_number": 12, "start_time": "2026-04-25T10:51:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS12 Maspalomas 2", "session_number": 13, "start_time": "2026-04-25T14:50:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS13 Arucas - Firgas - Teror 2", "session_number": 14, "start_time": "2026-04-25T16:05:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS14 Moya - Gáldar 2", "session_number": 15, "start_time": "2026-04-25T17:21:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS15 Ingenio - Telde - Valsequillo 1", "session_number": 16, "start_time": "2026-04-26T07:35:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS16 Santa Lucía - Agüimes 1", "session_number": 17, "start_time": "2026-04-26T09:05:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS17 Ingenio - Telde - Valsequillo 2", "session_number": 18, "start_time": "2026-04-26T10:50:00", "timezone": "Atlantic/Canary" },
+                { "name": "SS18 Wolf Power Stage - Santa Lucía - Agüimes 2", "session_number": 19, "start_time": "2026-04-26T13:15:00", "timezone": "Atlantic/Canary" }
+            ]
         },
         {
             "slug": "portugal-rally",

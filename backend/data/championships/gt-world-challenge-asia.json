@@ -19,9 +19,17 @@
     {
       "slug": "mandalika-2026",
       "name": "Pertamina Mandalika International Circuit",
-      "start_date": "2026-05-02",
+      "start_date": "2026-05-01",
       "end_date": "2026-05-03",
-      "sessions": []
+      "sessions": [
+        { "name": "Official Practice", "session_number": 1, "start_time": "2026-05-01T10:20:00", "timezone": "Asia/Makassar" },
+        { "name": "Bronze Session", "session_number": 2, "start_time": "2026-05-01T11:30:00", "timezone": "Asia/Makassar" },
+        { "name": "Pre-Qualifying", "session_number": 3, "start_time": "2026-05-01T14:45:00", "timezone": "Asia/Makassar" },
+        { "name": "Qualifying 1", "session_number": 4, "start_time": "2026-05-02T09:15:00", "timezone": "Asia/Makassar" },
+        { "name": "Qualifying 2", "session_number": 5, "start_time": "2026-05-02T09:37:00", "timezone": "Asia/Makassar" },
+        { "name": "Race 1", "session_number": 6, "start_time": "2026-05-02T13:30:00", "timezone": "Asia/Makassar" },
+        { "name": "Race 2", "session_number": 7, "start_time": "2026-05-03T11:30:00", "timezone": "Asia/Makassar" }
+      ]
     },
     {
       "slug": "shanghai-2026",

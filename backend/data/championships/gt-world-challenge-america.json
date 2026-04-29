@@ -19,7 +19,15 @@
       "name": "Circuit of the Americas",
       "start_date": "2026-04-24",
       "end_date": "2026-04-26",
-      "sessions": []
+      "sessions": [
+        { "name": "Test Session", "session_number": 1, "start_time": "2026-04-24T09:35:00", "timezone": "America/Chicago" },
+        { "name": "Bronze Test", "session_number": 2, "start_time": "2026-04-24T13:35:00", "timezone": "America/Chicago" },
+        { "name": "Free Practice 1", "session_number": 3, "start_time": "2026-04-24T16:20:00", "timezone": "America/Chicago" },
+        { "name": "Free Practice 2", "session_number": 4, "start_time": "2026-04-25T10:25:00", "timezone": "America/Chicago" },
+        { "name": "Free Practice 3", "session_number": 5, "start_time": "2026-04-25T14:30:00", "timezone": "America/Chicago" },
+        { "name": "Qualifying", "session_number": 6, "start_time": "2026-04-26T08:45:00", "timezone": "America/Chicago" },
+        { "name": "Race", "session_number": 7, "start_time": "2026-04-26T12:30:00", "timezone": "America/Chicago" }
+      ]
     },
     {
       "slug": "sebring-2026",
