@@ -4,7 +4,10 @@ import EventCard from '../../../components/EventCard';
 import { fetchChampionshipDetails, fetchChampionships } from '../../../api/championships';
 import type { Event } from '../../../api/events';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import dayjs from 'dayjs';
+
+export const revalidate = 3600;
 
 interface Params {
     params: Promise<{ slug: string }>;
@@ -42,22 +45,15 @@ export default async function ChampionshipDetailPage({ params }: Params) {
     const { slug } = await params;
 
     let championship;
-    let error;
 
     try {
         championship = await fetchChampionshipDetails(slug);
     } catch (err) {
-        error = 'Failed to load championship details.';
+        // Error handled below by notFound()
     }
 
-    if (error || !championship) {
-        return (
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <p className="text-gray-500 dark:text-gray-400 text-sm py-8">
-                    {error ?? 'Championship not found.'}
-                </p>
-            </main>
-        );
+    if (!championship) {
+        notFound();
     }
 
     const sortedEvents = championship.events

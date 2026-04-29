@@ -5,8 +5,9 @@ import { fetchEventDetails, fetchEvents } from '../../../api/events';
 import dayjs from 'dayjs';
 import Footer from '../../../components/Footer';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
 
 interface Params {
     params: Promise<{ slug: string }>;
@@ -48,23 +49,15 @@ export default async function EventDetailPage({ params }: Params) {
     const { slug } = await params;
 
     let event;
-    let error;
 
     try {
         event = await fetchEventDetails(slug);
     } catch (err) {
-        error = 'Failed to load event details.';
+        // Error handled below by notFound()
     }
 
-    if (error || !event) {
-        return (
-            <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
-                <p className="text-gray-500 dark:text-gray-400 text-sm py-8">
-                    {error ?? 'Event not found.'}
-                </p>
-                <Footer />
-            </main>
-        );
+    if (!event) {
+        notFound();
     }
 
     const startDate = dayjs(event.start_date);
@@ -87,8 +80,25 @@ export default async function EventDetailPage({ params }: Params) {
         return timeDiff !== 0 ? timeDiff : a.session_number - b.session_number;
     });
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": event.name,
+        "startDate": event.start_date,
+        "endDate": event.end_date,
+        "eventStatus": event.cancelled 
+            ? "https://schema.org/EventCancelled" 
+            : event.postponed 
+                ? "https://schema.org/EventPostponed" 
+                : "https://schema.org/EventScheduled"
+    };
+
     return (
         <main className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36 2xl:px-96 py-10">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Back link */}
             <div className="mb-8">
                 <Link

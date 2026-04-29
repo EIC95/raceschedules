@@ -7,7 +7,7 @@ import { fetchChampionships } from '../api/championships';
 import { fetchCategories } from '../api/categories';
 import { fetchNextSession } from '../api/sessions';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
     title: "RaceSchedules - Home",

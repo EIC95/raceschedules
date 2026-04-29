@@ -8,13 +8,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     let championships: Championship[] = []
     let events: Event[] = []
 
-    try {
-        championships = await fetchChampionships()
-    } catch (err) { }
-
-    try {
-        events = await fetchEvents()
-    } catch (err) { }
+    // Do not catch errors here. If the API fails, we want the sitemap generation 
+    // to throw a 500 error instead of returning a 200 OK with an empty list.
+    championships = await fetchChampionships();
+    events = await fetchEvents();
 
     const championshipUrls = championships.map((c) => ({
         url: `${baseUrl}/championships/${c.slug}`,
