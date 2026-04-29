@@ -13,10 +13,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    template: '%s',
-    default: 'RaceSchedules - Home',
+    template: '%s | RaceSchedules',
+    default: 'RaceSchedules | The Ultimate Motorsport Calendar',
   },
-  description: "Your go-to calendar for motorsport schedules. Follow Formula 1, MotoGP, WEC, and many other racing series — all in one place, always up to date.",
+  description: "Looking for a website to see every motorsport schedule in one place? RaceSchedules is your ultimate motorsport calendar for F1, MotoGP, WEC, NASCAR, and more.",
   metadataBase: new URL('https://raceschedules.app'),
   icons: {
     icon: '/favicon.png',
