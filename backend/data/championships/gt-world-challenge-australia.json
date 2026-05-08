@@ -20,7 +20,14 @@
       "name": "Shell V-Power Motorsport Park",
       "start_date": "2026-05-08",
       "end_date": "2026-05-10",
-      "sessions": []
+      "sessions": [
+        { "name": "Free Practice 1", "start_time": "2026-05-08T09:20:00", "timezone": "Australia/Adelaide", "session_number": 1 },
+        { "name": "Free Practice 2", "start_time": "2026-05-08T16:30:00", "timezone": "Australia/Adelaide", "session_number": 2 },
+        { "name": "Qualifying 1", "start_time": "2026-05-09T10:15:00", "timezone": "Australia/Adelaide", "session_number": 3 },
+        { "name": "Qualifying 2", "start_time": "2026-05-09T10:40:00", "timezone": "Australia/Adelaide", "session_number": 4 },
+        { "name": "Race 1", "start_time": "2026-05-09T16:20:00", "timezone": "Australia/Adelaide", "session_number": 5 },
+        { "name": "Race 2", "start_time": "2026-05-10T14:10:00", "timezone": "Australia/Adelaide", "session_number": 6 }
+      ]
     },
     {
       "slug": "queensland-raceway-2026",

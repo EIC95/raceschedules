@@ -22,7 +22,16 @@
             "name": "6 Hours of Spa-Francorchamps",
             "start_date": "2026-05-07",
             "end_date": "2026-05-09",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-05-07T11:00:00", "timezone": "Europe/Brussels", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-05-07T15:40:00", "timezone": "Europe/Brussels", "session_number": 2 },
+                { "name": "Free Practice 3", "start_time": "2026-05-08T10:10:00", "timezone": "Europe/Brussels", "session_number": 3 },
+                { "name": "Qualifying LMGT3", "start_time": "2026-05-08T14:30:00", "timezone": "Europe/Brussels", "session_number": 4 },
+                { "name": "Hyperpole LMGT3", "start_time": "2026-05-08T14:55:00", "timezone": "Europe/Brussels", "session_number": 5 },
+                { "name": "Qualifying Hypercar", "start_time": "2026-05-08T15:20:00", "timezone": "Europe/Brussels", "session_number": 6 },
+                { "name": "Hyperpole Hypercar", "start_time": "2026-05-08T15:45:00", "timezone": "Europe/Brussels", "session_number": 7 },
+                { "name": "Race", "start_time": "2026-05-09T14:00:00", "timezone": "Europe/Brussels", "session_number": 8 }
+            ]
         },
         {
             "slug": "24-hours-of-le-mans-2026",
