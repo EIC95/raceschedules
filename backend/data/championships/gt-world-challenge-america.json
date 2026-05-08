@@ -35,9 +35,9 @@
       "start_date": "2026-05-08",
       "end_date": "2026-05-10",
       "sessions": [
-        { "name": "Practice 1", "start_time": "2026-05-08T10:00:00", "timezone": "America/New_York", "session_number": 1 },
-        { "name": "Practice 2", "start_time": "2026-05-08T14:30:00", "timezone": "America/New_York", "session_number": 2 },
-        { "name": "Qualifying", "start_time": "2026-05-09T12:00:00", "timezone": "America/New_York", "session_number": 3 },
+        { "name": "Practice 1", "start_time": "2026-05-08T19:00:00", "timezone": "America/New_York", "session_number": 1 },
+        { "name": "Practice 2", "start_time": "2026-05-08T08:50:00", "timezone": "America/New_York", "session_number": 2 },
+        { "name": "Qualifying", "start_time": "2026-05-09T14:10:00", "timezone": "America/New_York", "session_number": 3 },
         { "name": "Race", "start_time": "2026-05-09T17:00:00", "timezone": "America/New_York", "session_number": 4 }
       ]
     },
