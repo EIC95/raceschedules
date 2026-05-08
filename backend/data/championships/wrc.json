@@ -145,7 +145,31 @@
             "name": "Portugal Rally",
             "start_date": "2026-05-07",
             "end_date": "2026-05-10",
-            "sessions": []
+            "sessions": [
+                { "name": "SS1 Águeda - Sever", "start_time": "2026-05-07T15:05:00", "timezone": "Europe/Lisbon", "session_number": 1 },
+                { "name": "SS2 Sever - Albergaria", "start_time": "2026-05-07T16:05:00", "timezone": "Europe/Lisbon", "session_number": 2 },
+                { "name": "SS3 Figueira da Foz", "start_time": "2026-05-07T18:05:00", "timezone": "Europe/Lisbon", "session_number": 3 },
+                { "name": "SS4 Mortágua 1", "start_time": "2026-05-08T07:35:00", "timezone": "Europe/Lisbon", "session_number": 4 },
+                { "name": "SS5 Arganil 1", "start_time": "2026-05-08T08:55:00", "timezone": "Europe/Lisbon", "session_number": 5 },
+                { "name": "SS6 Lousã 1", "start_time": "2026-05-08T10:13:00", "timezone": "Europe/Lisbon", "session_number": 6 },
+                { "name": "SS7 Arganil 2", "start_time": "2026-05-08T12:30:00", "timezone": "Europe/Lisbon", "session_number": 7 },
+                { "name": "SS8 Góis", "start_time": "2026-05-08T13:25:00", "timezone": "Europe/Lisbon", "session_number": 8 },
+                { "name": "SS9 Lousã 2", "start_time": "2026-05-08T14:08:00", "timezone": "Europe/Lisbon", "session_number": 9 },
+                { "name": "SS10 Mortágua 2", "start_time": "2026-05-08T15:45:00", "timezone": "Europe/Lisbon", "session_number": 10 },
+                { "name": "SS11 Felgueiras 1", "start_time": "2026-05-09T08:00:00", "timezone": "Europe/Lisbon", "session_number": 11 },
+                { "name": "SS12 Cabeceiras de Basto 1", "start_time": "2026-05-09T09:05:00", "timezone": "Europe/Lisbon", "session_number": 12 },
+                { "name": "SS13 Amarante 1", "start_time": "2026-05-09T10:35:00", "timezone": "Europe/Lisbon", "session_number": 13 },
+                { "name": "SS14 Paredes 1", "start_time": "2026-05-09T11:05:00", "timezone": "Europe/Lisbon", "session_number": 14 },
+                { "name": "SS15 Felgueiras 2", "start_time": "2026-05-09T14:00:00", "timezone": "Europe/Lisbon", "session_number": 15 },
+                { "name": "SS16 Cabeceiras de Basto 2", "start_time": "2026-05-09T15:05:00", "timezone": "Europe/Lisbon", "session_number": 16 },
+                { "name": "SS17 Amarante 2", "start_time": "2026-05-09T16:35:00", "timezone": "Europe/Lisbon", "session_number": 17 },
+                { "name": "SS18 Paredes 2", "start_time": "2026-05-09T18:05:00", "timezone": "Europe/Lisbon", "session_number": 18 },
+                { "name": "SS19 Lousada", "start_time": "2026-05-09T19:05:00", "timezone": "Europe/Lisbon", "session_number": 19 },
+                { "name": "SS20 Vieira do Minho 1", "start_time": "2026-05-10T08:05:00", "timezone": "Europe/Lisbon", "session_number": 20 },
+                { "name": "SS21 Fafe 1", "start_time": "2026-05-10T09:35:00", "timezone": "Europe/Lisbon", "session_number": 21 },
+                { "name": "SS22 Vieira do Minho 2", "start_time": "2026-05-10T10:35:00", "timezone": "Europe/Lisbon", "session_number": 22 },
+                { "name": "SS23 Wolf Power Stage - Fafe 2", "start_time": "2026-05-10T13:15:00", "timezone": "Europe/Lisbon", "session_number": 23 }
+            ]
         },
         {
             "slug": "japan-rally",
