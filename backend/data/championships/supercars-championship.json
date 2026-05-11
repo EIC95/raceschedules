@@ -7,15 +7,60 @@
             "start_date": "2026-02-20",
             "end_date": "2026-02-22",
             "sessions": [
-                { "name": "Practice", "start_time": "2026-02-20T13:55:00", "timezone": "Australia/Sydney", "session_number": 1 },
-                { "name": "Qualifying - Race 1", "start_time": "2026-02-20T16:20:00", "timezone": "Australia/Sydney", "session_number": 2 },
-                { "name": "Race 1", "start_time": "2026-02-20T19:50:00", "timezone": "Australia/Sydney", "session_number": 3 },
-                { "name": "Qualifying - Race 2", "start_time": "2026-02-21T15:40:00", "timezone": "Australia/Sydney", "session_number": 4 },
-                { "name": "Top Ten Shootout - Race 2", "start_time": "2026-02-21T16:35:00", "timezone": "Australia/Sydney", "session_number": 5 },
-                { "name": "Race 2", "start_time": "2026-02-21T19:35:00", "timezone": "Australia/Sydney", "session_number": 6 },
-                { "name": "Qualifying - Race 3", "start_time": "2026-02-22T12:10:00", "timezone": "Australia/Sydney", "session_number": 7 },
-                { "name": "Top Ten Shootout - Race 3", "start_time": "2026-02-22T13:05:00", "timezone": "Australia/Sydney", "session_number": 8 },
-                { "name": "Race 3", "start_time": "2026-02-22T16:05:00", "timezone": "Australia/Sydney", "session_number": 9 }
+                {
+                    "name": "Practice",
+                    "start_time": "2026-02-20T13:55:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying - Race 1",
+                    "start_time": "2026-02-20T16:20:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 2
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-02-20T19:50:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying - Race 2",
+                    "start_time": "2026-02-21T15:40:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 4
+                },
+                {
+                    "name": "Top Ten Shootout - Race 2",
+                    "start_time": "2026-02-21T16:35:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 5
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-02-21T19:35:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 6
+                },
+                {
+                    "name": "Qualifying - Race 3",
+                    "start_time": "2026-02-22T12:10:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 7
+                },
+                {
+                    "name": "Top Ten Shootout - Race 3",
+                    "start_time": "2026-02-22T13:05:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 8
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-02-22T16:05:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 9
+                }
             ]
         },
         {
@@ -24,16 +69,66 @@
             "start_date": "2026-03-05",
             "end_date": "2026-03-08",
             "sessions": [
-                { "name": "Practice 1", "start_time": "2026-03-05T10:35:00", "timezone": "Australia/Melbourne", "session_number": 1 },
-                { "name": "Practice 2", "start_time": "2026-03-05T12:25:00", "timezone": "Australia/Melbourne", "session_number": 2 },
-                { "name": "Qualifying - Race 1", "start_time": "2026-03-05T14:20:00", "timezone": "Australia/Melbourne", "session_number": 3 },
-                { "name": "Qualifying - Race 2", "start_time": "2026-03-05T14:42:00", "timezone": "Australia/Melbourne", "session_number": 4 },
-                { "name": "Race 1", "start_time": "2026-03-05T17:00:00", "timezone": "Australia/Melbourne", "session_number": 5 },
-                { "name": "Race 2", "start_time": "2026-03-06T17:30:00", "timezone": "Australia/Melbourne", "session_number": 6 },
-                { "name": "Qualifying - Race 3", "start_time": "2026-03-07T09:00:00", "timezone": "Australia/Melbourne", "session_number": 7 },
-                { "name": "Qualifying - Race 4", "start_time": "2026-03-07T09:22:00", "timezone": "Australia/Melbourne", "session_number": 8 },
-                { "name": "Race 3", "start_time": "2026-03-07T17:35:00", "timezone": "Australia/Melbourne", "session_number": 9 },
-                { "name": "Race 4", "start_time": "2026-03-08T10:10:00", "timezone": "Australia/Melbourne", "session_number": 10 }
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-03-05T10:35:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-03-05T12:25:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying - Race 1",
+                    "start_time": "2026-03-05T14:20:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying - Race 2",
+                    "start_time": "2026-03-05T14:42:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-03-05T17:00:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 5
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-03-06T17:30:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 6
+                },
+                {
+                    "name": "Qualifying - Race 3",
+                    "start_time": "2026-03-07T09:00:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 7
+                },
+                {
+                    "name": "Qualifying - Race 4",
+                    "start_time": "2026-03-07T09:22:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 8
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-03-07T17:35:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 9
+                },
+                {
+                    "name": "Race 4",
+                    "start_time": "2026-03-08T10:10:00",
+                    "timezone": "Australia/Melbourne",
+                    "session_number": 10
+                }
             ]
         },
         {
@@ -42,18 +137,78 @@
             "start_date": "2026-04-10",
             "end_date": "2026-04-12",
             "sessions": [
-                { "name": "Practice 1", "start_time": "2026-04-10T13:50:00", "timezone": "Pacific/Auckland", "session_number": 1 },
-                { "name": "Practice 2", "start_time": "2026-04-10T14:30:00", "timezone": "Pacific/Auckland", "session_number": 2 },
-                { "name": "Qualifying 1 Race 1", "start_time": "2026-04-11T10:15:00", "timezone": "Pacific/Auckland", "session_number": 3 },
-                { "name": "Qualifying 2 Race 1", "start_time": "2026-04-11T10:35:00", "timezone": "Pacific/Auckland", "session_number": 4 },
-                { "name": "Qualifying 1 Race 2", "start_time": "2026-04-11T11:10:00", "timezone": "Pacific/Auckland", "session_number": 5 },
-                { "name": "Qualifying 2 Race 2", "start_time": "2026-04-11T11:30:00", "timezone": "Pacific/Auckland", "session_number": 6 },
-                { "name": "Race 1", "start_time": "2026-04-11T12:55:00", "timezone": "Pacific/Auckland", "session_number": 7 },
-                { "name": "Race 2", "start_time": "2026-04-11T16:05:00", "timezone": "Pacific/Auckland", "session_number": 8 },
-                { "name": "Qualifying 1 Race 3", "start_time": "2026-04-12T11:40:00", "timezone": "Pacific/Auckland", "session_number": 9 },
-                { "name": "Qualifying 2 Race 3", "start_time": "2026-04-12T12:00:00", "timezone": "Pacific/Auckland", "session_number": 10 },
-                { "name": "Top Ten Shootout", "start_time": "2026-04-12T12:35:00", "timezone": "Pacific/Auckland", "session_number": 11 },
-                { "name": "Race 3", "start_time": "2026-04-12T15:05:00", "timezone": "Pacific/Auckland", "session_number": 12 }
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-04-10T13:50:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-04-10T14:30:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 1 Race 1",
+                    "start_time": "2026-04-11T10:15:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying 2 Race 1",
+                    "start_time": "2026-04-11T10:35:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 1 Race 2",
+                    "start_time": "2026-04-11T11:10:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 5
+                },
+                {
+                    "name": "Qualifying 2 Race 2",
+                    "start_time": "2026-04-11T11:30:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 6
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-04-11T12:55:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 7
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-04-11T16:05:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 8
+                },
+                {
+                    "name": "Qualifying 1 Race 3",
+                    "start_time": "2026-04-12T11:40:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 9
+                },
+                {
+                    "name": "Qualifying 2 Race 3",
+                    "start_time": "2026-04-12T12:00:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 10
+                },
+                {
+                    "name": "Top Ten Shootout",
+                    "start_time": "2026-04-12T12:35:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 11
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-04-12T15:05:00",
+                    "timezone": "Pacific/Auckland",
+                    "session_number": 12
+                }
             ]
         },
         {
@@ -62,20 +217,90 @@
             "start_date": "2026-04-17",
             "end_date": "2026-04-19",
             "sessions": [
-                {"name": "Practice", "session_number": 1, "start_time": "2026-04-17T09:35:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 1 Race 1", "session_number": 2, "start_time": "2026-04-17T14:15:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 2 Race 1", "session_number": 3, "start_time": "2026-04-17T14:37:00", "timezone": "Pacific/Auckland"},
-                {"name": "Race 1", "session_number": 4, "start_time": "2026-04-17T16:35:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 1 Race 2", "session_number": 5, "start_time": "2026-04-18T10:05:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 2 Race 2", "session_number": 6, "start_time": "2026-04-18T10:25:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 1 Race 3", "session_number": 7, "start_time": "2026-04-18T11:00:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 2 Race 3", "session_number": 8, "start_time": "2026-04-18T11:20:00", "timezone": "Pacific/Auckland"},
-                {"name": "Race 2", "session_number": 9, "start_time": "2026-04-18T12:45:00", "timezone": "Pacific/Auckland"},
-                {"name": "Race 3", "session_number": 10, "start_time": "2026-04-18T16:10:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 1 Race 4", "session_number": 11, "start_time": "2026-04-19T11:50:00", "timezone": "Pacific/Auckland"},
-                {"name": "Qualifying 2 Race 4", "session_number": 12, "start_time": "2026-04-19T12:10:00", "timezone": "Pacific/Auckland"},
-                {"name": "Top Ten Shootout", "session_number": 13, "start_time": "2026-04-19T12:45:00", "timezone": "Pacific/Auckland"},
-                {"name": "Race 4", "session_number": 14, "start_time": "2026-04-19T15:05:00", "timezone": "Pacific/Auckland"}
+                {
+                    "name": "Practice",
+                    "session_number": 1,
+                    "start_time": "2026-04-17T09:35:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 1 Race 1",
+                    "session_number": 2,
+                    "start_time": "2026-04-17T14:15:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 2 Race 1",
+                    "session_number": 3,
+                    "start_time": "2026-04-17T14:37:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Race 1",
+                    "session_number": 4,
+                    "start_time": "2026-04-17T16:35:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 1 Race 2",
+                    "session_number": 5,
+                    "start_time": "2026-04-18T10:05:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 2 Race 2",
+                    "session_number": 6,
+                    "start_time": "2026-04-18T10:25:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 1 Race 3",
+                    "session_number": 7,
+                    "start_time": "2026-04-18T11:00:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 2 Race 3",
+                    "session_number": 8,
+                    "start_time": "2026-04-18T11:20:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Race 2",
+                    "session_number": 9,
+                    "start_time": "2026-04-18T12:45:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Race 3",
+                    "session_number": 10,
+                    "start_time": "2026-04-18T16:10:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 1 Race 4",
+                    "session_number": 11,
+                    "start_time": "2026-04-19T11:50:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Qualifying 2 Race 4",
+                    "session_number": 12,
+                    "start_time": "2026-04-19T12:10:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Top Ten Shootout",
+                    "session_number": 13,
+                    "start_time": "2026-04-19T12:45:00",
+                    "timezone": "Pacific/Auckland"
+                },
+                {
+                    "name": "Race 4",
+                    "session_number": 14,
+                    "start_time": "2026-04-19T15:05:00",
+                    "timezone": "Pacific/Auckland"
+                }
             ]
         },
         {
@@ -83,7 +308,62 @@
             "name": "Tasmania Super 440",
             "start_date": "2026-05-22",
             "end_date": "2026-05-24",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-05-22T10:15:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-05-22T11:45:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 1 Race 1",
+                    "start_time": "2026-05-23T09:05:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying 2 Race 1",
+                    "start_time": "2026-05-23T09:25:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 1 Race 2",
+                    "start_time": "2026-05-23T10:00:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 5
+                },
+                {
+                    "name": "Qualifying 2 Race 2",
+                    "start_time": "2026-05-23T10:20:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 6
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-05-23T12:55:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 7
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-05-23T15:55:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 8
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-05-24T14:45:00",
+                    "timezone": "Australia/Hobart",
+                    "session_number": 9
+                }
+            ]
         },
         {
             "slug": "darwin-triple-crown-2026",
