@@ -108,52 +108,14 @@
             "name": "24 Hours of Spa - Prologue",
             "start_date": "2026-05-19",
             "end_date": "2026-05-20",
-            "sessions": [
-                {
-                    "name": "Test Day 1",
-                    "start_time": "2026-05-19T09:00:00",
-                    "timezone": "Europe/Brussels",
-                    "session_number": 1
-                },
-                {
-                    "name": "Test Day 2",
-                    "start_time": "2026-05-20T09:00:00",
-                    "timezone": "Europe/Brussels",
-                    "session_number": 2
-                }
-            ]
+            "sessions": []
         },
         {
             "slug": "monza-2026",
             "name": "Monza",
             "start_date": "2026-05-29",
             "end_date": "2026-05-31",
-            "sessions": [
-                {
-                    "name": "Free Practice 1",
-                    "start_time": "2026-05-29T14:25:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 1
-                },
-                {
-                    "name": "Free Practice 2",
-                    "start_time": "2026-05-29T19:25:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 2
-                },
-                {
-                    "name": "Qualifying",
-                    "start_time": "2026-05-31T09:00:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 3
-                },
-                {
-                    "name": "Race",
-                    "start_time": "2026-05-31T15:00:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 4
-                }
-            ]
+            "sessions": []
         },
         {
             "slug": "spa-24h-2026",

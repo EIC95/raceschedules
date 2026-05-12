@@ -44,51 +44,39 @@
             "name": "Autopolis",
             "start_date": "2026-04-25",
             "end_date": "2026-04-26",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-04-24T09:15:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-04-25T14:15:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 2
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-04-26T09:40:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-04-26T14:30:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 4
+                }
+            ]
         },
         {
             "slug": "suzuka-1-2026",
             "name": "Suzuka Circuit – Round 1",
             "start_date": "2026-05-22",
             "end_date": "2026-05-24",
-            "sessions": [
-                {
-                    "name": "Free Practice 1",
-                    "start_time": "2026-05-22T10:50:00",
-                    "timezone": "Asia/Tokyo",
-                    "session_number": 1
-                },
-                {
-                    "name": "Free Practice 2",
-                    "start_time": "2026-05-22T15:40:00",
-                    "timezone": "Asia/Tokyo",
-                    "session_number": 2
-                },
-                {
-                    "name": "Qualifying Round 1",
-                    "start_time": "2026-05-23T08:25:00",
-                    "timezone": "Asia/Tokyo",
-                    "session_number": 3
-                },
-                {
-                    "name": "Race 1",
-                    "start_time": "2026-05-23T14:00:00",
-                    "timezone": "Asia/Tokyo",
-                    "session_number": 4
-                },
-                {
-                    "name": "Qualifying Round 2",
-                    "start_time": "2026-05-24T10:20:00",
-                    "timezone": "Asia/Tokyo",
-                    "session_number": 5
-                },
-                {
-                    "name": "Race 2",
-                    "start_time": "2026-05-24T14:00:00",
-                    "timezone": "Asia/Tokyo",
-                    "session_number": 6
-                }
-            ]
+            "sessions": []
         },
         {
             "slug": "fuji-1-2026",
