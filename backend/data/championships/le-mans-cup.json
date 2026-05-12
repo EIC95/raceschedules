@@ -20,19 +20,45 @@
             "name": "Paul Ricard Round",
             "start_date": "2026-05-01",
             "end_date": "2026-05-03",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-05-01T11:50:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 1
+                },
+                {
+                    "name": "Bronze Driver Collective Test",
+                    "start_time": "2026-05-01T16:20:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 2
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-05-02T10:10:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-05-02T15:10:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-05-02T18:20:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 5
+                }
+            ]
         },
         {
             "slug": "road-to-le-mans-2026",
             "name": "Road To Le Mans",
             "start_date": "2026-06-10",
             "end_date": "2026-06-12",
-            "sessions": [
-                { "name": "Free Practice 1", "start_time": "2026-06-10T00:00:00", "timezone": "Europe/Paris", "session_number": 1 },
-                { "name": "Free Practice 2", "start_time": "2026-06-10T00:00:00", "timezone": "Europe/Paris", "session_number": 2 },
-                { "name": "Qualifying", "start_time": "2026-06-11T00:00:00", "timezone": "Europe/Paris", "session_number": 3 },
-                { "name": "Race", "start_time": "2026-06-12T00:00:00", "timezone": "Europe/Paris", "session_number": 4 }
-            ]
+            "sessions": []
         },
         {
             "slug": "spa-2026",

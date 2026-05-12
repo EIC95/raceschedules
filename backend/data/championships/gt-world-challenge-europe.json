@@ -7,9 +7,24 @@
             "start_date": "2026-04-08",
             "end_date": "2026-04-09",
             "sessions": [
-                { "name": "Morning Session 1", "start_time": "2026-04-08T09:00:00", "timezone": "Europe/Paris", "session_number": 1 },
-                { "name": "Afternoon Session 1", "start_time": "2026-04-08T14:00:00", "timezone": "Europe/Paris", "session_number": 2 },
-                { "name": "Morning Session 2", "start_time": "2026-04-09T09:00:00", "timezone": "Europe/Paris", "session_number": 3 }
+                {
+                    "name": "Morning Session 1",
+                    "start_time": "2026-04-08T09:00:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 1
+                },
+                {
+                    "name": "Afternoon Session 1",
+                    "start_time": "2026-04-08T14:00:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 2
+                },
+                {
+                    "name": "Morning Session 2",
+                    "start_time": "2026-04-09T09:00:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 3
+                }
             ]
         },
         {
@@ -18,11 +33,36 @@
             "start_date": "2026-04-10",
             "end_date": "2026-04-11",
             "sessions": [
-                { "name": "Bronze Test", "start_time": "2026-04-10T09:00:00", "timezone": "Europe/Paris", "session_number": 1 },
-                { "name": "Free Practice 1", "start_time": "2026-04-10T14:25:00", "timezone": "Europe/Paris", "session_number": 2 },
-                { "name": "Free Practice 2", "start_time": "2026-04-10T19:25:00", "timezone": "Europe/Paris", "session_number": 3 },
-                { "name": "Qualifying", "start_time": "2026-04-11T12:05:00", "timezone": "Europe/Paris", "session_number": 4 },
-                { "name": "Race", "start_time": "2026-04-11T18:00:00", "timezone": "Europe/Paris", "session_number": 5 }
+                {
+                    "name": "Bronze Test",
+                    "start_time": "2026-04-10T09:00:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 1
+                },
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-04-10T14:25:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 2
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-04-10T19:25:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-04-11T12:05:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-04-11T18:00:00",
+                    "timezone": "Europe/Paris",
+                    "session_number": 5
+                }
             ]
         },
         {
@@ -31,11 +71,36 @@
             "start_date": "2026-05-02",
             "end_date": "2026-05-03",
             "sessions": [
-                { "name": "Free Practice 1", "session_number": 1, "start_time": "2026-05-02T09:35:00", "timezone": "Europe/London" },
-                { "name": "Free Practice 2", "session_number": 2, "start_time": "2026-05-02T12:00:00", "timezone": "Europe/London" },
-                { "name": "Qualifying", "session_number": 3, "start_time": "2026-05-02T16:40:00", "timezone": "Europe/London" },
-                { "name": "Race 1", "session_number": 4, "start_time": "2026-05-03T11:15:00", "timezone": "Europe/London" },
-                { "name": "Race 2", "session_number": 5, "start_time": "2026-05-03T15:45:00", "timezone": "Europe/London" }
+                {
+                    "name": "Free Practice 1",
+                    "session_number": 1,
+                    "start_time": "2026-05-02T09:35:00",
+                    "timezone": "Europe/London"
+                },
+                {
+                    "name": "Free Practice 2",
+                    "session_number": 2,
+                    "start_time": "2026-05-02T12:00:00",
+                    "timezone": "Europe/London"
+                },
+                {
+                    "name": "Qualifying",
+                    "session_number": 3,
+                    "start_time": "2026-05-02T16:40:00",
+                    "timezone": "Europe/London"
+                },
+                {
+                    "name": "Race 1",
+                    "session_number": 4,
+                    "start_time": "2026-05-03T11:15:00",
+                    "timezone": "Europe/London"
+                },
+                {
+                    "name": "Race 2",
+                    "session_number": 5,
+                    "start_time": "2026-05-03T15:45:00",
+                    "timezone": "Europe/London"
+                }
             ]
         },
         {
