@@ -786,7 +786,122 @@
             "name": "Japan Rally",
             "start_date": "2026-05-28",
             "end_date": "2026-05-31",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Shakedown",
+                    "start_time": "2026-05-28T09:00:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 1
+                },
+                {
+                    "name": "SS1 Asuke 1",
+                    "start_time": "2026-05-29T08:03:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 2
+                },
+                {
+                    "name": "SS2 Isegami's Tunnel 1",
+                    "start_time": "2026-05-29T08:46:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 3
+                },
+                {
+                    "name": "SS3 Inabu - Shitara 1",
+                    "start_time": "2026-05-29T10:09:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 4
+                },
+                {
+                    "name": "SS4 Asuke 2",
+                    "start_time": "2026-05-29T13:57:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 5
+                },
+                {
+                    "name": "SS5 Isegami's Tunnel 2",
+                    "start_time": "2026-05-29T14:40:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 6
+                },
+                {
+                    "name": "SS6 Inabu - Shitara 2",
+                    "start_time": "2026-05-29T16:03:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 7
+                },
+                {
+                    "name": "SS7 Obara 1",
+                    "start_time": "2026-05-30T07:41:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 8
+                },
+                {
+                    "name": "SS8 Ena 1",
+                    "start_time": "2026-05-30T08:54:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 9
+                },
+                {
+                    "name": "SS9 Mt. Kasagi 1",
+                    "start_time": "2026-05-30T10:35:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 10
+                },
+                {
+                    "name": "SS10 Obara 2",
+                    "start_time": "2026-05-30T13:05:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 11
+                },
+                {
+                    "name": "SS11 Ena 2",
+                    "start_time": "2026-05-30T14:38:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 12
+                },
+                {
+                    "name": "SS12 Mt. Kasagi 2",
+                    "start_time": "2026-05-30T15:56:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 13
+                },
+                {
+                    "name": "SS13 Fujioka SSS",
+                    "start_time": "2026-05-30T17:15:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 14
+                },
+                {
+                    "name": "SS14 Nukata 1",
+                    "start_time": "2026-05-31T08:14:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 15
+                },
+                {
+                    "name": "SS15 Kuragaike 1",
+                    "start_time": "2026-05-31T09:05:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 16
+                },
+                {
+                    "name": "SS16 Nukata 2",
+                    "start_time": "2026-05-31T10:13:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 17
+                },
+                {
+                    "name": "SS17 Kuragaike 2",
+                    "start_time": "2026-05-31T13:00:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 18
+                },
+                {
+                    "name": "SS18 Lake Mikawako Wolf Power Stage",
+                    "start_time": "2026-05-31T14:30:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 19
+                }
+            ]
         },
         {
             "slug": "acropolis-rally",
