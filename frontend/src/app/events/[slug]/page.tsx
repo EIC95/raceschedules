@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 interface Params {
     params: Promise<{ slug: string }>;

@@ -78,8 +78,8 @@ export default function FeedbackBanner() {
                     cursor-pointer
                 "
             >
-                <span aria-hidden="true">⚡</span>
-                <span>Feedback</span>
+                <span aria-hidden="true">💬</span>
+                <span>Quick survey</span>
             </button>
         );
     }
@@ -107,12 +107,9 @@ export default function FeedbackBanner() {
             ">
                 {/* Header row */}
                 <div className="flex items-start justify-between gap-3">
-                    <div className="flex items-center gap-2 min-w-0">
-                        <span className="text-base shrink-0" aria-hidden="true">⚡</span>
-                        <p className="text-sm font-medium text-gray-900 dark:text-gray-100 leading-snug">
-                            Help us improve RaceSchedules in 2 minutes
-                        </p>
-                    </div>
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug">
+                        What do you think of RaceSchedules? 💬
+                    </p>
 
                     <button
                         onClick={dismiss}
@@ -136,6 +133,11 @@ export default function FeedbackBanner() {
                     </button>
                 </div>
 
+                {/* Body */}
+                <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                    A short Google Form — no account needed. Helps us know what to improve.
+                </p>
+
                 {/* CTA */}
                 <button
                     onClick={openSurvey}
@@ -152,7 +154,7 @@ export default function FeedbackBanner() {
                         cursor-pointer
                     "
                 >
-                    Give feedback
+                    Open the form →
                 </button>
             </div>
         </div>

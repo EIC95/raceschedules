@@ -7,7 +7,7 @@ import { fetchChampionships } from '../api/championships';
 import { fetchCategories } from '../api/categories';
 import { fetchNextSession } from '../api/sessions';
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 export const metadata: Metadata = {
     title: "RaceSchedules | The Ultimate Motorsport Calendar",

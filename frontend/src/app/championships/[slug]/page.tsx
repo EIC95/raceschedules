@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import dayjs from 'dayjs';
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 interface Params {
     params: Promise<{ slug: string }>;
