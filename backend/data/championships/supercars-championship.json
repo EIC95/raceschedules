@@ -308,7 +308,62 @@
             "name": "Tasmania Super 440",
             "start_date": "2026-05-22",
             "end_date": "2026-05-24",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-05-22T14:05:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-05-22T14:45:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying - Race 1",
+                    "start_time": "2026-05-23T10:30:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying - Race 2",
+                    "start_time": "2026-05-23T10:50:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-05-23T13:00:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 5
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-05-23T16:00:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 6
+                },
+                {
+                    "name": "Qualifying - Race 3",
+                    "start_time": "2026-05-24T11:35:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 7
+                },
+                {
+                    "name": "Top Ten Shootout - Race 3",
+                    "start_time": "2026-05-24T12:30:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 8
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-05-24T14:45:00",
+                    "timezone": "Australia/Sydney",
+                    "session_number": 9
+                }
+            ]
         },
         {
             "slug": "darwin-triple-crown-2026",

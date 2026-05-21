@@ -108,7 +108,32 @@
             "name": "24 Hours of Spa - Prologue",
             "start_date": "2026-05-19",
             "end_date": "2026-05-20",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Morning Session 1",
+                    "start_time": "2026-05-19T09:00:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 1
+                },
+                {
+                    "name": "Afternoon Session 1",
+                    "start_time": "2026-05-19T14:00:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 2
+                },
+                {
+                    "name": "Morning Session 2",
+                    "start_time": "2026-05-20T09:00:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 3
+                },
+                {
+                    "name": "Afternoon Session 2",
+                    "start_time": "2026-05-20T14:00:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 4
+                }
+            ]
         },
         {
             "slug": "monza-2026",

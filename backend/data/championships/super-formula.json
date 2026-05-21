@@ -76,7 +76,38 @@
             "name": "Suzuka Circuit – Round 1",
             "start_date": "2026-05-22",
             "end_date": "2026-05-24",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice",
+                    "start_time": "2026-05-22T10:50:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying Round 1",
+                    "start_time": "2026-05-23T09:00:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 2
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-05-23T14:45:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying Round 2",
+                    "start_time": "2026-05-24T10:35:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-05-24T14:45:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 5
+                }
+            ]
         },
         {
             "slug": "fuji-1-2026",
