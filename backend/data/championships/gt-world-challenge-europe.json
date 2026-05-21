@@ -140,32 +140,7 @@
             "name": "Monza",
             "start_date": "2026-05-29",
             "end_date": "2026-05-31",
-            "sessions": [
-                {
-                    "name": "Free Practice 1",
-                    "start_time": "2026-05-29T09:00:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 1
-                },
-                {
-                    "name": "Free Practice 2",
-                    "start_time": "2026-05-29T14:00:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 2
-                },
-                {
-                    "name": "Qualifying",
-                    "start_time": "2026-05-30T11:00:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 3
-                },
-                {
-                    "name": "Race",
-                    "start_time": "2026-05-31T15:00:00",
-                    "timezone": "Europe/Rome",
-                    "session_number": 4
-                }
-            ]
+            "sessions": []
         },
         {
             "slug": "spa-24h-2026",

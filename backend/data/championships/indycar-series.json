@@ -320,38 +320,7 @@
             "name": "Detroit Grand Prix",
             "start_date": "2026-05-29",
             "end_date": "2026-05-31",
-            "sessions": [
-                {
-                    "name": "Practice 1",
-                    "start_time": "2026-05-29T14:00:00",
-                    "timezone": "America/New_York",
-                    "session_number": 1
-                },
-                {
-                    "name": "Practice 2",
-                    "start_time": "2026-05-30T08:00:00",
-                    "timezone": "America/New_York",
-                    "session_number": 2
-                },
-                {
-                    "name": "Qualifying",
-                    "start_time": "2026-05-30T13:00:00",
-                    "timezone": "America/New_York",
-                    "session_number": 3
-                },
-                {
-                    "name": "Warm Up",
-                    "start_time": "2026-05-31T08:30:00",
-                    "timezone": "America/New_York",
-                    "session_number": 4
-                },
-                {
-                    "name": "Race",
-                    "start_time": "2026-05-31T12:30:00",
-                    "timezone": "America/New_York",
-                    "session_number": 5
-                }
-            ]
+            "sessions": []
         },
         {
             "slug": "gateway-2026",

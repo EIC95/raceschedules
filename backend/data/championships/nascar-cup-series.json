@@ -364,26 +364,7 @@
             "name": "Nashville 400",
             "start_date": "2026-05-31",
             "end_date": "2026-05-31",
-            "sessions": [
-                {
-                    "name": "Practice",
-                    "start_time": "2026-05-30T15:30:00",
-                    "timezone": "America/New_York",
-                    "session_number": 1
-                },
-                {
-                    "name": "Qualifying",
-                    "start_time": "2026-05-30T17:00:00",
-                    "timezone": "America/New_York",
-                    "session_number": 2
-                },
-                {
-                    "name": "Race",
-                    "start_time": "2026-05-31T19:00:00",
-                    "timezone": "America/New_York",
-                    "session_number": 3
-                }
-            ]
+            "sessions": []
         },
         {
             "slug": "michigan-400-2026",
