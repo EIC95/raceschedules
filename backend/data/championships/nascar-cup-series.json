@@ -367,13 +367,13 @@
             "sessions": [
                 {
                     "name": "Practice 1",
-                    "start_time": "2026-05-30T14:30:00",
+                    "start_time": "2026-05-30T15:30:00",
                     "timezone": "America/Chicago",
                     "session_number": 1
                 },
                 {
                     "name": "Qualifying",
-                    "start_time": "2026-05-30T15:30:00",
+                    "start_time": "2026-05-30T16:30:00",
                     "timezone": "America/Chicago",
                     "session_number": 2
                 },
