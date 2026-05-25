@@ -202,7 +202,38 @@
             "name": "Detroit Grand Prix",
             "start_date": "2026-05-30",
             "end_date": "2026-05-30",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "session_number": 1,
+                    "start_time": "2026-05-29T08:00:00",
+                    "timezone": "America/Detroit"
+                },
+                {
+                    "name": "Practice 2",
+                    "session_number": 2,
+                    "start_time": "2026-05-29T11:30:00",
+                    "timezone": "America/Detroit"
+                },
+                {
+                    "name": "Qualifying",
+                    "session_number": 3,
+                    "start_time": "2026-05-29T16:50:00",
+                    "timezone": "America/Detroit"
+                },
+                {
+                    "name": "Practice 3",
+                    "session_number": 4,
+                    "start_time": "2026-05-30T11:10:00",
+                    "timezone": "America/Detroit"
+                },
+                {
+                    "name": "Race",
+                    "session_number": 5,
+                    "start_time": "2026-05-30T16:10:00",
+                    "timezone": "America/Detroit"
+                }
+            ]
         },
         {
             "slug": "watkins-glen-2026",
