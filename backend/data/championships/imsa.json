@@ -52,8 +52,8 @@
             ]
         },
         {
-            "slug": "rolex-24-at-daytona-2026",
-            "name": "Rolex 24 at Daytona",
+            "slug": "24-at-daytona-2026",
+            "name": "24 at Daytona",
             "start_date": "2026-01-22",
             "end_date": "2026-01-24",
             "sessions": [
@@ -198,7 +198,7 @@
             ]
         },
         {
-            "slug": "detroit-grand-prix-2026",
+            "slug": "detroit-grand-prix-imsa-2026",
             "name": "Detroit Grand Prix",
             "start_date": "2026-05-30",
             "end_date": "2026-05-30",
@@ -236,7 +236,7 @@
             ]
         },
         {
-            "slug": "watkins-glen-2026",
+            "slug": "watkins-glen-imsa-2026",
             "name": "Watkins Glen",
             "start_date": "2026-06-28",
             "end_date": "2026-06-28",
@@ -250,7 +250,7 @@
             "sessions": []
         },
         {
-            "slug": "road-america-2026",
+            "slug": "road-america-imsa-2026",
             "name": "Road America",
             "start_date": "2026-08-02",
             "end_date": "2026-08-02",

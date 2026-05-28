@@ -28,7 +28,7 @@
             ]
         },
         {
-            "slug": "paul-ricard-2026",
+            "slug": "paul-ricard-gtwc-2026",
             "name": "Circuit Paul Ricard",
             "start_date": "2026-04-10",
             "end_date": "2026-04-11",
@@ -201,28 +201,28 @@
             "sessions": []
         },
         {
-            "slug": "nurburgring-2026",
+            "slug": "nurburgring-gtwc-2026",
             "name": "Nürburgring",
             "start_date": "2026-08-28",
             "end_date": "2026-08-30",
             "sessions": []
         },
         {
-            "slug": "zandvoort-2026",
+            "slug": "zandvoort-gtwc-2026",
             "name": "Circuit Zandvoort",
             "start_date": "2026-09-18",
             "end_date": "2026-09-20",
             "sessions": []
         },
         {
-            "slug": "barcelona-2026",
+            "slug": "barcelona-gtwc-2026",
             "name": "Circuit de Barcelona-Catalunya",
             "start_date": "2026-10-02",
             "end_date": "2026-10-04",
             "sessions": []
         },
         {
-            "slug": "portimao-2026",
+            "slug": "portimao-gtwc-2026",
             "name": "Algarve International Circuit",
             "start_date": "2026-10-16",
             "end_date": "2026-10-18",

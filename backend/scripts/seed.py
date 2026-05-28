@@ -213,6 +213,13 @@ def apply_championships(db, validated_championships, category_slug_to_id):
 
 
 def apply_events(db, validated_champ_events, championship_id):
+    json_slugs = {e.slug for e in validated_champ_events.events}
+    for ev in db.query(Event).filter(Event.championship_id == championship_id).all():
+        if ev.slug not in json_slugs:
+            db.query(Session).filter(Session.event_id == ev.id).delete()
+            db.delete(ev)
+    db.flush()
+
     for event_data in validated_champ_events.events:
         ev_db = db.query(Event).filter(Event.slug == event_data.slug).first()
         if not ev_db:

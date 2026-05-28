@@ -2,7 +2,7 @@
     "championship": "le-mans-cup",
     "events": [
         {
-            "slug": "barcelona-2026",
+            "slug": "barcelona-le-mans-cup-2026",
             "name": "Barcelona Round",
             "start_date": "2026-04-10",
             "end_date": "2026-04-11",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "slug": "paul-ricard-2026",
+            "slug": "paul-ricard-le-mans-cup-2026",
             "name": "Paul Ricard Round",
             "start_date": "2026-05-01",
             "end_date": "2026-05-03",
@@ -75,7 +75,7 @@
             "sessions": []
         },
         {
-            "slug": "portimao-2026",
+            "slug": "portimao-le-mans-cup-2026",
             "name": "Portimão Round",
             "start_date": "2026-10-09",
             "end_date": "2026-10-10",
