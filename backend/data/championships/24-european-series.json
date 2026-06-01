@@ -40,7 +40,17 @@
       "name": "12H Paul Ricard",
       "start_date": "2026-06-05",
       "end_date": "2026-06-07",
-      "sessions": []
+      "sessions": [
+        { "name": "Free Practice", "start_time": "2026-06-05T10:50:00", "timezone": "Europe/Paris", "session_number": 1 },
+        { "name": "Qualifying 1 - TCE/GT4/GTX/992", "start_time": "2026-06-05T16:30:00", "timezone": "Europe/Paris", "session_number": 2 },
+        { "name": "Qualifying 2 - TCE/GT4/GTX/992", "start_time": "2026-06-05T16:52:00", "timezone": "Europe/Paris", "session_number": 3 },
+        { "name": "Qualifying 3 - TCE/GT4/GTX/992", "start_time": "2026-06-05T17:14:00", "timezone": "Europe/Paris", "session_number": 4 },
+        { "name": "Qualifying 1 - GT3", "start_time": "2026-06-05T17:40:00", "timezone": "Europe/Paris", "session_number": 5 },
+        { "name": "Qualifying 2 - GT3", "start_time": "2026-06-05T18:00:00", "timezone": "Europe/Paris", "session_number": 6 },
+        { "name": "Qualifying 3 - GT3", "start_time": "2026-06-05T18:20:00", "timezone": "Europe/Paris", "session_number": 7 },
+        { "name": "Race Part 1", "start_time": "2026-06-06T11:45:00", "timezone": "Europe/Paris", "session_number": 8 },
+        { "name": "Race Part 2", "start_time": "2026-06-07T11:30:00", "timezone": "Europe/Paris", "session_number": 9 }
+      ]
     },
     {
       "slug": "12h-nurburgring-2026",
