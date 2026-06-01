@@ -32,13 +32,6 @@
       ]
     },
     {
-      "slug": "shanghai-2026",
-      "name": "Shanghai International Circuit",
-      "start_date": "2026-06-05",
-      "end_date": "2026-06-06",
-      "sessions": []
-    },
-    {
       "slug": "fuji-2026",
       "name": "Fuji International Speedway",
       "start_date": "2026-07-11",
@@ -55,8 +48,15 @@
     {
       "slug": "beijing-street-circuit-2026",
       "name": "Beijing Street Circuit",
-      "start_date": "2026-10-17",
-      "end_date": "2026-10-18",
+      "start_date": "2026-10-02",
+      "end_date": "2026-10-04",
+      "sessions": []
+    },
+    {
+      "slug": "shanghai-2026",
+      "name": "Shanghai International Circuit",
+      "start_date": "2026-10-30",
+      "end_date": "2026-11-01",
       "sessions": []
     }
   ]
