@@ -399,7 +399,7 @@
         {
             "slug": "pocono-400-2026",
             "name": "Pocono 400",
-            "start_date": "2026-06-14",
+            "start_date": "2026-06-13",
             "end_date": "2026-06-14",
             "sessions": [
                 { "name": "Practice", "start_time": "2026-06-13T13:00:00", "timezone": "America/New_York", "session_number": 1 },

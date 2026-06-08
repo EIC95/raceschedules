@@ -58,7 +58,12 @@
             "name": "Road To Le Mans",
             "start_date": "2026-06-10",
             "end_date": "2026-06-12",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-06-10T11:15:00", "timezone": "Europe/Paris", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-06-10T20:30:00", "timezone": "Europe/Paris", "session_number": 2 },
+                { "name": "Qualifying 1", "start_time": "2026-06-11T10:15:00", "timezone": "Europe/Paris", "session_number": 3 },
+                { "name": "Race 1", "start_time": "2026-06-12T10:00:00", "timezone": "Europe/Paris", "session_number": 4 }
+            ]
         },
         {
             "slug": "spa-2026",

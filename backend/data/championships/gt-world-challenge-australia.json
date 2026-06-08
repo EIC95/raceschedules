@@ -36,6 +36,7 @@
       "end_date": "2026-06-14",
       "sessions": [
         { "name": "Free Practice 1", "start_time": "2026-06-12T09:30:00", "timezone": "Australia/Brisbane", "session_number": 1 },
+        { "name": "Free Practice 2", "start_time": "2026-06-12T12:10:00", "timezone": "Australia/Brisbane", "session_number": 1 },
         { "name": "Qualifying 1", "start_time": "2026-06-13T09:00:00", "timezone": "Australia/Brisbane", "session_number": 2 },
         { "name": "Qualifying 2", "start_time": "2026-06-13T09:25:00", "timezone": "Australia/Brisbane", "session_number": 3 },
         { "name": "Race 1", "start_time": "2026-06-13T13:15:00", "timezone": "Australia/Brisbane", "session_number": 4 },
