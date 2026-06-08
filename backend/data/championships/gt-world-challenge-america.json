@@ -46,7 +46,15 @@
       "name": "Michelin Raceway Road Atlanta",
       "start_date": "2026-06-12",
       "end_date": "2026-06-14",
-      "sessions": []
+      "sessions": [
+        { "name": "Test Session", "start_time": "2026-06-12T08:50:00", "timezone": "America/New_York", "session_number": 1 },
+        { "name": "Practice 1", "start_time": "2026-06-12T17:05:00", "timezone": "America/New_York", "session_number": 2 },
+        { "name": "Practice 2", "start_time": "2026-06-13T10:45:00", "timezone": "America/New_York", "session_number": 3 },
+        { "name": "Practice 3", "start_time": "2026-06-13T13:45:00", "timezone": "America/New_York", "session_number": 4 },
+        { "name": "Qualifying 1", "start_time": "2026-06-13T17:25:00", "timezone": "America/New_York", "session_number": 5 },
+        { "name": "Qualifying 2", "start_time": "2026-06-13T17:45:00", "timezone": "America/New_York", "session_number": 6 },
+        { "name": "Race", "start_time": "2026-06-14T14:30:00", "timezone": "America/New_York", "session_number": 7 }
+      ]
     },
     {
       "slug": "road-america-gtwc-2026",

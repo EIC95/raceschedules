@@ -401,7 +401,11 @@
             "name": "Pocono 400",
             "start_date": "2026-06-14",
             "end_date": "2026-06-14",
-            "sessions": []
+            "sessions": [
+                { "name": "Practice", "start_time": "2026-06-13T13:00:00", "timezone": "America/New_York", "session_number": 1 },
+                { "name": "Qualifying", "start_time": "2026-06-13T14:10:00", "timezone": "America/New_York", "session_number": 2 },
+                { "name": "Race", "start_time": "2026-06-14T15:00:00", "timezone": "America/New_York", "session_number": 3 }
+            ]
         },
         {
             "slug": "coronado-250-2026",
