@@ -100,7 +100,44 @@
             "name": "Lausitzring",
             "start_date": "2026-06-19",
             "end_date": "2026-06-21",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "session_number": 1,
+                    "start_time": "2026-06-19T11:40:00",
+                    "timezone": "Europe/Berlin"
+                },
+                {
+                    "name": "Free Practice 2",
+                    "session_number": 2,
+                    "start_time": "2026-06-19T16:10:00",
+                    "timezone": "Europe/Berlin"
+                },
+                {
+                    "name": "Qualifying 1",
+                    "session_number": 3,
+                    "start_time": "2026-06-20T09:00:00",
+                    "timezone": "Europe/Berlin"
+                },
+                {
+                    "name": "Race 1",
+                    "session_number": 4,
+                    "start_time": "2026-06-20T13:30:00",
+                    "timezone": "Europe/Berlin"
+                },
+                {
+                    "name": "Qualifying 2",
+                    "session_number": 5,
+                    "start_time": "2026-06-21T09:05:00",
+                    "timezone": "Europe/Berlin"
+                },
+                {
+                    "name": "Race 2",
+                    "session_number": 6,
+                    "start_time": "2026-06-21T13:30:00",
+                    "timezone": "Europe/Berlin"
+                }
+            ]
         },
         {
             "slug": "norisring-2026",

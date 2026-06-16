@@ -370,7 +370,80 @@
             "name": "Darwin Triple Crown",
             "start_date": "2026-06-19",
             "end_date": "2026-06-21",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "start_time": "2026-06-19T10:20:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying 1 Race 1",
+                    "start_time": "2026-06-19T13:20:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 2 Race 1",
+                    "start_time": "2026-06-19T13:40:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-06-19T17:00:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 1 Race 2",
+                    "start_time": "2026-06-20T10:40:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 5
+                },
+                {
+                    "name": "Qualifying 2 Race 2",
+                    "start_time": "2026-06-20T11:00:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 6
+                },
+                {
+                    "name": "Top Ten Shootout - Race 2",
+                    "start_time": "2026-06-20T11:35:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 7
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-06-20T15:20:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 8
+                },
+                {
+                    "name": "Qualifying 1 Race 3",
+                    "start_time": "2026-06-21T10:40:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 9
+                },
+                {
+                    "name": "Qualifying 2 Race 3",
+                    "start_time": "2026-06-21T11:00:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 10
+                },
+                {
+                    "name": "Top Ten Shootout - Race 3",
+                    "start_time": "2026-06-21T11:35:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 11
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-06-21T14:40:00",
+                    "timezone": "Australia/Darwin",
+                    "session_number": 12
+                }
+            ]
         },
         {
             "slug": "townsville-500-2026",
