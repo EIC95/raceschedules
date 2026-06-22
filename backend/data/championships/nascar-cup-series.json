@@ -438,7 +438,26 @@
             "name": "Sonoma 350",
             "start_date": "2026-06-28",
             "end_date": "2026-06-28",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "start_time": "2026-06-27T11:00:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-06-27T12:10:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 2
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-06-28T12:30:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 3
+                }
+            ]
         },
         {
             "slug": "chicagoland-400-2026",
