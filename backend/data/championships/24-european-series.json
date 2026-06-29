@@ -57,7 +57,17 @@
       "name": "12H Nürburgring",
       "start_date": "2026-07-03",
       "end_date": "2026-07-05",
-      "sessions": []
+      "sessions": [
+        { "name": "Free Practice", "start_time": "2026-07-03T11:45:00", "timezone": "Europe/Berlin", "session_number": 1 },
+        { "name": "Qualifying TCE/GT4/GTX/992 - Session 1", "start_time": "2026-07-03T15:25:00", "timezone": "Europe/Berlin", "session_number": 2 },
+        { "name": "Qualifying TCE/GT4/GTX/992 - Session 2", "start_time": "2026-07-03T15:47:00", "timezone": "Europe/Berlin", "session_number": 3 },
+        { "name": "Qualifying TCE/GT4/GTX/992 - Session 3", "start_time": "2026-07-03T16:09:00", "timezone": "Europe/Berlin", "session_number": 4 },
+        { "name": "Qualifying GT3 - Session 1", "start_time": "2026-07-03T16:35:00", "timezone": "Europe/Berlin", "session_number": 5 },
+        { "name": "Qualifying GT3 - Session 2", "start_time": "2026-07-03T16:55:00", "timezone": "Europe/Berlin", "session_number": 6 },
+        { "name": "Qualifying GT3 - Session 3", "start_time": "2026-07-03T17:15:00", "timezone": "Europe/Berlin", "session_number": 7 },
+        { "name": "Race Part 1", "start_time": "2026-07-04T12:00:00", "timezone": "Europe/Berlin", "session_number": 8 },
+        { "name": "Race Part 2", "start_time": "2026-07-05T12:00:00", "timezone": "Europe/Berlin", "session_number": 9 }
+      ]
     },
     {
       "slug": "24h-barcelona-2026",

@@ -445,7 +445,26 @@
             "name": "Chicagoland 400",
             "start_date": "2026-07-05",
             "end_date": "2026-07-05",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "session_number": 1,
+                    "start_time": "2026-07-03T17:00:00",
+                    "timezone": "America/Chicago"
+                },
+                {
+                    "name": "Qualifying",
+                    "session_number": 2,
+                    "start_time": "2026-07-04T14:00:00",
+                    "timezone": "America/Chicago"
+                },
+                {
+                    "name": "Race",
+                    "session_number": 3,
+                    "start_time": "2026-07-05T17:00:00",
+                    "timezone": "America/Chicago"
+                }
+            ]
         },
         {
             "slug": "atlanta-400-2-2026",
