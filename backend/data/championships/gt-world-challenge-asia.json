@@ -36,7 +36,15 @@
       "name": "Fuji International Speedway",
       "start_date": "2026-07-11",
       "end_date": "2026-07-12",
-      "sessions": []
+      "sessions": [
+            { "name": "Official Practice", "start_time": "2026-07-10T11:10:00", "timezone": "Asia/Tokyo", "session_number": 1 },
+            { "name": "Bronze Session", "start_time": "2026-07-10T12:15:00", "timezone": "Asia/Tokyo", "session_number": 2 },
+            { "name": "Pre-Qualifying", "start_time": "2026-07-10T15:45:00", "timezone": "Asia/Tokyo", "session_number": 3 },
+            { "name": "Qualifying 1", "start_time": "2026-07-11T08:30:00", "timezone": "Asia/Tokyo", "session_number": 4 },
+            { "name": "Qualifying 2", "start_time": "2026-07-11T08:52:00", "timezone": "Asia/Tokyo", "session_number": 5 },
+            { "name": "Race 1", "start_time": "2026-07-11T12:35:00", "timezone": "Asia/Tokyo", "session_number": 6 },
+            { "name": "Race 2", "start_time": "2026-07-12T11:35:00", "timezone": "Asia/Tokyo", "session_number": 7 }
+        ]
     },
     {
       "slug": "okayama-2026",

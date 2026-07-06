@@ -247,7 +247,32 @@
             "name": "Mosport",
             "start_date": "2026-07-12",
             "end_date": "2026-07-12",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "session_number": 1,
+                    "start_time": "2026-07-10T13:55:00",
+                    "timezone": "America/Toronto"
+                },
+                {
+                    "name": "Practice 2",
+                    "session_number": 2,
+                    "start_time": "2026-07-11T10:35:00",
+                    "timezone": "America/Toronto"
+                },
+                {
+                    "name": "Qualifying",
+                    "session_number": 3,
+                    "start_time": "2026-07-11T16:00:00",
+                    "timezone": "America/Toronto"
+                },
+                {
+                    "name": "Race",
+                    "session_number": 4,
+                    "start_time": "2026-07-12T14:05:00",
+                    "timezone": "America/Toronto"
+                }
+            ]
         },
         {
             "slug": "road-america-imsa-2026",

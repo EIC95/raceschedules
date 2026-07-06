@@ -58,7 +58,16 @@
             "name": "6 Hours of São Paulo",
             "start_date": "2026-07-10",
             "end_date": "2026-07-12",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-07-10T11:00:00", "timezone": "America/Sao_Paulo", "session_number": 1 },
+                { "name": "Free Practice 2", "start_time": "2026-07-10T15:50:00", "timezone": "America/Sao_Paulo", "session_number": 2 },
+                { "name": "Free Practice 3", "start_time": "2026-07-11T10:10:00", "timezone": "America/Sao_Paulo", "session_number": 3 },
+                { "name": "Qualifying LMGT3", "start_time": "2026-07-11T14:30:00", "timezone": "America/Sao_Paulo", "session_number": 4 },
+                { "name": "Hyperpole LMGT3", "start_time": "2026-07-11T14:50:00", "timezone": "America/Sao_Paulo", "session_number": 5 },
+                { "name": "Qualifying Hypercar", "start_time": "2026-07-11T15:25:00", "timezone": "America/Sao_Paulo", "session_number": 6 },
+                { "name": "Hyperpole Hypercar", "start_time": "2026-07-11T15:45:00", "timezone": "America/Sao_Paulo", "session_number": 7 },
+                { "name": "Race", "start_time": "2026-07-12T11:30:00", "timezone": "America/Sao_Paulo", "session_number": 8 }
+            ]
         },
         {
             "slug": "lone-star-le-mans-2026",

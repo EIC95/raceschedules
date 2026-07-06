@@ -450,7 +450,80 @@
             "name": "Townsville 500",
             "start_date": "2026-07-10",
             "end_date": "2026-07-12",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "start_time": "2026-07-10T10:35:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying 1 Race 1",
+                    "start_time": "2026-07-10T12:45:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 2 Race 1",
+                    "start_time": "2026-07-10T13:05:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-07-10T16:15:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 1 Race 2",
+                    "start_time": "2026-07-11T11:25:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 5
+                },
+                {
+                    "name": "Qualifying 2 Race 2",
+                    "start_time": "2026-07-11T11:45:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 6
+                },
+                {
+                    "name": "Top Ten Shootout - Race 2",
+                    "start_time": "2026-07-11T12:10:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 7
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-07-11T15:05:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 8
+                },
+                {
+                    "name": "Qualifying 1 Race 3",
+                    "start_time": "2026-07-12T11:25:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 9
+                },
+                {
+                    "name": "Qualifying 2 Race 3",
+                    "start_time": "2026-07-12T11:45:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 10
+                },
+                {
+                    "name": "Top Ten Shootout - Race 3",
+                    "start_time": "2026-07-12T12:10:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 11
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-07-12T15:05:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 12
+                }
+            ]
         },
         {
             "slug": "perth-super-440-2026",
