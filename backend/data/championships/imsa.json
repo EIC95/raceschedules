@@ -240,7 +240,32 @@
             "name": "Watkins Glen",
             "start_date": "2026-06-28",
             "end_date": "2026-06-28",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-06-26T11:25:00",
+                    "timezone": "America/New_York",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-06-27T10:05:00",
+                    "timezone": "America/New_York",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-06-27T15:40:00",
+                    "timezone": "America/New_York",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-06-28T12:10:00",
+                    "timezone": "America/New_York",
+                    "session_number": 4
+                }
+            ]
         },
         {
             "slug": "mosport-2026",
