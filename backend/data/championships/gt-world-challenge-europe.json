@@ -184,7 +184,68 @@
             "name": "24 Hours of Spa",
             "start_date": "2026-06-24",
             "end_date": "2026-06-28",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-06-25T10:10:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 1
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-06-25T16:10:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 1",
+                    "start_time": "2026-06-25T19:45:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying 2",
+                    "start_time": "2026-06-25T20:05:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 3",
+                    "start_time": "2026-06-25T20:35:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 5
+                },
+                {
+                    "name": "Qualifying 4",
+                    "start_time": "2026-06-25T21:05:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 6
+                },
+                {
+                    "name": "Night Practice",
+                    "start_time": "2026-06-25T21:55:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 7
+                },
+                {
+                    "name": "Superpole",
+                    "start_time": "2026-06-26T15:05:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 8
+                },
+                {
+                    "name": "Warm Up",
+                    "start_time": "2026-06-26T19:20:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 9
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-06-27T16:30:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 10
+                }
+            ]
         },
         {
             "slug": "misano-2026",
