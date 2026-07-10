@@ -408,7 +408,38 @@
             "name": "Indy 200 at Mid-Ohio",
             "start_date": "2026-07-03",
             "end_date": "2026-07-05",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-07-03T15:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-07-04T10:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-07-04T17:15:00",
+                    "timezone": "America/New_York",
+                    "session_number": 3
+                },
+                {
+                    "name": "Warm-Up",
+                    "start_time": "2026-07-05T09:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-07-05T12:30:00",
+                    "timezone": "America/New_York",
+                    "session_number": 5
+                }
+            ]
         },
         {
             "slug": "music-city-grand-prix-2026",

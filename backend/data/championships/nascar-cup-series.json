@@ -436,26 +436,26 @@
         {
             "slug": "sonoma-350-2026",
             "name": "Sonoma 350",
-            "start_date": "2026-06-28",
+            "start_date": "2026-06-27",
             "end_date": "2026-06-28",
             "sessions": [
                 {
                     "name": "Practice",
-                    "start_time": "2026-06-27T11:00:00",
-                    "timezone": "America/Los_Angeles",
-                    "session_number": 1
+                    "session_number": 1,
+                    "start_time": "2026-06-27T14:00:00",
+                    "timezone": "America/Chicago"
                 },
                 {
                     "name": "Qualifying",
-                    "start_time": "2026-06-27T12:10:00",
-                    "timezone": "America/Los_Angeles",
-                    "session_number": 2
+                    "session_number": 2,
+                    "start_time": "2026-06-27T15:10:00",
+                    "timezone": "America/Chicago"
                 },
                 {
                     "name": "Race",
-                    "start_time": "2026-06-28T12:30:00",
-                    "timezone": "America/Los_Angeles",
-                    "session_number": 3
+                    "session_number": 3,
+                    "start_time": "2026-06-28T15:30:00",
+                    "timezone": "America/Chicago"
                 }
             ]
         },
@@ -464,7 +464,26 @@
             "name": "Chicagoland 400",
             "start_date": "2026-07-05",
             "end_date": "2026-07-05",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "session_number": 1,
+                    "start_time": "2026-07-03T18:00:00",
+                    "timezone": "America/Chicago"
+                },
+                {
+                    "name": "Qualifying",
+                    "session_number": 2,
+                    "start_time": "2026-07-04T15:00:00",
+                    "timezone": "America/Chicago"
+                },
+                {
+                    "name": "Race",
+                    "session_number": 3,
+                    "start_time": "2026-07-05T18:00:00",
+                    "timezone": "America/Chicago"
+                }
+            ]
         },
         {
             "slug": "atlanta-400-2-2026",
