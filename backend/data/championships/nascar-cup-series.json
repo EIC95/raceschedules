@@ -497,7 +497,26 @@
             "name": "North Wilkesboro 450",
             "start_date": "2026-07-19",
             "end_date": "2026-07-19",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "start_time": "2026-07-18T17:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-07-18T18:10:00",
+                    "timezone": "America/New_York",
+                    "session_number": 2
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-07-19T19:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 3
+                }
+            ]
         },
         {
             "slug": "brickyard-400-2026",

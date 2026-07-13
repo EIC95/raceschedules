@@ -1024,7 +1024,122 @@
             "name": "Estonia Rally",
             "start_date": "2026-07-16",
             "end_date": "2026-07-19",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Shakedown",
+                    "start_time": "2026-07-17T09:01:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 1
+                },
+                {
+                    "name": "SS1 Raanitsa 1",
+                    "start_time": "2026-07-17T13:03:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 2
+                },
+                {
+                    "name": "SS2 Karaski 1",
+                    "start_time": "2026-07-17T13:56:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 3
+                },
+                {
+                    "name": "SS3 Kanepi 1",
+                    "start_time": "2026-07-17T14:49:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 4
+                },
+                {
+                    "name": "SS4 Raanitsa 2",
+                    "start_time": "2026-07-17T16:46:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 5
+                },
+                {
+                    "name": "SS5 Karaski 2",
+                    "start_time": "2026-07-17T17:39:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 6
+                },
+                {
+                    "name": "SS6 Kanepi 2",
+                    "start_time": "2026-07-17T18:32:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 7
+                },
+                {
+                    "name": "SS7 Elva Linn",
+                    "start_time": "2026-07-17T19:35:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 8
+                },
+                {
+                    "name": "SS8 Peipsiääre 1",
+                    "start_time": "2026-07-18T09:56:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 9
+                },
+                {
+                    "name": "SS9 Mustvee 1",
+                    "start_time": "2026-07-18T10:49:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 10
+                },
+                {
+                    "name": "SS10 Peipsiääre 2",
+                    "start_time": "2026-07-18T12:10:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 11
+                },
+                {
+                    "name": "SS11 Mustvee 2",
+                    "start_time": "2026-07-18T13:03:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 12
+                },
+                {
+                    "name": "SS12 Kambja 1",
+                    "start_time": "2026-07-18T15:48:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 13
+                },
+                {
+                    "name": "SS13 Otepää 1",
+                    "start_time": "2026-07-18T17:05:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 14
+                },
+                {
+                    "name": "SS14 Kambja 2",
+                    "start_time": "2026-07-18T17:58:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 15
+                },
+                {
+                    "name": "SS15 Otepää 2",
+                    "start_time": "2026-07-18T19:05:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 16
+                },
+                {
+                    "name": "SS16 Tartu vald",
+                    "start_time": "2026-07-18T20:35:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 17
+                },
+                {
+                    "name": "SS17 Kääriku 1",
+                    "start_time": "2026-07-19T11:05:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 18
+                },
+                {
+                    "name": "SS18 Kääriku 2 - Power Stage",
+                    "start_time": "2026-07-19T13:15:00",
+                    "timezone": "Europe/Tallinn",
+                    "session_number": 19
+                }
+            ]
         },
         {
             "slug": "finland-rally",
