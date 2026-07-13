@@ -908,7 +908,116 @@
             "name": "Acropolis Rally",
             "start_date": "2026-06-25",
             "end_date": "2026-06-28",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Shakedown",
+                    "start_time": "2026-06-25T09:01:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 1
+                },
+                {
+                    "name": "SS1 EKO SSS",
+                    "start_time": "2026-06-25T19:05:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 2
+                },
+                {
+                    "name": "SS2 Bauxites",
+                    "start_time": "2026-06-26T08:48:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 3
+                },
+                {
+                    "name": "SS3 Parnassos Mt",
+                    "start_time": "2026-06-26T09:51:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 4
+                },
+                {
+                    "name": "SS4 Stiri 1",
+                    "start_time": "2026-06-26T11:14:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 5
+                },
+                {
+                    "name": "SS5 Elikon Mt",
+                    "start_time": "2026-06-26T13:35:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 6
+                },
+                {
+                    "name": "SS6 Stiri 2",
+                    "start_time": "2026-06-26T14:46:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 7
+                },
+                {
+                    "name": "SS7 Thiva",
+                    "start_time": "2026-06-26T16:56:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 8
+                },
+                {
+                    "name": "SS8 Ghymno 1",
+                    "start_time": "2026-06-27T07:54:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 9
+                },
+                {
+                    "name": "SS9 Kolines",
+                    "start_time": "2026-06-27T09:19:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 10
+                },
+                {
+                    "name": "SS10 Menalo Mt 1",
+                    "start_time": "2026-06-27T11:05:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 11
+                },
+                {
+                    "name": "SS11 Kefalari",
+                    "start_time": "2026-06-27T12:58:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 12
+                },
+                {
+                    "name": "SS12 Ghymno 2",
+                    "start_time": "2026-06-27T16:39:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 13
+                },
+                {
+                    "name": "SS13 Menalo Mt 2",
+                    "start_time": "2026-06-27T19:05:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 14
+                },
+                {
+                    "name": "SS14 Aghii Theodori 1",
+                    "start_time": "2026-06-28T08:28:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 15
+                },
+                {
+                    "name": "SS15 Loutraki 1",
+                    "start_time": "2026-06-28T09:35:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 16
+                },
+                {
+                    "name": "SS16 Aghii Theodori 2",
+                    "start_time": "2026-06-28T12:10:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 17
+                },
+                {
+                    "name": "SS17 Loutraki 2 - Wolf Power Stage",
+                    "start_time": "2026-06-28T14:15:00",
+                    "timezone": "Europe/Athens",
+                    "session_number": 18
+                }
+            ]
         },
         {
             "slug": "estonia-rally",

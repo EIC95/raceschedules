@@ -38,7 +38,16 @@
             "name": "4 Hours of Imola",
             "start_date": "2026-07-03",
             "end_date": "2026-07-05",
-            "sessions": []
+            "sessions": [
+                { "name": "Free Practice 1", "start_time": "2026-07-03T10:50:00", "timezone": "Europe/Rome", "session_number": 1 },
+                { "name": "Bronze Test", "start_time": "2026-07-03T14:55:00", "timezone": "Europe/Rome", "session_number": 2 },
+                { "name": "Free Practice 2", "start_time": "2026-07-04T10:50:00", "timezone": "Europe/Rome", "session_number": 3 },
+                { "name": "Qualifying LMGT3", "start_time": "2026-07-04T14:55:00", "timezone": "Europe/Rome", "session_number": 4 },
+                { "name": "Qualifying LMP3", "start_time": "2026-07-04T15:20:00", "timezone": "Europe/Rome", "session_number": 5 },
+                { "name": "Qualifying LMP2 Pro/Am", "start_time": "2026-07-04T15:45:00", "timezone": "Europe/Rome", "session_number": 6 },
+                { "name": "Qualifying LMP2", "start_time": "2026-07-04T16:10:00", "timezone": "Europe/Rome", "session_number": 7 },
+                { "name": "Race", "start_time": "2026-07-05T13:00:00", "timezone": "Europe/Rome", "session_number": 8 }
+            ]
         },
         {
             "slug": "4-hours-of-spa-2026",
