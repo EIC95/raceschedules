@@ -1027,7 +1027,7 @@
             "sessions": [
                 {
                     "name": "Shakedown",
-                    "start_time": "2026-07-17T09:01:00",
+                    "start_time": "2026-07-17T08:01:00",
                     "timezone": "Europe/Tallinn",
                     "session_number": 1
                 },
