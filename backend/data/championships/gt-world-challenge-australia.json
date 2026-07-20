@@ -48,7 +48,14 @@
       "name": "Hidden Valley Raceway",
       "start_date": "2026-07-24",
       "end_date": "2026-07-26",
-      "sessions": []
+      "sessions": [
+        { "name": "Free Practice 1", "start_time": "2026-07-24T12:50:00", "timezone": "Australia/Darwin", "session_number": 1 },
+        { "name": "Free Practice 2", "start_time": "2026-07-24T16:00:00", "timezone": "Australia/Darwin", "session_number": 2 },
+        { "name": "Qualifying 1", "start_time": "2026-07-25T10:15:00", "timezone": "Australia/Darwin", "session_number": 3 },
+        { "name": "Qualifying 2", "start_time": "2026-07-25T10:35:00", "timezone": "Australia/Darwin", "session_number": 4 },
+        { "name": "Race 1", "start_time": "2026-07-25T14:00:00", "timezone": "Australia/Darwin", "session_number": 5 },
+        { "name": "Race 2", "start_time": "2026-07-26T10:00:00", "timezone": "Australia/Darwin", "session_number": 6 }
+      ]
     },
     {
       "slug": "sydney-motorsport-park-2026",

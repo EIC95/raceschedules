@@ -536,7 +536,26 @@
             "name": "Brickyard 400",
             "start_date": "2026-07-26",
             "end_date": "2026-07-26",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "start_time": "2026-07-24T13:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-07-25T13:30:00",
+                    "timezone": "America/New_York",
+                    "session_number": 2
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-07-26T14:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 3
+                }
+            ]
         },
         {
             "slug": "iowa-350-2026",
