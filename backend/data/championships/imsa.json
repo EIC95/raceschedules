@@ -304,7 +304,32 @@
             "name": "Road America",
             "start_date": "2026-08-02",
             "end_date": "2026-08-02",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-07-31T11:25:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-08-01T09:50:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-01T15:25:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-02T10:40:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 4
+                }
+            ]
         },
         {
             "slug": "virginia-international-raceway-2026",
