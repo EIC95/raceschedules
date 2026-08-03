@@ -484,7 +484,38 @@
             "name": "Grand Prix of Portland",
             "start_date": "2026-08-07",
             "end_date": "2026-08-09",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-08-07T14:30:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-08-08T10:00:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-08T16:00:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 3
+                },
+                {
+                    "name": "Warm-Up",
+                    "start_time": "2026-08-09T10:00:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-09T13:00:00",
+                    "timezone": "America/Los_Angeles",
+                    "session_number": 5
+                }
+            ]
         },
         {
             "slug": "indy-at-markham-2026",

@@ -543,7 +543,26 @@
             "name": "Iowa 350",
             "start_date": "2026-08-09",
             "end_date": "2026-08-09",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice",
+                    "start_time": "2026-08-08T13:05:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-08T14:10:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 2
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-09T14:30:00",
+                    "timezone": "America/Chicago",
+                    "session_number": 3
+                }
+            ]
         },
         {
             "slug": "richmond-400-2026",

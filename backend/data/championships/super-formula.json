@@ -164,7 +164,32 @@
             "name": "Sportsland SUGO",
             "start_date": "2026-08-07",
             "end_date": "2026-08-09",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-08-08T09:00:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 1
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-08T13:45:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 2
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-08-09T09:00:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-09T13:45:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 4
+                }
+            ]
         },
         {
             "slug": "fuji-2-2026",
