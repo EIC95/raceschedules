@@ -491,7 +491,38 @@
             "name": "Indy at Markham",
             "start_date": "2026-08-14",
             "end_date": "2026-08-16",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-08-14T15:00:00",
+                    "timezone": "America/Toronto",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-08-15T10:00:00",
+                    "timezone": "America/Toronto",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-15T14:25:00",
+                    "timezone": "America/Toronto",
+                    "session_number": 3
+                },
+                {
+                    "name": "Warm-Up",
+                    "start_time": "2026-08-16T08:30:00",
+                    "timezone": "America/Toronto",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-16T12:00:00",
+                    "timezone": "America/Toronto",
+                    "session_number": 5
+                }
+            ]
         },
         {
             "slug": "washington-dc-grand-prix-2026",
