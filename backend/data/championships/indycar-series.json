@@ -498,7 +498,38 @@
             "name": "Washington D.C. Grand Prix",
             "start_date": "2026-08-21",
             "end_date": "2026-08-23",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-08-22T09:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-08-22T13:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-22T17:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 3
+                },
+                {
+                    "name": "Warm-Up",
+                    "start_time": "2026-08-23T09:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-23T13:00:00",
+                    "timezone": "America/New_York",
+                    "session_number": 5
+                }
+            ]
         },
         {
             "slug": "milwaukee-mile-2026",

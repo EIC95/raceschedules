@@ -70,7 +70,44 @@
             "name": "Spa-Francorchamps Round",
             "start_date": "2026-08-21",
             "end_date": "2026-08-22",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-08-21T09:50:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 1
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-08-21T14:50:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 1",
+                    "start_time": "2026-08-22T11:25:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying 2",
+                    "start_time": "2026-08-22T11:45:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 3",
+                    "start_time": "2026-08-22T12:05:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 5
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-22T15:52:00",
+                    "timezone": "Europe/Brussels",
+                    "session_number": 6
+                }
+            ]
         },
         {
             "slug": "silverstone-2026",

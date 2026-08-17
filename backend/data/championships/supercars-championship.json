@@ -537,7 +537,80 @@
             "name": "Ipswich Super 440",
             "start_date": "2026-08-21",
             "end_date": "2026-08-23",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-08-21T14:40:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-08-21T15:30:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 1 - Race 1",
+                    "start_time": "2026-08-22T10:00:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying 2 - Race 1",
+                    "start_time": "2026-08-22T10:20:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 1 - Race 2",
+                    "start_time": "2026-08-22T10:50:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 5
+                },
+                {
+                    "name": "Qualifying 2 - Race 2",
+                    "start_time": "2026-08-22T11:10:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 6
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-08-22T12:45:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 7
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-08-22T16:15:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 8
+                },
+                {
+                    "name": "Qualifying 1 - Race 3",
+                    "start_time": "2026-08-23T10:55:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 9
+                },
+                {
+                    "name": "Qualifying 2 - Race 3",
+                    "start_time": "2026-08-23T11:15:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 10
+                },
+                {
+                    "name": "Top Ten Shootout - Race 3",
+                    "start_time": "2026-08-23T11:40:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 11
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-08-23T15:20:00",
+                    "timezone": "Australia/Brisbane",
+                    "session_number": 12
+                }
+            ]
         },
         {
             "slug": "500-at-the-bend-2026",

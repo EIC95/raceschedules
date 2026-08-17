@@ -311,7 +311,32 @@
             "name": "Virginia International Raceway",
             "start_date": "2026-08-23",
             "end_date": "2026-08-23",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Practice 1",
+                    "start_time": "2026-08-21T15:10:00",
+                    "timezone": "America/New_York",
+                    "session_number": 1
+                },
+                {
+                    "name": "Practice 2",
+                    "start_time": "2026-08-22T10:30:00",
+                    "timezone": "America/New_York",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying",
+                    "start_time": "2026-08-22T16:50:00",
+                    "timezone": "America/New_York",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race",
+                    "start_time": "2026-08-23T12:10:00",
+                    "timezone": "America/New_York",
+                    "session_number": 4
+                }
+            ]
         },
         {
             "slug": "indianapolis-motor-speedway-2026",
