@@ -1,13 +1,13 @@
 # RaceSchedules
 
-This project is a web application designed to help motorsports enthusiasts track the schedules of numerous racing categories. Faced with the difficulty of staying informed and the risk of missing important events, RaceSchedules aims to simplify this task.
+RaceSchedules is a web application designed to help motorsports enthusiasts track the schedules of numerous racing categories, built with a FastAPI backend, a Next.js frontend, and a PostgreSQL database.
 
-This project is designed to be **open source and completely free**, developed by and for the motorsports community. We invite you to keep it alive and contribute to its improvement.
+**This is a personal portfolio project, no longer maintained or open for contributions.** It's kept here as a showcase of the code and architecture.
 
 ## Project Structure
 
-- `backend/`: Contains the FastAPI application, database models, API endpoints, and migration scripts.
-- `frontend/`: Contains the Next.js application, including components, pages, and API integration.
+- `backend/`: FastAPI application, database models, API endpoints, and migration scripts.
+- `frontend/`: Next.js application, including components, pages, and API integration.
 
 ## Features
 
@@ -15,11 +15,9 @@ This project is designed to be **open source and completely free**, developed by
 - **Event Management:** Schedule and detail individual events within championships.
 - **Session Management:** Define specific sessions (e.g., practice, qualifying, race) for each event with timezone handling.
 
-## Getting Started
+## Running Locally
 
 ### Option 1: Docker (recommended)
-
-The easiest way to run the full stack locally is with Docker Compose.
 
 #### Prerequisites
 
@@ -56,60 +54,25 @@ To stop and remove the database volume:
 docker compose down -v
 ```
 
----
-
 ### Option 2: Manual setup
 
-Follow the instructions in the `backend/README.md` and `frontend/README.md` files to set up and run each part of the application.
+#### Backend (from `backend/`)
 
-## Development
+```bash
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+python -m alembic upgrade head           # Apply migrations
+uvicorn main:app --reload                # Start dev server on :8000
+python scripts/seed.py                  # Seed data (interactive)
+```
 
-### Prerequisites
-- Docker and Docker Compose (for Docker setup)
-- Python 3.10+ and Node.js 18+ (for manual setup)
+#### Frontend (from `frontend/`)
 
-### Setup
+```bash
+npm install
+npm run dev      # Start dev server on :3000
+```
 
-1.  **Backend Setup:** Refer to `backend/README.md`
-2.  **Frontend Setup:** Refer to `frontend/README.md`
+## Architecture
 
-## Contributions
-
-### General Contributions
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-### Data Contributions (Championships and Schedules)
-
-The world of motorsports is vast and covers many categories. It's challenging to keep all championship and schedule data up to date. That's why we rely on the community!
-
-If you wish to contribute data for an existing championship or add a new one, please refer to the [DATA_CONTRIBUTING.md](DATA_CONTRIBUTING.md) file. You will find a detailed guide on how to contribute, a list of currently covered championships, and those we would like to see added. Your help is invaluable in enriching the database and making RaceSchedules more comprehensive!
-
-Please see [roadmap.md](roadmap.md) for planned features and project vision.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
-## Disclaimer
-
-**RaceSchedules** is a community-driven, open-source project created for informational purposes.
-
-*   **Data Sources**: All race schedules, dates, and related factual information are compiled from publicly available sources, including official championship websites and public calendars. We strive for accuracy but make no guarantees regarding the completeness or timeliness of the data.
-*   **Intellectual Property**: All trademarks and brand names (e.g., Formula 1, NASCAR, FIA) are the property of their respective owners. This project is not endorsed by, affiliated with, or sponsored by any of these entities. The use of such marks is for informational identification purposes only.
-*   **No Commercial Use**: This project and its data are provided free of charge for personal, non-commercial use by the motorsport community.
-*   **Limitation of Liability**: The maintainers and contributors of this project are not liable for any errors, omissions, or any losses, injuries, or damages arising from the use of this information. Always verify critical details with official sources.
-
-*For any copyright or trademark concerns, please open an issue in the repository to discuss.*
-
-## Support Me
-If you like this project and want to support it, you can **donate** via Ko-fi:
-
-<p>
-  <a href="https://ko-fi.com/X8X511TO4J" target="_blank">
-    <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" alt="Donate" height="36"/>
-  </a>
-</p>
-
----
-Built with ❤️ by [Ibrahima Cissé](https://github.com/EIC95)
+See [CLAUDE.md](CLAUDE.md) for a detailed overview of the data model, backend/frontend structure, and data seeding approach.
