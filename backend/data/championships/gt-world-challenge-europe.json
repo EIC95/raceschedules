@@ -252,7 +252,44 @@
             "name": "Misano",
             "start_date": "2026-07-17",
             "end_date": "2026-07-19",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-07-17T14:50:00",
+                    "timezone": "Europe/Rome",
+                    "session_number": 1
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-07-17T20:10:00",
+                    "timezone": "Europe/Rome",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying 1",
+                    "start_time": "2026-07-18T13:05:00",
+                    "timezone": "Europe/Rome",
+                    "session_number": 3
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-07-18T20:30:00",
+                    "timezone": "Europe/Rome",
+                    "session_number": 4
+                },
+                {
+                    "name": "Qualifying 2",
+                    "start_time": "2026-07-19T10:05:00",
+                    "timezone": "Europe/Rome",
+                    "session_number": 5
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-07-19T14:30:00",
+                    "timezone": "Europe/Rome",
+                    "session_number": 6
+                }
+            ]
         },
         {
             "slug": "magny-cours-2026",

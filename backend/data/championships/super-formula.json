@@ -114,7 +114,50 @@
             "name": "Fuji Speedway – Round 1",
             "start_date": "2026-07-17",
             "end_date": "2026-07-19",
-            "sessions": []
+            "sessions": [
+                {
+                    "name": "Free Practice 1",
+                    "start_time": "2026-07-17T11:00:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 1
+                },
+                {
+                    "name": "Free Practice 2",
+                    "start_time": "2026-07-17T14:50:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 2
+                },
+                {
+                    "name": "Qualifying Round 1",
+                    "start_time": "2026-07-18T08:15:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 3
+                },
+                {
+                    "name": "Qualifying Round 2",
+                    "start_time": "2026-07-18T10:35:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 4
+                },
+                {
+                    "name": "Race 1",
+                    "start_time": "2026-07-18T16:15:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 5
+                },
+                {
+                    "name": "Race 2",
+                    "start_time": "2026-07-19T10:05:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 6
+                },
+                {
+                    "name": "Race 3",
+                    "start_time": "2026-07-19T15:35:00",
+                    "timezone": "Asia/Tokyo",
+                    "session_number": 7
+                }
+            ]
         },
         {
             "slug": "sugo-2026",
